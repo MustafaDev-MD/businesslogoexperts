@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Digital Marketing Agency')</title>
+
+    {{-- Dynamic Title --}}
+    <title>
+        {{isset($title) ? $title . ' | Business Logo Experts' : 'Business Logo Experts'}}
+    </title>
+
+    {{-- Dynamic Meta Description --}}
+    <meta name="description" content="{{ $description ?? 'We provide professional digital marketing services including SEO, PPC, and branding.' }}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
     @livewireStyles
-    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -57,4 +67,5 @@
 
     @livewireScripts
 </body>
+
 </html>
