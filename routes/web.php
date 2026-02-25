@@ -29,8 +29,7 @@ Route::controller(FrontendController::class)->group(function () {
 
     // Services
     Route::get('/service', 'service')->name('service');
-    Route::get('/service/{slug}', [FrontendController::class, 'singleService'])
-    ->name('service.show');
+    Route::get('/service/{slug}', 'singleService')->name('single-service');
     Route::get('/single-service', 'singleService')->name('single-service');
 
     // Other pages

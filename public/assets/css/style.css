@@ -200,7 +200,7 @@ url('../fonts/Magox.otf') format('opentype'),  */
 
 :root{
     --primary: #D1D1D1;
-    --secondary: #040404;
+    --secondary: #100819;
     --text-color: #8B8B8B;
     --text-color-2: var(--secondary); 
     --accent-color: #C82AEF; 
@@ -217,8 +217,9 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --box-shadow-bottom-right: 3px 3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --box-shadow-top-left-wide: -3px -3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --box-shadow-bottom-right-wide: 3px 3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
-    --global-font: "Plus Jakarta Sans", sans-serif;
-    /* --global-font: "GC Matrix", sans-serif; */
+    /* --global-font: "Plus Jakarta Sans", sans-serif; */
+    --global-font: "GC Matrix", sans-serif;
+    --secondary-font: "Figtree", sans-serif;
     --global-border-radius: 25px 25px 25px 25px;
     --animation-normal: 1.25s;
     --animation-slow: 2s;
@@ -365,6 +366,7 @@ body{
     transition: all .3s ease;
     position: relative;
     z-index: 0;
+    font-variant: no-common-ligatures;
 }
 
 body::before {
@@ -382,9 +384,13 @@ body::before {
     z-index: -1;
 }
 
+body.lightmode::before {
+    opacity: 0;
+}
+
 body.lightmode .keep-dark {
     --primary: #D1D1D1;
-    --secondary: #040404;
+    --secondary: #100819;
     --text-color: #8B8B8B;
     --accent-color: #C82AEF; 
     --accent-color-2: #FFFFFF;
@@ -399,7 +405,7 @@ body.lightmode .keep-dark {
 
 h1 {
     font-size: var(--font-size-15xl);
-    line-height: var(--line-height-normal);
+    line-height: var(--line-height-snug);
 }
 
 h2{
@@ -414,17 +420,17 @@ h3 {
 
 h4 {
     font-size: var(--font-size-5xl);
-    line-height: var(--line-height-loose);
+    line-height: var(--line-height-snug);
 }
 
 h5 {
     font-size: var(--font-size-3xl);
-    line-height: var(--line-height-loose);
+    line-height: var(--line-height-snug);
 }
 
 h6 {
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-loose);
+    line-height: var(--line-height-snug);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -444,6 +450,12 @@ p {
     margin-bottom: 14.4px;
     font-weight: var(--font-weight-medium);
     color: var(--text-color);
+    font-family: var(--secondary-font);
+    letter-spacing: -0.5px;
+}
+
+a{
+    font-variant: no-common-ligatures;
 }
 
 ul{
@@ -903,6 +915,7 @@ body.lightmode .form select{
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
     text-transform: capitalize;
+    font-variant: no-common-ligatures;
 }
 
 .menu a:hover,

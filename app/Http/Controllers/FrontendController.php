@@ -16,53 +16,73 @@ class FrontendController extends Controller
     */
 
     // Home page
-    public function index() {
+    public function index()
+    {
         return view('frontend.index');
     }
 
     // About page
-    public function about() {
+    public function about()
+    {
         return view('frontend.about');
     }
 
     // Blog listing page
-    public function blog() {
+    public function blog()
+    {
         return view('frontend.blog');
     }
 
     // Single blog post page
-    public function singlePost() {
+    public function singlePost()
+    {
         return view('frontend.single-post');
     }
 
     // Case studies page
-    public function caseStudies() {
+    public function caseStudies()
+    {
         return view('frontend.case-studies');
     }
 
     // Contact page
-    public function contact() {
+    public function contact()
+    {
         return view('frontend.contact');
     }
 
     // FAQ page
-    public function faq() {
+    public function faq()
+    {
         return view('frontend.faq');
     }
 
     // Pricing page
-    public function pricing() {
+    public function pricing()
+    {
         return view('frontend.pricing');
     }
 
     // Partnership page
-    public function partnership() {
+    public function partnership()
+    {
         return view('frontend.partnership');
     }
 
     // Services listing page
-    public function service() {
-        return view('frontend.service');
+    public function service()
+    {
+        // Could fetch all services from DB if needed
+        $services = [
+            ['name' => 'Performance Marketing', 'slug' => 'performance-marketing'],
+            ['name' => 'Social Media Growth', 'slug' => 'social-media-growth'],
+            ['name' => 'Content Marketing', 'slug' => 'content-marketing'],
+            ['name' => 'PPC & Paid Ads', 'slug' => 'ppc-paid-ads'],
+            ['name' => 'Brand Strategy', 'slug' => 'brand-strategy'],
+            ['name' => 'Conversion Optimization', 'slug' => 'conversion-optimization'],
+        ];
+
+        return view('frontend.service', compact('services'));
     }
 
     // Single service page
@@ -70,17 +90,19 @@ class FrontendController extends Controller
     {
         // Optionally, fetch the service from DB using $slug
         // $service = Service::where('slug', $slug)->firstOrFail();
-    
+
         return view('frontend.single-services', compact('slug'));
     }
 
     // Team page
-    public function team() {
+    public function team()
+    {
         return view('frontend.team');
     }
 
     // Testimonials page
-    public function testimonial() {
+    public function testimonial()
+    {
         return view('frontend.testimonial');
     }
 
@@ -92,7 +114,8 @@ class FrontendController extends Controller
     | This method returns the custom 404 error page when a route is not found.
     |
     */
-    public function pageNotFound() {
+    public function pageNotFound()
+    {
         return response()->view('frontend.errors.404', [], 404);
     }
 }

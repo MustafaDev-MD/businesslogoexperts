@@ -18,4 +18,7 @@ export default defineConfig({
             ignored: ['**/storage/framework/views/**'],
         },
     },
+    build: {
+        assetsInlineLimit: 0, // images ko inline na kare
+    }
 });

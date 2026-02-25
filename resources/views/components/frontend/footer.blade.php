@@ -4,12 +4,12 @@
             <div class="hero-container position-relative z-2">
                 <div class="d-flex flex-column gspace-2">
                     <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-5">
-                        
+
                         <!-- Logo & Description -->
                         <div class="col col-xl-4">
                             <div class="footer-logo-container">
                                 <div class="logo-container-footer">
-                                    <img src="{{ asset('assets/image/marko-logo.png') }}" alt="Logo" class="site-logo img-fluid">
+                                    <img src="{{ asset('assets/image/logo.png') }}" alt="Logo" class="site-logo img-fluid">
                                 </div>
                                 <h4>Driving Digital Growth with Innovation & Strategy</h4>
                                 <p>
@@ -38,12 +38,21 @@
                             <div class="footer-services-container">
                                 <h5>Services</h5>
                                 <ul class="footer-list">
-                                    <li><a href="{{ route('single-service') }}">Social Media Marketing</a></li>
-                                    <li><a href="{{ route('single-service') }}">SEO Optimization</a></li>
-                                    <li><a href="{{ route('single-service') }}">PPC Advertising</a></li>
-                                    <li><a href="{{ route('single-service') }}">Content Marketing</a></li>
-                                    <li><a href="{{ route('single-service') }}">Branding Strategy</a></li>
-                                    <li><a href="{{ route('single-service') }}">Email Marketing</a></li>
+                                    <!-- <li><a href="{{ route('single-service', ['slug' => 'social-media-marketing']) }}">Social Media Marketing</a></li>
+                                    <li><a href="{{ route('single-service', ['slug' => 'seo-optimization']) }}">SEO Optimization</a></li>
+                                    <li><a href="{{ route('single-service', ['slug' => 'ppc-advertising']) }}">PPC Advertising</a></li>
+                                    <li><a href="{{ route('single-service', ['slug' => 'content-marketing']) }}">Content Marketing</a></li>
+                                    <li><a href="{{ route('single-service', ['slug' => 'branding-strategy']) }}">Branding Strategy</a></li>
+                                    <li><a href="{{ route('single-service', ['slug' => 'email-marketing']) }}">Email Marketing</a></li> -->
+                                    @foreach(config('services') as $service)
+                                    @if(isset($service['slug']) && isset($service['name']))
+                                    <li>
+                                        <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">
+                                            {{ $service['name'] }}
+                                        </a>
+                                    </li>
+                                    @endif
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -71,7 +80,7 @@
                                                 <i class="fa-brands fa-youtube"></i>
                                             </a>
                                         </div>
-                                        <div class="social-item-wrapper">    
+                                        <div class="social-item-wrapper">
                                             <a href="https://instagram.com" target="_blank" class="social-item">
                                                 <i class="fa-brands fa-instagram"></i>
                                             </a>

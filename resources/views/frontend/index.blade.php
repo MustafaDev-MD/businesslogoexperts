@@ -1,7 +1,7 @@
-<x-layouts.frontend 
+<x-layouts.frontend
     title="Best Digital Marketing Agency"
     description="We help businesses grow with SEO, social media marketing, PPC campaigns, and branding solutions.">
-    
+
     <!-- Section Banner -->
     <div class="section-banner">
         <div class="banner-video-container keep-dark animate-box animated animate__animated" data-animate="animate__fadeInUp">
@@ -21,7 +21,7 @@
                         <div class="banner-content order-xl-2 order-1  animate-box animated animate__animated" data-animate="animate__fadeInRight">
                             <p>Marko empowers businesses to grow online with data driven digital marketing, innovative branding, and performance focused strategies trusted by top brands lorem ipsum dolor sit amet consectetur.</p>
                             <div class="d-flex flex-md-row flex-column justify-content-center justify-content-xl-start align-self-center align-self-xl-start gspace-3">
-                                <a href="./about.html" class="btn btn-accent">
+                                <a href="{{ route('about') }}" class="btn btn-accent">
                                     <div class="btn-title">
                                         <span>Get Started</span>
                                     </div>
@@ -62,7 +62,7 @@
                                         <h4>Ready to Elevate Your Digital Presence?</h4>
                                         <p>Let's create a custom strategy that fits your business goals.</p>
                                         <div class="d-flex align-items-center flex-row gspace-2 expertise-link">
-                                            <a href="./contact.html">Get Free Consultation</a>
+                                            <a href="{{ route('contact') }}">Get Free Consultation</a>
                                             <i class="fa-solid fa-circle-arrow-right"></i>
                                         </div>
                                     </div>
@@ -83,13 +83,20 @@
                     <div class="d-flex flex-column flex-md-row gspace-2">
                         <div class="expertise-list">
                             <h5>What We Do Best</h5>
+                            @php
+                            $services = [
+                            ['name'=>'Performance Marketing','slug'=>'performance-marketing'],
+                            ['name'=>'Social Media Growth','slug'=>'social-media-growth'],
+                            ['name'=>'Content Marketing','slug'=>'content-marketing'],
+                            ['name'=>'PPC & Paid Ads','slug'=>'ppc-paid-ads'],
+                            ['name'=>'Brand Strategy','slug'=>'brand-strategy'],
+                            ['name'=>'Conversion Optimization','slug'=>'conversion-optimization'],
+                            ];
+                            @endphp
                             <ul class="check-list">
-                                <li><a href="./single_services.html">Performance Marketing</a></li>
-                                <li><a href="./single_services.html">Social Media Growth</a></li>
-                                <li><a href="./single_services.html">Content Marketing</a></li>
-                                <li><a href="./single_services.html">PPC & Paid Ads</a></li>
-                                <li><a href="./single_services.html">Brand Strategy</a></li>
-                                <li><a href="./single_services.html">Conversion Optimization</a></li>
+                                @foreach($services as $service)
+                                <li><a href="{{ route('single-service', ['slug' => $service['slug']]) }}">{{ $service['name'] }}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="card card-expertise card-expertise-counter animate-box animated animate__animated" data-animate="animate__fadeInUp">
@@ -108,7 +115,7 @@
         </div>
     </div>
 
-    <!-- Section Modal Video -->
+    <!-- Modal Video -->
     <div class="section p-0">
         <div id="modal-overlay" class="modal-overlay">
             <span class="my-close"><i class="fa-solid fa-xmark"></i></span>
@@ -127,63 +134,30 @@
             <div class="d-flex flex-column flex-xl-row gspace-5">
                 <div class="chooseus-card-container">
                     <div class="d-flex flex-column gspace-2">
-                        <div class="card card-chooseus animate-box animated fast animate__animated" data-animate="animate__fadeInLeft">
+                        <!-- Cards Repeated, links updated -->
+                        @foreach([['icon'=>'Icon-2.png','title'=>'Data-Driven Approach','desc'=>'Every decision is backed by real-time analytics for maximum impact.'],
+                        ['icon'=>'icon-1.png','title'=>'Creative & Innovative','desc'=>'Cutting-edge marketing techniques to keep you ahead of the competition.'],
+                        ['icon'=>'Icon-3.png','title'=>'Transparent Reporting','desc'=>'Clear insights and performance tracking, so you always know your ROI.']] as $item)
+                        <div class="card card-chooseus animate-box animated animate__animated" data-animate="animate__fadeInLeft">
                             <div class="chooseus-icon-wrapper">
                                 <div class="chooseus-spacer above"></div>
                                 <div class="chooseus-icon-layout">
                                     <div class="chooseus-icon">
-                                        <img src="{{ asset('assets/image/Icon-2.png') }}" alt="Why Choose Us Icon" class="img-fluid">
+                                        <img src="{{ asset('assets/image/'.$item['icon']) }}" alt="{{ $item['title'] }} Icon" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="chooseus-spacer below"></div>
                             </div>
                             <div class="chooseus-content">
-                                <h4 class="chooseus-title">Data-Driven Approach</h4>
-                                <p>Every decision is backed by real-time analytics for maximum impact lorem ipsum dolor sit consectetur adipiscing elit ut elit tellus luctus nec.</p>
+                                <h4 class="chooseus-title">{{ $item['title'] }}</h4>
+                                <p>{{ $item['desc'] }}</p>
                                 <div class="link-wrapper">
-                                    <a href="#">Read More</a>
+                                    <a href="{{ route('about') }}">Read More</a>
                                     <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="card card-chooseus  animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                            <div class="chooseus-icon-wrapper">
-                                <div class="chooseus-spacer above"></div>
-                                <div class="chooseus-icon-layout">
-                                    <div class="chooseus-icon">
-                                        <img src="{{ asset('assets/image/icon-1.png') }}" alt="Why Choose Us Icon" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="chooseus-spacer below"></div>
-                            </div>
-                            <div class="chooseus-content">
-                                <h4 class="chooseus-title">Creative & Innovative</h4>
-                                <p>Cutting-edge marketing techniques to keep you ahead of the competition lorem ipsum dolor sit awsa consectetur adipiscing elit ut elit.</p>
-                                <div class="link-wrapper">
-                                    <a href="#">Read More</a>
-                                    <i class="fa-solid fa-arrow-circle-right accent-color"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-chooseus  animate-box animated slow animate__animated" data-animate="animate__fadeInLeft">
-                            <div class="chooseus-icon-wrapper">
-                                <div class="chooseus-spacer above"></div>
-                                <div class="chooseus-icon-layout">
-                                    <div class="chooseus-icon">
-                                        <img src="{{ asset('assets/image/Icon-3.png') }}" alt="Why Choose Us Icon" class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="chooseus-spacer below"></div>
-                            </div>
-                            <div class="chooseus-content">
-                                <h4 class="chooseus-title">Transparent Reporting</h4>
-                                <p>Clear insights and performance tracking, so you always know your ROI lorem ipsum dolo consectetur adipiscing elit ut elit tellus luctus nec.</p>
-                                <div class="link-wrapper">
-                                    <a href="#">Read More</a>
-                                    <i class="fa-solid fa-arrow-circle-right accent-color"></i>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="chooseus-content-container">
@@ -206,7 +180,7 @@
                                         <div class="card card-chooseus-cta animate-box animated animate__animated" data-animate="animate__fadeInUp">
                                             <h5>Partner with Marko & take your brand to the next level.</h5>
                                             <div class="link-wrapper">
-                                                <a href="./contact.html">Let's Talk Strategy</a>
+                                                <a href="{{ route('contact') }}">Let's Talk Strategy</a>
                                                 <i class="fa-solid fa-circle-arrow-right"></i>
                                             </div>
                                         </div>
@@ -231,8 +205,10 @@
                     </div>
                     <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown">Digital Solutions That Drive Real Results</h2>
                 </div>
+
                 <div class="card-service-wrapper">
                     <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 grid-spacer-2">
+                        @foreach($services as $service)
                         <div class="col">
                             <div class="card card-service animate-box animated slow animate__animated" data-animate="animate__fadeInLeft">
                                 <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
@@ -244,161 +220,22 @@
                                         </div>
                                     </div>
                                     <div class="service-title">
-                                        <h4>Social Media Marketing</h4>
+                                        <h4>{{ $service['name'] }}</h4>
                                     </div>
                                 </div>
-                                <p>
-                                    Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.
-                                </p>
-                                <a href="./single_services.html" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
+                                <p>Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.</p>
+                                <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent">
+                                    <div class="btn-title"><span>View Details</span></div>
+                                    <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                                <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
-                                    <div>
-                                        <div class="service-icon-wrapper">
-                                            <div class="service-icon">
-                                                <img src="{{ asset('assets/image/digital-marketing-icons-F4LJ4W8.png') }}" alt="Service Icon" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-title">
-                                        <h4>Content Marketing</h4>
-                                    </div>
-                                </div>
-                                <p>
-                                    Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.
-                                </p>
-                                <a href="./single_services.html" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animated fast animate__animated" data-animate="animate__fadeInLeft">
-                                <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
-                                    <div>
-                                        <div class="service-icon-wrapper">
-                                            <div class="service-icon">
-                                                <img src="{{ asset('assets/image/Icon-8.png') }}" alt="Service Icon" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-title">
-                                        <h4>PPC Advertising</h4>
-                                    </div>
-                                </div>
-                                <p>
-                                    Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.
-                                </p>
-                                <a href="./single_services.html" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animated slow animate__animated" data-animate="animate__fadeInLeft">
-                                <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
-                                    <div>
-                                        <div class="service-icon-wrapper">
-                                            <div class="service-icon">
-                                                <img src="{{ asset('assets/image/Icon-5.png') }}" alt="Service Icon" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-title">
-                                        <h4>Email Marketing</h4>
-                                    </div>
-                                </div>
-                                <p>
-                                    Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.
-                                </p>
-                                <a href="./single_services.html" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                                <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
-                                    <div>
-                                        <div class="service-icon-wrapper">
-                                            <div class="service-icon">
-                                                <img src="{{ asset('assets/image/Icon-6.png') }}" alt="Service Icon" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-title">
-                                        <h4>Brading & Design</h4>
-                                    </div>
-                                </div>
-                                <p>
-                                    Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.
-                                </p>
-                                <a href="./single_services.html" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-service animate-box animated fast animate__animated" data-animate="animate__fadeInLeft">
-                                <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-3 align-items-center">
-                                    <div>
-                                        <div class="service-icon-wrapper">
-                                            <div class="service-icon">
-                                                <img src="{{ asset('assets/image/Icon-4.png') }}" alt="Service Icon" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-title">
-                                        <h4>Web Development</h4>
-                                    </div>
-                                </div>
-                                <p>
-                                    Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.
-                                </p>
-                                <a href="./single_services.html" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
+
                 <div class="service-link-footer">
-                    <p>Need a custom solution? Let's create a strategy tailored for your business. <a href="./contact.html">Get a Free Strategy Call</a></p>
+                    <p>Need a custom solution? Let's create a strategy tailored for your business. <a href="{{ route('contact') }}">Get a Free Strategy Call</a></p>
                 </div>
             </div>
         </div>
@@ -455,9 +292,9 @@
                                     </div>
                                 </a>
                                 <ul class="check-list">
-                                    <li><a href="./single_services.html">Basic SEO & Marketing</a></li>
-                                    <li><a href="./single_services.html">Social Media Management (1 Platform)</a></li>
-                                    <li><a href="./single_services.html">Monthly Performance Report</a></li>
+                                    <li><a href="javascript:void(0)">Basic SEO & Marketing</a></li>
+                                    <li><a href="javascript:void(0)">Social Media Management (1 Platform)</a></li>
+                                    <li><a href="javascript:void(0)">Monthly Performance Report</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -484,24 +321,24 @@
                             <div class="core-benefits">
                                 <div class="benefit">
                                     <i class="fa-solid fa-brain"></i>
-                                    <a href="#">Dedicated Account Manager</a>
+                                    <a href="javascript:void(0)">Dedicated Account Manager</a>
                                 </div>
                                 <div class="benefit">
                                     <i class="fa-brands fa-accessible-icon"></i>
-                                    <a href="#">Priority Support 24/7</a>
+                                    <a href="javascript:void(0)">Priority Support 24/7</a>
                                 </div>
                                 <div class="benefit">
                                     <i class="fa-solid fa-bug"></i>
-                                    <a href="#">Customized Growth Strength</a>
+                                    <a href="javascript:void(0)">Customized Growth Strength</a>
                                 </div>
                             </div>
                             <ul class="check-list">
-                                <li><a href="#">Complate Digital Marketing Suite</a></li>
-                                <li><a href="#">Paid Ads Management</a></li>
-                                <li><a href="#">Dedicated Account Manager</a></li>
-                                <li><a href="#">Email Marketing & Automation</a></li>
-                                <li><a href="#">Dedicated Account Manager</a></li>
-                                <li><a href="#">Weekly Performance insights</a></li>
+                                <li><a href="javascript:void(0)">Complate Digital Marketing Suite</a></li>
+                                <li><a href="javascript:void(0)">Paid Ads Management</a></li>
+                                <li><a href="javascript:void(0)">Dedicated Account Manager</a></li>
+                                <li><a href="javascript:void(0)">Email Marketing & Automation</a></li>
+                                <li><a href="javascript:void(0)">Dedicated Account Manager</a></li>
+                                <li><a href="javascript:void(0)">Weekly Performance insights</a></li>
                             </ul>
                         </div>
                     </div>
@@ -545,9 +382,9 @@
                                     </div>
                                 </a>
                                 <ul class="check-list">
-                                    <li><a href="./single_services.html">Basic SEO & Marketing</a></li>
-                                    <li><a href="./single_services.html">Social Media Management (1 Platform)</a></li>
-                                    <li><a href="./single_services.html">Monthly Performance Report</a></li>
+                                    <li><a href="javascript:void(0)">Basic SEO & Marketing</a></li>
+                                    <li><a href="javascript:void(0)">Social Media Management (1 Platform)</a></li>
+                                    <li><a href="javascript:void(0)">Monthly Performance Report</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -568,28 +405,15 @@
                             <h3 class="title-heading">Stay Ahead in Digital Marketing</h3>
                             <p>Get exclusive insights, trends, and strategies delivered straight to your inbox. Subscribe now!</p>
                         </div>
-                        <div id="newsletter-success" class="alert success hidden">
-                            <span class="check-icon"><i class="fa-solid fa-2xl fa-check"></i></span>
-                            <p class="text-center">Thank you! Form submitted successfully.</p>
-                        </div>
-
-                        <div id="newsletter-error" class="alert error hidden">
-                            <span class="cross-icon"><i class="fa-solid fa-2xl fa-xmark"></i></span>
-                            <p class="text-center">Oops! Form submission failed. Please try again.</p>
-                        </div>
-
-                        <form action="./php/newsletter_process.php" method="POST" id="newsletterForm" class="needs-validation animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                        <form action="newsletter.submit" method="POST" id="newsletterForm" class="needs-validation animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                            @csrf
                             <div class="input-container">
                                 <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Give your best email" required>
                                 <p class="error-text hidden"></p>
                             </div>
                             <button class="btn btn-accent" type="submit">
-                                <span class="btn-title">
-                                    <span>Subscribe</span>
-                                </span>
-                                <span class="icon-circle">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                                <span class="btn-title"><span>Subscribe</span></span>
+                                <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
                             </button>
                         </form>
                     </div>
@@ -600,5 +424,5 @@
 
     <!-- Section Blog -->
     @include('components.sections.blog')
-    
+
 </x-layouts.frontend>

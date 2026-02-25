@@ -1,11 +1,11 @@
 <div class="navbar-wrapper">
     <nav class="navbar navbar-expand-xl">
         <div class="navbar-container">
-            
+
             <!-- Logo -->
             <div class="logo-container">
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="{{ asset('assets/image/marko-logo.png') }}" class="site-logo img-fluid" width="150" height="50" alt="Marko Logo">
+                    <img src="{{ asset('assets/image/logo.png') }}" class="site-logo img-fluid" alt="Marko Logo">
                 </a>
             </div>
 
@@ -29,14 +29,29 @@
                     </li>
 
                     <!-- Services Dropdown -->
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Services <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('service') }}">Service</a></li>
-                            <li><a class="dropdown-item" href="{{ route('single-service') }}">Single Services</a></li>
+                            <li><a class="dropdown-item" href="#">Single Services</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('service') }}">All Services</a></li>
+                            @foreach($services as $service)
+                            <li>
+                                <a class="dropdown-item" href="{{ route('single-service', ['slug' => $service['slug']]) }}">
+                                    {{ $service['name'] }}
+                                </a>
+                            </li>
+                            @endforeach
                         </ul>
                     </li>
 
@@ -81,7 +96,7 @@
                 <div class="navbar-action-button">
                     <button id="themeSwitch" class="themeswitch" aria-label="Toggle Theme">
                         <i id="themeIcon" class="fas fa-moon"></i>
-                    </button>                      
+                    </button>
                 </div>
 
                 <!-- Contact Icon -->

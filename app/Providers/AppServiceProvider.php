@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->configureDefaults();
+        // Share services array with the header view
+        View::composer(['components.frontend.header', 'components.frontend.footer'], function ($view) {
+            $services = [
+                ['name' => 'Performance Marketing', 'slug' => 'performance-marketing'],
+                ['name' => 'Social Media Growth', 'slug' => 'social-media-growth'],
+                ['name' => 'Content Marketing', 'slug' => 'content-marketing'],
+                ['name' => 'PPC & Paid Ads', 'slug' => 'ppc-paid-ads'],
+                ['name' => 'Brand Strategy', 'slug' => 'brand-strategy'],
+                ['name' => 'Conversion Optimization', 'slug' => 'conversion-optimization'],
+            ];
+            $view->with('services', $services);
+        });
     }
 
     /**
@@ -37,14 +50,16 @@ class AppServiceProvider extends ServiceProvider
             app()->isProduction(),
         );
 
-        Password::defaults(fn (): ?Password => app()->isProduction()
-            ? Password::min(12)
+        Password::defaults(
+            fn(): ?Password => app()->isProduction()
+                ? Password::min(12)
                 ->mixedCase()
                 ->letters()
                 ->numbers()
                 ->symbols()
                 ->uncompromised()
-            : null
+                : null
         );
     }
+
 }

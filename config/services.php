@@ -35,4 +35,29 @@ return [
         ],
     ],
 
+    [
+        'name' => 'Performance Marketing',
+        'slug' => 'performance-marketing',
+    ],
+    [
+        'name' => 'Social Media Growth',
+        'slug' => 'social-media-growth',
+    ],
+    [
+        'name' => 'Content Marketing',
+        'slug' => 'content-marketing',
+    ],
+    [
+        'name' => 'PPC & Paid Ads',
+        'slug' => 'ppc-paid-ads',
+    ],
+    [
+        'name' => 'Brand Strategy',
+        'slug' => 'brand-strategy',
+    ],
+    [
+        'name' => 'Conversion Optimization',
+        'slug' => 'conversion-optimization',
+    ],
+
 ];

@@ -140,11 +140,11 @@ function initThemeSwitch() {
         if (lightMode) {
             $('body').addClass('lightmode');
             localStorage.setItem('lightmode', 'active');
-            siteLogo.attr('src', '/assets/image/marko-logo-dark.png');
+            siteLogo.attr('src', '/assets/image/logo-dark.png');
         } else {
             $('body').removeClass('lightmode');
             localStorage.removeItem('lightmode');
-            siteLogo.attr('src', '/assets/image/marko-logo.png');
+            siteLogo.attr('src', '/assets/image/logo.png');
         }
     };
 
