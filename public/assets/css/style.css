@@ -106,6 +106,16 @@
 @import url('../css/vendor/swiper-bundle.min.css');
 @import url('../css/vendor/animate.min.css');
 
+@font-face {
+    font-family: 'GC Matrix';
+    src: url('../fonts/GC Matrix.woff2') format('woff2');
+    /* font-weight: 100; */
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 /* ===============================
    TRTBonza Font Family
    =============================== */
@@ -208,7 +218,7 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --box-shadow-top-left-wide: -3px -3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --box-shadow-bottom-right-wide: 3px 3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --global-font: "Plus Jakarta Sans", sans-serif;
-    /* --global-font: "TRTBonza", sans-serif; */
+    /* --global-font: "GC Matrix", sans-serif; */
     --global-border-radius: 25px 25px 25px 25px;
     --animation-normal: 1.25s;
     --animation-slow: 2s;
@@ -221,11 +231,11 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --font-weight-bold: 700;
     --font-weight-black: 900; */
 
-    --font-weight-normal: 300;
-    --font-weight-medium: 400;
-    --font-weight-semibold: 500;
-    --font-weight-bold: 600;
-    --font-weight-black: 800;
+    --font-weight-normal: 500;
+    --font-weight-medium: 600;
+    --font-weight-semibold: 700;
+    --font-weight-bold: 800;
+    --font-weight-black: 900;
     
     /* 2.3 Font Size Variables */
     --font-size-xs: 12px;
@@ -252,7 +262,7 @@ url('../fonts/Magox.otf') format('opentype'),  */
     
     /* 2.4 Line Height Variables */
     --line-height-tight: 1em;
-    --line-height-snug: 1.2em;
+    --line-height-snug: 0.9;
     --line-height-normal: 1.3em;
     --line-height-relaxed: 1.4em;
     --line-height-loose: 1.5em;
@@ -348,9 +358,6 @@ url('../fonts/Magox.otf') format('opentype'),  */
 /* ================== 04. Base Styles ================== */
 
 body{
-    background-color: var(--secondary);
-    font-family: var(--global-font);
-    color: var(--primary);
     overflow-x: hidden;
     background-color: var(--secondary);
     font-family: var(--global-font);
@@ -360,7 +367,7 @@ body{
     z-index: 0;
 }
 
-body:before {
+body::before {
     content: "";
     position: absolute;
     width: 100%;

@@ -422,7 +422,7 @@
                         <i class="fa-regular fa-circle-dot"></i>
                         <span>Our Core Services</span>
                     </div>
-                    <h2 class="title-heading heading-container heading-container-short">Flexible Pricing Plans for Every Business</h2>
+                    <h2 class="title-heading heading-container heading-container-short">Flexible Pricing Plans<br> for Every Business</h2>
                 </div>
                 <div class="row row-cols-xl-3 row-cols-1 grid-spacer-2">
                     <div class="col">
