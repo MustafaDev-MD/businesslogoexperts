@@ -211,7 +211,8 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --accent-color-6: #C82AEF85;
     --star-color: #EFBC2A;
     --error-color: #e63946;
-    --accent-transparent: #00000000;
+    --accent-transparent-1: #00000000;
+    --accent-transparent: #9797971f;
     --accent-transparent-2: #00000073;
     --box-shadow-top-left: -3px -3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --box-shadow-bottom-right: 3px 3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
@@ -429,7 +430,7 @@ h5 {
 }
 
 h6 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     line-height: var(--line-height-snug);
 }
 
@@ -774,7 +775,7 @@ body.lightmode .form select{
 }
 
 .nav-link {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-loose);
     color: var(--primary);
@@ -791,6 +792,7 @@ body.lightmode .form select{
 .navbar-collapse{
     display: flex;
     justify-content: space-between;
+    /* width: 62%; */
 }
 
 .nav-link:hover,
@@ -1244,6 +1246,16 @@ body.lightmode .keep-dark .btn-accent{
     height: 100%;
 }
 
+#banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crucial: poora area cover kare */
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: -1; /* content ke peeche */
+}
 
 .banner-video-content{
     display: flex;
@@ -1627,7 +1639,7 @@ body.lightmode .digital-process-banner{
     display: inline-block;
     -webkit-background-clip: text;
     background-color: transparent;
-    background-image: linear-gradient(340deg, var(--accent-transparent) 30%, var(--primary) 100%);
+    background-image: linear-gradient(349deg, var(--accent-transparent) 30%, var(--primary) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
 }
@@ -1679,7 +1691,7 @@ body.lightmode .title-heading{
     justify-content: flex-end;
     gap: 0px 0px;
     align-items: center;
-    width: 30%;
+    width: 21%;
 }
 
 .navbar-action-button{
@@ -1762,14 +1774,14 @@ body.lightmode .navbar-icon-wrapper{
 }
 
 .logo-container{
-    width: 30%;
+    width: 13%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logo-container img{
-    width: 40%;
+    /* width: 40%; */
 }
 
 .logo-container-footer{
@@ -2247,7 +2259,7 @@ body.lightmode .card-partner{
     left: 0;
     background-color: transparent;
     z-index: 2;
-    background-image: radial-gradient(at center center, var(--accent-transparent) 0%, var(--accent-color-4) 100%);
+    background-image: radial-gradient(at center center, var(--accent-transparent-1) 0%, var(--accent-color-4) 100%);
 }
 
 .swiperPartner-overlay .spacer{
@@ -3624,6 +3636,15 @@ body.lightmode .newsletter-layout{
     justify-content: center;
     text-align: center;
     transition: all 0.3s ease-in-out;
+}
+
+.navbar-icon-wrapper .icon-circle {
+    width: 42px;
+    height: 42px;
+}
+
+.icon-circle .fa-solid.fa-phone-volume{
+    font-size: 16px;
 }
 
 /* 41.2 Stars */

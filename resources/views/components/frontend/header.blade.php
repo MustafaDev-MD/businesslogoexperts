@@ -19,14 +19,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <!-- Home -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
-                    </li>
+                    </li> -->
 
                     <!-- About -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('about') }}">About</a>
-                    </li>
+                    </li> -->
 
                     <!-- Services Dropdown -->
                     <!-- <li class="nav-item dropdown">
@@ -39,7 +39,7 @@
                             <li><a class="dropdown-item" href="#">Single Services</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
@@ -53,10 +53,27 @@
                             </li>
                             @endforeach
                         </ul>
+                    </li> -->
+
+                    <!-- @foreach($services as $service)
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('single-service', ['slug' => $service['slug']]) }}">
+                            {{ $service['name'] }}
+                        </a>
                     </li>
+                    @endforeach -->
+                    @foreach(config('services') as $service)
+                    @if(isset($service['slug']) && isset($service['name']))
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('single-service', ['slug' => $service['slug']]) }}">
+                            {{ $service['name'] }}
+                        </a>
+                    </li>
+                    @endif
+                    @endforeach
 
                     <!-- Pages Dropdown -->
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Pages <i class="fa-solid fa-angle-down accent-color"></i>
@@ -69,10 +86,10 @@
                             <li><a class="dropdown-item" href="{{ route('testimonial') }}">Testimonial</a></li>
                             <li><a class="dropdown-item" href="{{ route('faq') }}">FAQs</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <!-- Archive Dropdown -->
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Archive <i class="fa-solid fa-angle-down accent-color"></i>
@@ -81,12 +98,12 @@
                             <li><a class="dropdown-item" href="{{ route('blog') }}">Blog</a></li>
                             <li><a class="dropdown-item" href="{{ route('single-post') }}">Single Post</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <!-- Contact -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 

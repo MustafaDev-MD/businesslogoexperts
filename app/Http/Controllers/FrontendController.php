@@ -72,27 +72,23 @@ class FrontendController extends Controller
     // Services listing page
     public function service()
     {
-        // Could fetch all services from DB if needed
-        $services = [
-            ['name' => 'Performance Marketing', 'slug' => 'performance-marketing'],
-            ['name' => 'Social Media Growth', 'slug' => 'social-media-growth'],
-            ['name' => 'Content Marketing', 'slug' => 'content-marketing'],
-            ['name' => 'PPC & Paid Ads', 'slug' => 'ppc-paid-ads'],
-            ['name' => 'Brand Strategy', 'slug' => 'brand-strategy'],
-            ['name' => 'Conversion Optimization', 'slug' => 'conversion-optimization'],
-        ];
-
+        $services = config('custom_services');
         return view('frontend.service', compact('services'));
     }
 
-    // Single service page
     public function singleService($slug)
-    {
-        // Optionally, fetch the service from DB using $slug
-        // $service = Service::where('slug', $slug)->firstOrFail();
+{
+    $slug = trim($slug); // remove trailing spaces
+    $services = config('services');
 
-        return view('frontend.single-services', compact('slug'));
+    $service = collect($services)->firstWhere('slug', $slug);
+
+    if (!$service) {
+        abort(404);
     }
+
+    return view('frontend.single-services', compact('service', 'services'));
+}
 
     // Team page
     public function team()

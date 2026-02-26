@@ -5,7 +5,11 @@
     <!-- Section Banner -->
     <div class="section-banner">
         <div class="banner-video-container keep-dark animate-box animated animate__animated" data-animate="animate__fadeInUp">
-            <div id="banner-video-background"></div>
+            <!-- Local video background -->
+            <div id="banner-video-background">
+
+                <video autoplay muted loop playsinline id="banner-video" src="{{ asset('assets/image/Sequence-01.mp4') }} "></video>
+            </div>
             <div class="hero-container position-relative">
                 <div class="d-flex flex-column gspace-2">
                     <h1 class="title-heading-banner animate-box animated animate__animated" data-animate="animate__fadeInLeft">Amplify Your Brand with Cutting-Edge Digital Marketing</h1>
@@ -83,7 +87,7 @@
                     <div class="d-flex flex-column flex-md-row gspace-2">
                         <div class="expertise-list">
                             <h5>What We Do Best</h5>
-                            @php
+                            <!-- @php
                             $services = [
                             ['name'=>'Performance Marketing','slug'=>'performance-marketing'],
                             ['name'=>'Social Media Growth','slug'=>'social-media-growth'],
@@ -96,6 +100,17 @@
                             <ul class="check-list">
                                 @foreach($services as $service)
                                 <li><a href="{{ route('single-service', ['slug' => $service['slug']]) }}">{{ $service['name'] }}</a></li>
+                                @endforeach
+                            </ul> -->
+                            <ul class="check-list">
+                                @foreach(config('services') as $service)
+                                @if(isset($service['slug']) && isset($service['name']))
+                                <li>
+                                    <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">
+                                        {{ $service['name'] }}
+                                    </a>
+                                </li>
+                                @endif
                                 @endforeach
                             </ul>
                         </div>
@@ -395,32 +410,7 @@
     </div>
 
     <!-- Section Newsletter -->
-    <div class="section">
-        <div class="hero-container">
-            <div class="newsletter-wrapper">
-                <div class="newsletter-layout">
-                    <div class="spacer"></div>
-                    <div class="d-flex flex-column gspace-5 position-relative z-2">
-                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                            <h3 class="title-heading">Stay Ahead in Digital Marketing</h3>
-                            <p>Get exclusive insights, trends, and strategies delivered straight to your inbox. Subscribe now!</p>
-                        </div>
-                        <form action="newsletter.submit" method="POST" id="newsletterForm" class="needs-validation animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                            @csrf
-                            <div class="input-container">
-                                <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Give your best email" required>
-                                <p class="error-text hidden"></p>
-                            </div>
-                            <button class="btn btn-accent" type="submit">
-                                <span class="btn-title"><span>Subscribe</span></span>
-                                <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('components.sections.newsletter')
 
     <!-- Section Blog -->
     @include('components.sections.blog')
