@@ -77,18 +77,18 @@ class FrontendController extends Controller
     }
 
     public function singleService($slug)
-{
-    $slug = trim($slug); // remove trailing spaces
-    $services = config('services');
+    {
+        $slug = trim($slug); // remove trailing spaces
+        $services = config('custom_services');
 
-    $service = collect($services)->firstWhere('slug', $slug);
+        $service = collect($services)->firstWhere('slug', $slug);
 
-    if (!$service) {
-        abort(404);
+        if (!$service) {
+            abort(404);
+        }
+
+        return view('frontend.single-services', compact('service', 'services'));
     }
-
-    return view('frontend.single-services', compact('service', 'services'));
-}
 
     // Team page
     public function team()

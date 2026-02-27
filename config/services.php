@@ -35,67 +35,35 @@ return [
         ],
     ],
 
-    [
-        'name' => 'Branding ',
-        'slug' => 'branding ',
-    ],
-    [
-        'name' => 'Web Development ',
-        'slug' => 'web-development ',
-    ],
-    [
-        'name' => 'App Development',
-        'slug' => 'app-development',
-    ],
-    [
-        'name' => 'Animation',
-        'slug' => 'animation',
-    ],
-    [
-        'name' => 'AI Agents',
-        'slug' => 'ai-agents',
-    ],
-    [
-        'name' => 'SEO',
-        'slug' => 'seo',
-    ],
-    [
-        'name' => 'Social Media',
-        'slug' => 'social-media',
-    ],
-
     // [
-    //     'name' => 'Branding',
-    //     'slug' => 'branding',
-    //     'description' => 'Boost Your Brand with Strategic Marketing',
-    //     'overview' => 'We help brands grow through custom-tailored marketing strategies.',
-    //     'tagline' => 'Branding & Identity',
-    //     'included' => ['Platform Strategy & Planning', 'Creative Content Production', 'Paid Ads Management'],
-    //     'images' => [
-    //         asset('assets/image/dummy-img-600x400.jpg'),
-    //         asset('assets/image/dummy-img-600x400.jpg')
-    //     ],
-    //     'cta' => 'Take your brand to the next level!',
-    //     'faqs' => [
-    //         ['question' => 'What services are included?', 'answer' => 'We specialize in digital marketing, including branding, social media management, content strategy, paid ads, and analytics-driven campaigns.'],
-    //         ['question' => 'How long to see results?', 'answer' => 'We specialize in digital marketing, including branding, social media management, content strategy, paid ads, and analytics-driven campaigns.'],
-    //     ],
+    //     'name' => 'Branding ',
+    //     'slug' => 'branding ',
+    // ],
+    // [
+    //     'name' => 'Web Development ',
+    //     'slug' => 'web-development ',
+    // ],
+    // [
+    //     'name' => 'App Development',
+    //     'slug' => 'app-development',
+    // ],
+    // [
+    //     'name' => 'Animation',
+    //     'slug' => 'animation',
+    // ],
+    // [
+    //     'name' => 'AI Agents',
+    //     'slug' => 'ai-agents',
+    // ],
+    // [
+    //     'name' => 'SEO',
+    //     'slug' => 'seo',
+    // ],
+    // [
+    //     'name' => 'Social Media',
+    //     'slug' => 'social-media',
     // ],
 
-    // [
-    //     'name' => 'Web Development',
-    //     'slug' => 'web-development',
-    //     'description' => 'Custom Websites & Apps for Your Business',
-    //     'overview' => 'We build websites that convert visitors into customers.',
-    //     'tagline' => 'Web & App Solutions',
-    //     'included' => ['Frontend Development', 'Backend Development', 'SEO Optimization'],
-    //     'images' => [
-    //         asset('assets/image/dummy-img-600x400.jpg')
-    //     ],
-    //     'cta' => 'Get your custom website today!',
-    //     'faqs' => [
-    //         ['question' => 'Do you do eCommerce?', 'answer' => 'Yes, we develop online stores with full functionality.']
-    //     ],
-    // ],
+    
 
 ];
