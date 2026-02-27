@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     @endforeach -->
-                    @foreach(config('services') as $service)
+                    @foreach(config('custom_services') as $service)
                     @if(isset($service['slug']) && isset($service['name']))
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('single-service', ['slug' => $service['slug']]) }}">

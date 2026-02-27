@@ -44,7 +44,7 @@
                                     <li><a href="{{ route('single-service', ['slug' => 'content-marketing']) }}">Content Marketing</a></li>
                                     <li><a href="{{ route('single-service', ['slug' => 'branding-strategy']) }}">Branding Strategy</a></li>
                                     <li><a href="{{ route('single-service', ['slug' => 'email-marketing']) }}">Email Marketing</a></li> -->
-                                    @foreach(config('services') as $service)
+                                    @foreach(config('custom_services') as $service)
                                     @if(isset($service['slug']) && isset($service['name']))
                                     <li>
                                         <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">

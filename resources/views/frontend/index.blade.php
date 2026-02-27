@@ -103,7 +103,7 @@
                                 @endforeach
                             </ul> -->
                             <ul class="check-list">
-                                @foreach(config('services') as $service)
+                                @foreach(config('custom_services') as $service)
                                 @if(isset($service['slug']) && isset($service['name']))
                                 <li>
                                     <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">
