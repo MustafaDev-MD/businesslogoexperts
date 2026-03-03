@@ -70,10 +70,10 @@ class FrontendController extends Controller
     }
 
     // Services listing page
-    public function service()
+    public function services()
     {
         $services = config('custom_services');
-        return view('frontend.service', compact('services'));
+        return view('frontend.services', compact('services'));
     }
 
     public function singleService($slug)

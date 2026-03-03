@@ -3,13 +3,11 @@
     description="{{ $service['description'] ?? 'Learn more about our services.' }}">
 
     <!-- Section Banner -->
-    <x-sections.banner
+    <x-banner
         :title="$service['name']"
         :parent="$service['parent']"
         :parent-link="$service['parentLink']"
         :current="$service['breadcrumb']" />
-
-
     <!-- Section Content -->
     <div class="section pb-0">
         <div class="hero-container">
@@ -27,7 +25,7 @@
                                 <div class="single-service-title">
                                     <div class="sub-heading animate-box animated slow animate__animated" data-animate="animate__fadeInRight">
                                         <i class="fa-regular fa-circle-dot"></i>
-                                        <span>Service Overview</span>
+                                        <span>Our Expertise</span>
                                     </div>
                                     <h3 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">
                                         {{ $service['expertiseTitle'] ?? 'Boost your business with our expertise.' }}
@@ -51,7 +49,7 @@
                             <!-- Tabs -->
                             <div class="service-inner-tab-container">
                                 <div class="spacer"></div>
-                                <ul class="service-inner-tab nav nav-tabs justify-content-around" id="portfolioTabs" role="tablist">
+                                <ul class="service-inner-tab nav nav-tabs" id="portfolioTabs" role="tablist">
                                     @php
                                     // Ye line 'Logo', 'Business Cards' etc. ki keys ko automatically nikaal legi
                                     $dynamicTabs = isset($service['portfolioImages']) ? array_keys($service['portfolioImages']) : [];
@@ -79,14 +77,10 @@
                                 @foreach($dynamicTabs as $index => $tabName)
                                 <div class="tab-pane fade {{ $index == 0 ? 'show active' : '' }}" id="tab-content-{{ $index }}" role="tabpanel" aria-labelledby="tab-{{ $index }}">
 
-
                                     @php
-                                    $tabContent = $service['portfolioContent'][$tabName] ?? 'No content available for this tab.';
                                     // Sirf wahi images uthayega jo current $tab name se match karti hain
                                     $portfolioImages = $service['portfolioImages'][$tabName] ?? [];
                                     @endphp
-
-                                    <p class="pb-4">{{ $tabContent }}</p>
 
                                     @if(count($portfolioImages) > 0)
                                     <div class="glide glide-{{ $index }}">
@@ -283,16 +277,18 @@
                     <div class="col col-xl-4">
                         <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-5">
 
-                            <!-- Why Choose Us -->
+                            <!-- Recent Services -->
                             <div class="card service-recent">
-                                <h4>Why Choose Us</h4>
+                                <h4>Recent Services</h4>
                                 <div class="underline-accent-short"></div>
                                 <ul class="single-service-list">
                                     @foreach($services as $s)
-                                    @if(isset($s['slug']) && isset($s['whyChooseUs']))
-                                    @foreach($s['whyChooseUs'] as $item)
-                                    <li>{{ $item }}</li>
-                                    @endforeach
+                                    @if(isset($s['slug']) && isset($s['name']))
+                                    <li>
+                                        <a href="{{ route('single-service', ['slug' => $s['slug']]) }}">
+                                            {{ $s['name'] }}
+                                        </a>
+                                    </li>
                                     @endif
                                     @endforeach
                                 </ul>
@@ -301,8 +297,8 @@
                             <!-- CTA Banner -->
                             <div class="cta-service-banner">
                                 <div class="spacer"></div>
-                                <h3 class="title-heading">{{ $service['rightBlogTitle'] ?? 'Transform Your Business with Marko!' }}</h3>
-                                <p>{{ $service['rightBlogDes'] ?? 'Take your business to the next level with our solutions.' }}</p>
+                                <h3 class="title-heading">Transform Your Business with Marko!</h3>
+                                <p>{{ $service['cta'] ?? 'Take your business to the next level with our solutions.' }}</p>
                                 <div class="link-wrapper">
                                     <a href="{{ route('about') }}">Read More</a>
                                     <i class="fa-solid fa-circle-arrow-right"></i>
@@ -311,18 +307,21 @@
 
                             <!-- Recent Services -->
                             <div class="card service-recent">
-                                <h4 class="text-start">Ready to make your brand do the heavy lifting?</h4>
+                                <h4>Recent Services</h4>
                                 <div class="underline-accent-short"></div>
-                                <p class="text-start">Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.</p>
-                                <a href="tel:+1 (62) 987 7543">
-                                    <div class="navbar-icon-wrapper inner-service-button">
-                                        <div class="icon-circle">
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                        </div>
-                                        <h6>+1 (62) 987 7543</h6>
-                                    </div>
-                                </a>
+                                <ul class="single-service-list">
+                                    @foreach($services as $s)
+                                    @if(isset($s['slug']) && isset($s['name']))
+                                    <li>
+                                        <a href="{{ route('single-service', ['slug' => $s['slug']]) }}">
+                                            {{ $s['name'] }}
+                                        </a>
+                                    </li>
+                                    @endif
+                                    @endforeach
+                                </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -331,117 +330,7 @@
     </div>
 
     <!-- Section Testimonial -->
-    <div class="section">
-        <div class="hero-container">
-            <div class="d-flex flex-column gspace-5">
-                <div class="d-flex flex-column flex-xl-row gspace-5">
-                    <div class="testimonial-reviewer-container">
-                        <div class="testimonial-header-wrapper animate-box animated fast animate__animated" data-animate="animate__fadeInDown">
-                            <div class="card card-testimonial-reviewer">
-
-                                <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-3">
-
-                                    {{-- Avatars --}}
-                                    <div class="testimonial-reviewer">
-                                        <div class="avatar-container">
-                                            @foreach($service['testimonialSummary']['avatars'] ?? [] as $avatar)
-                                            <img src="{{ asset($avatar) }}" alt="Reviewer" class="avatar">
-                                            @endforeach
-                                        </div>
-
-                                        <div class="detail">
-                                            <h6>{{ $service['testimonialSummary']['positiveReviews'] ?? '' }}</h6>
-                                            <h6>{{ $service['testimonialSummary']['reviewLabel'] ?? '' }}</h6>
-                                        </div>
-                                    </div>
-
-                                    {{-- Stats --}}
-                                    <div class="testimonial-rating-container">
-                                        @foreach($service['testimonialSummary']['stats'] ?? [] as $stat)
-                                        <div class="d-flex flex-column align-items-center gspace-1 testimonial-ratings">
-                                            <div class="d-flex flex-row align-items-center">
-                                                <span class="counter" data-target="{{ $stat['value'] }}"></span>
-                                                <span class="counter-detail">{{ $stat['suffix'] }}</span>
-                                            </div>
-                                            <p class="text-center">{{ $stat['label'] }}</p>
-                                        </div>
-
-                                        @if(!$loop->last)
-                                        <div class="underline-vertical"></div>
-                                        @endif
-                                        @endforeach
-                                    </div>
-
-                                </div>
-
-                                {{-- Service Links --}}
-                                <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-center gspace-2">
-                                    @foreach($service['testimonialSummary']['services'] ?? [] as $link)
-                                    <div class="testimonial-header-link-wrapper">
-                                        <i class="fa-regular fa-circle-check accent-color"></i>
-                                        <a href="#">{{ $link }}</a>
-                                    </div>
-                                    @endforeach
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-title-container">
-                        <div class="testimonial-header-wrapper-title animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                            <div class="card-testimonial-header-title">
-                                <div class="sub-heading">
-                                    <i class="fa-regular fa-circle-dot"></i>
-                                    <span>What Our Client Says</span>
-                                </div>
-                                <h2 class="title-heading">Hear from Our Satisfied Clients, Real Success Stories</h2>
-                                <p>Real brands, real results. We partner with teams who want identity to be an asset — here are concise stories of how identity work translated into measurable outcomes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="overflow-hidden">
-                        <div class="swiper swiperTestimonial">
-                            <div class="swiper-wrapper">
-                                <!--  -->
-                                @foreach($service['testimonials'] as $testimonial)
-
-                                <div class="swiper-slide">
-                                    <div class="card card-testimonial">
-                                        <div class="stars">
-                                            @for($i=0; $i < $testimonial['stars']; $i++)
-                                                <i class="fa-solid fa-star"></i>
-                                                @endfor
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center justify-content-between">
-                                            <div class="d-flex flex-row gspace-2">
-                                                <div class="testimonial-image">
-                                                    <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" class="img-fluid">
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <span class="profile-name">{{ $testimonial['name'] }}</span>
-                                                    <p class="profile-info">{{ $testimonial['position'] }}</p>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
-                                        </div>
-                                        <p class="testimonial-description">{{ $testimonial['description'] }}</p>
-                                        @if($testimonial['result'])
-                                        <p class="testimonial-result">{{ $testimonial['result'] }}</p>
-                                        @endif
-                                    </div>
-                                </div>
-                                @endforeach `
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('components.sections.testimonial')
 
     <!-- Section Newsletter -->
     @include('components.sections.newsletter')

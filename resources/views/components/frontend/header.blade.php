@@ -35,7 +35,7 @@
                             Services <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('service') }}">Service</a></li>
+                            <li><a class="dropdown-item" href="{{ route('services') }}">Service</a></li>
                             <li><a class="dropdown-item" href="#">Single Services</a></li>
                         </ul>
                     </li> -->
@@ -44,7 +44,7 @@
                             Services <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('service') }}">All Services</a></li>
+                            <li><a class="dropdown-item" href="{{ route('services') }}">All Services</a></li>
                             @foreach($services as $service)
                             <li>
                                 <a class="dropdown-item" href="{{ route('single-service', ['slug' => $service['slug']]) }}">

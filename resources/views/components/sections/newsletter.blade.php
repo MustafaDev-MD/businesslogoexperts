@@ -5,8 +5,8 @@
                 <div class="spacer"></div>
                 <div class="d-flex flex-column gspace-5 position-relative z-2">
                     <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                        <h3 class="title-heading">Stay Ahead in Digital Marketing</h3>
-                        <p>Get exclusive insights, trends, and strategies delivered straight to your inbox. Subscribe now!</p>
+                        <h3 class="title-heading">Stay ahead with brand thinking that scales</h3>
+                        <p>Subscribe for monthly insights, case studies, and quick design tests you can run tomorrow.</p>
                     </div>
                     <form action="newsletter.submit" method="POST" id="newsletterForm" class="needs-validation animate-box animated animate__animated" data-animate="animate__fadeInRight">
                         @csrf

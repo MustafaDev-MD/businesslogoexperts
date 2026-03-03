@@ -28,8 +28,8 @@ Route::controller(FrontendController::class)->group(function () {
     Route::get('/case-studies', 'caseStudies')->name('case-studies');
 
     // Services
-    Route::get('/service', 'service')->name('service');
-    Route::get('/service/{slug}', 'singleService')->name('single-service');
+    Route::get('/services', 'services')->name('services');
+    Route::get('/services/{slug}', 'singleService')->name('single-service');
     // Route::get('/single-service', 'singleService')->name('single-service-page');
 
     // Other pages
