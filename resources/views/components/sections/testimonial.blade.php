@@ -40,11 +40,11 @@
                             <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-center gspace-2">
                                 <div class="testimonial-header-link-wrapper">
                                     <i class="fa-regular fa-circle-check accent-color"></i>
-                                    <a href="#">Social Media Growth</a>
+                                    <a href="javascript:void(0)">Social Media Growth</a>
                                 </div>
                                 <div class="testimonial-header-link-wrapper">
                                     <i class="fa-regular fa-circle-check accent-color"></i>
-                                    <a href="#">Performance Marketing</a>
+                                    <a href="javascript:void(0)">Performance Marketing</a>
                                 </div>
                             </div>
                         </div>

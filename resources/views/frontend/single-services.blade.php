@@ -4,7 +4,7 @@
 
     <!-- Section Banner -->
     <x-sections.banner
-        :title="$service['name']"
+        :title="$service['heading']"
         :parent="$service['parent']"
         :parent-link="$service['parentLink']"
         :current="$service['breadcrumb']" />
@@ -284,7 +284,7 @@
                         <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-5">
 
                             <!-- Why Choose Us -->
-                            <div class="card service-recent">
+                            <!-- <div class="card service-recent">
                                 <h4>Why Choose Us</h4>
                                 <div class="underline-accent-short"></div>
                                 <ul class="single-service-list">
@@ -296,6 +296,21 @@
                                     @endif
                                     @endforeach
                                 </ul>
+                            </div> -->
+
+                            <!-- Why Choose Us -->
+                            <div class="card service-recent">
+                                <h4>Why Choose Us</h4>
+                                <div class="underline-accent-short"></div>
+
+                                <ul class="single-service-list">
+                                    @if(isset($service['whyChooseUs']))
+                                    @foreach($service['whyChooseUs'] as $item)
+                                    <li>{{ $item }}</li>
+                                    @endforeach
+                                    @endif
+                                </ul>
+
                             </div>
 
                             <!-- CTA Banner -->
@@ -311,9 +326,9 @@
 
                             <!-- Recent Services -->
                             <div class="card service-recent">
-                                <h4 class="text-start">Ready to make your brand do the heavy lifting?</h4>
+                                <h4 class="text-start">{{ $service['rightCTATitle'] ?? 'Ready to make your brand do the heavy lifting?' }}</h4>
                                 <div class="underline-accent-short"></div>
-                                <p class="text-start">Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.</p>
+                                <p class="text-start">{{ $service['rightCTADes'] ?? 'Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.' }}</p>
                                 <a href="tel:+1 (62) 987 7543">
                                     <div class="navbar-icon-wrapper inner-service-button">
                                         <div class="icon-circle">
@@ -444,7 +459,34 @@
     </div>
 
     <!-- Section Newsletter -->
-    @include('components.sections.newsletter')
+    <div class="section">
+        <div class="hero-container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-layout">
+                    <div class="spacer"></div>
+                    <div class="d-flex flex-column gspace-5 position-relative z-2">
+                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                            <h3 class="title-heading">{{ $service['mainCTATitle'] ?? 'Stay ahead with brand thinking that scales' }}</h3>
+                            <p>{{ $service['mainCTADes'] ?? 'Subscribe for monthly insights, case studies, and quick design tests you can run tomorrow.' }}</p>
+                        </div>
+                        <!-- <form action="newsletter.submit" method="POST" id="newsletterForm" class="needs-validation animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                            @csrf
+                            <div class="input-container">
+                                <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Give your best email" required>
+                                <p class="error-text hidden"></p>
+                            </div> -->
+                        <a href="{{ route('contact') }}" class="align-self-center">
+                            <button class="btn btn-accent cta-btn" type="submit">
+                                <span class="btn-title"><span>Subscribe</span></span>
+                                <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                            </button>
+                        </a>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Section FAQs -->
     @if(!empty($service['faqs']))

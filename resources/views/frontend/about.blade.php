@@ -45,18 +45,22 @@
                         <div class="d-flex flex-column flex-md-row gspace-1 gspace-md-5">
                             <div class="about-list">
                                 <ul class="check-list">
-                                    <li><a href="{{ route('single-service') }}">PPC & Paid Ads</a></li>
-                                    <li><a href="{{ route('single-service') }}">Brand Strategy</a></li>
-                                    <li><a href="{{ route('single-service') }}">Conversion Optimization</a></li>
+                                    @foreach(config('custom_services') as $service)
+                                        @if(isset($service['slug']) && isset($service['name']))
+                                            <li>
+                                                <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">{{ $service['name'] }}</a>
+                                            </li>
+                                        @endif
+                                    @endforeach
                                 </ul>
                             </div>
-                            <div class="about-list">
+                            {{-- <div class="about-list">
                                 <ul class="check-list">
                                     <li><a href="{{ route('single-service') }}">Performance Marketing</a></li>
                                     <li><a href="{{ route('single-service') }}">Social Media Growth</a></li>
                                     <li><a href="{{ route('single-service') }}">Content Marketing</a></li>
                                 </ul>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -87,7 +91,7 @@
                                 <h4 class="chooseus-title">Innovation & Integrity</h4>
                                 <p>Every decision is backed by real-time analytics for maximum impact lorem ipsum dolor sit consectetur adipiscing elit ut elit tellus luctus nec.</p>
                                 <div class="link-wrapper">
-                                    <a href="{{ route('single-service') }}">Read More</a>
+                                    <a href="{{ route('services') }}">Read More</a>
                                     <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                 </div>
                             </div>
@@ -107,7 +111,7 @@
                                 <h4 class="chooseus-title">Collaboration</h4>
                                 <p>Cutting-edge marketing techniques to keep you ahead of the competition lorem ipsum dolor sit awsa consectetur adipiscing elit ut elit.</p>
                                 <div class="link-wrapper">
-                                    <a href="{{ route('single-service') }}">Read More</a>
+                                    <a href="{{ route('services') }}">Read More</a>
                                     <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                 </div>
                             </div>
@@ -127,7 +131,7 @@
                                 <h4 class="chooseus-title">Result Driven</h4>
                                 <p>Clear insights and performance tracking, so you always know your ROI lorem ipsum dolo consectetur adipiscing elit ut elit tellus luctus nec.</p>
                                 <div class="link-wrapper">
-                                    <a href="{{ route('single-service') }}">Read More</a>
+                                    <a href="{{ route('services') }}">Read More</a>
                                     <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                 </div>
                             </div>

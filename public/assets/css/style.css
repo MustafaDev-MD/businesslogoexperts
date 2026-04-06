@@ -105,6 +105,7 @@
 @import url('../css/vendor/solid.css');
 @import url('../css/vendor/swiper-bundle.min.css');
 @import url('../css/vendor/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 @font-face {
     font-family: 'GC Matrix';
@@ -114,7 +115,6 @@
     font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* ===============================
    TRTBonza Font Family
@@ -211,8 +211,8 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --accent-color-6: #C82AEF85;
     --star-color: #EFBC2A;
     --error-color: #e63946;
-    --accent-transparent-1: #00000000;
-    --accent-transparent: #9797971f;
+    --accent-transparent: #00000000;
+    --accent-transparent-1: #9797971f;
     --accent-transparent-2: #00000073;
     --box-shadow-top-left: -3px -3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --box-shadow-bottom-right: 3px 3px 7px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
@@ -1152,6 +1152,10 @@ body.lightmode #newsletterForm input:autofill:focus {
     padding: 5px 5px 5px 5px;
     justify-content: space-between;
     align-self: stretch;
+}
+
+.cta-btn{
+    width: fit-content;
 }
 
 .btn-accent {

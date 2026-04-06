@@ -150,15 +150,28 @@ function initThemeSwitch() {
     const updateLogos = () => {
         const siteLogo = $('.site-logo');
         if (!siteLogo.length) return;
+        const partnerLogos = $('.partner-logo');
 
         if (lightMode) {
             $('body').addClass('lightmode');
             localStorage.setItem('lightmode', 'active');
             siteLogo.attr('src', '/assets/image/logo-dark.png');
+            partnerLogos.each(function () {
+                const $img = $(this);
+                const src = $img.attr('src');
+                if (!src.includes('-dark')) {
+                    $img.attr('src', src.replace('.png', '-dark.png'));
+                }
+            });
         } else {
             $('body').removeClass('lightmode');
             localStorage.removeItem('lightmode');
             siteLogo.attr('src', '/assets/image/logo.png');
+            partnerLogos.each(function () {
+                const $img = $(this);
+                const src = $img.attr('src');
+                $img.attr('src', src.replace('-dark.png', '.png'));
+            });
         }
     };
 
