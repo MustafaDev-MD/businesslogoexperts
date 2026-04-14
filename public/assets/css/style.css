@@ -117,80 +117,80 @@
 
 
 /* ===============================
-   TRTBonza Font Family
+   Neue-Jothama Font Family
    =============================== */
 
-/* Thin - 100
+/* Thin - 100 */
 @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-Thin.woff2') format('woff2');
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 /* Extra Light - 200 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-ExtraLight.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Extralight.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 /* Light - 300 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-Light.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 /* Regular - 400 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-Regular.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 /* Medium - 500 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-Medium.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 /* SemiBold - 600 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-SemiBold.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 /* Bold - 700 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-Bold.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-} */
+}
 
 /* ExtraBold - 800 */
-/* @font-face {
-    font-family: 'TRTBonza';
-    src: url('../fonts/TRTBonza-ExtraBold.woff2') format('woff2');
+@font-face {
+    font-family: 'Neue-Jothama';
+    src: url('../fonts/Neue-Jothama-ExtraBold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-} */
+}
 /* url('../fonts/Magox.woff2') format('woff2'), 
 url('../fonts/Magox.otf') format('opentype'),  */
 
@@ -219,7 +219,7 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --box-shadow-top-left-wide: -3px -3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     --box-shadow-bottom-right-wide: 3px 3px 10px 0px rgba(200.00000000000006, 42, 238.99999999999997, 0.44);
     /* --global-font: "Plus Jakarta Sans", sans-serif; */
-    --global-font: "GC Matrix", sans-serif;
+    --global-font: "Neue-Jothama", sans-serif;
     --secondary-font: "Figtree", sans-serif;
     --global-border-radius: 25px 25px 25px 25px;
     --secondary-border-radius: 10px;
@@ -234,6 +234,9 @@ url('../fonts/Magox.otf') format('opentype'),  */
     --font-weight-bold: 700;
     --font-weight-black: 900; */
 
+    --font-weight-thin: 200;
+    --font-weight-extra-light: 300;
+    --font-weight-light: 400;
     --font-weight-normal: 500;
     --font-weight-medium: 600;
     --font-weight-semibold: 700;
@@ -426,12 +429,13 @@ h3 {
 }
 
 h4 {
-    font-size: var(--font-size-5xl);
-    line-height: var(--line-height-snug);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-normal);
+    letter-spacing: 0.6px;
 }
 
 h5 {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-lg);
     line-height: var(--line-height-snug);
 }
 
@@ -446,7 +450,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-normal);
     margin: 0;
 }
 
@@ -455,14 +459,14 @@ a {
     font-size: var(--font-size-base);
     color: var(--accent-color);
     text-decoration: none;
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-light);
     font-variant: no-common-ligatures;
 }
 
 p {
     font-size: var(--font-size-lg);
     margin-bottom: 14.4px;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-light);
     color: var(--text-color);
     font-family: var(--secondary-font);
     letter-spacing: -0.5px;
@@ -1179,8 +1183,9 @@ body.lightmode .keep-dark .btn-accent {
 
 .btn-title {
     font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-light);
     line-height: var(--line-height-snug);
+    letter-spacing: 1px;
     padding: 20px 30px 20px 30px;
     color: var(--accent-color-2);
     text-decoration: none;
@@ -1705,8 +1710,9 @@ body.lightmode .title-heading {
 
 .sub-heading span {
     font-size: var(--font-size-base);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-light);
     line-height: var(--line-height-loose);
+    letter-spacing: 1px;
     color: var(--primary);
 }
 
@@ -2318,7 +2324,7 @@ body.lightmode .card-partner {
     left: 0;
     background-color: transparent;
     z-index: 2;
-    background-image: radial-gradient(at center center, var(--accent-transparent-1) 0%, var(--accent-color-4) 100%);
+    /* background-image: radial-gradient(at center center, var(--accent-transparent-1) 0%, var(--accent-color-4) 100%); */
 }
 
 .swiperPartner-overlay .spacer {
@@ -3154,9 +3160,9 @@ body.lightmode .case-studies-content::before {
 }
 
 .blog-link {
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-3xl);
     color: var(--primary);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-normal);
 }
 
 
@@ -3177,11 +3183,12 @@ body.lightmode .case-studies-content::before {
 }
 
 .meta-data {
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-extra-light);
     line-height: 1.5em;
     color: var(--primary);
     transition: all 0.3s;
+    letter-spacing: 1px;
     cursor: pointer;
 }
 
@@ -3994,7 +4001,7 @@ body.lightmode .newsletter-layout {
 .check-list a {
     color: var(--text-color);
     font-size: var(--font-size-base);
-    font-weight: 700;
+    font-weight: 400;
     transition: all 0.2s;
     line-height: var(--line-height-loose);
 }
@@ -4631,7 +4638,7 @@ body.lightmode .cta-service-banner::before {
 
 .footer-list a {
     font-size: var(--font-size-base);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-color);
     transition: all 0.2s;
 }
@@ -4655,8 +4662,9 @@ body.lightmode .cta-service-banner::before {
     align-items: start;
     justify-content: start;
     font-size: var(--font-size-base);
-    font-weight: 500;
+    font-weight: 300;
     margin-bottom: 15px;
+    letter-spacing: 1px;
     color: var(--primary);
 }
 
@@ -4718,15 +4726,16 @@ body.lightmode .cta-service-banner::before {
 .copyright {
     font-size: var(--font-size-base);
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 300;
     line-height: var(--line-height-loose);
+    letter-spacing: 0.8px;
 }
 
 /* 56.9 Legal Link */
 
 .legal-link {
     font-size: var(--font-size-base);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-color);
     transition: all 0.2s;
     line-height: var(--line-height-loose);
@@ -4965,7 +4974,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .title-heading-banner {
-        background-image: linear-gradient(340deg, var(--accent-transparent) 10%, var(--primary) 100%);
+        background-image: linear-gradient(340deg, #ffffff24  10%, var(--primary) 100%);
     }
 
     .about-img-layout {
