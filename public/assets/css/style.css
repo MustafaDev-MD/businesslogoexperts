@@ -793,8 +793,8 @@ body.lightmode .form select {
 }
 
 .nav-link {
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-normal);
     line-height: var(--line-height-loose);
     color: var(--primary);
     background-color: transparent;
@@ -3682,7 +3682,7 @@ body.lightmode .card-testimonial-header-title {
 .profile-name {
     color: var(--primary);
     font-size: var(--font-size-xl);
-    font-weight: 700;
+    font-weight: 500;
     line-height: var(--line-height-loose);
 }
 
