@@ -96,15 +96,15 @@
                                 <h5>Your Growth, Our Priority!</h5>
                                 <div class="d-flex flex-column gspace-2">
                                     <div class="pricing-highlights">
-                                        <a href="#">Data-Driven Digital Marketing</a>
+                                        <a href="javascript:void(0)">Data-Driven Digital Marketing</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <a href="#">Proven Strategies for Higher</a>
+                                        <a href="javascript:void(0)">Proven Strategies for Higher</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <a href="#">Scalable Solution for Every Business</a>
+                                        <a href="javascript:void(0)">Scalable Solution for Every Business</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                 </div>

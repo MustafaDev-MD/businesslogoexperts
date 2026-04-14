@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <p>Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.</p>
-                            <a href="{{ route('services') }}" class="btn btn-accent">
+                            <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent">
                                 <div class="btn-title"><span>View Details</span></div>
                                 <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                             </a>
@@ -39,7 +39,7 @@
                     @endforeach
                 </div>
             </div>
-            <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent all-services-btn align-self-center">
+            <a href="{{ route('services') }}" class="btn btn-accent all-services-btn align-self-center">
                 <div class="btn-title"><span>View All Services</span></div>
                 <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
             </a>
