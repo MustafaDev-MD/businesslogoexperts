@@ -108,18 +108,17 @@ return [
         'includedPara' => 'Complete handover that gets you publishing, selling, and scaling faster.',
 
         'included_1' => [
-            'Brand strategy brief (audience, positioning, competitive audit)',
-            'Primary logo, secondary marks, favicon, and lockups',
-            'Color palette, typography system, and accessibility guidance',
-            'Icon set, illustration direction, and photography guidance',
-            'Voice guide: elevator pitch, messaging pillars, and microcopy examples'
+            'Brand strategy brief',
+            'Logo suite',
+            'Color typography system',
+            'Icon illustration guide',
         ],
 
         'included_2' => [
-            'Component library: templates for social, email, and presentations',
-            'Motion tokens and simple animation rules (where applicable)',
-            'Paid Ads ManagementExported source files (SVG, EPS, PNG) and editable source package',
-            '30 days post-handover support and implementation checklist',
+            'Voice messaging guide',
+            'Template library',
+            'Source files pack',
+            'Handover support checklist',
         ],
 
         // -------------------------------------------------
@@ -407,20 +406,17 @@ return [
         'includedPara' => 'A full development handover so your team can move fast',
 
         'included_1' => [
-            'Discovery & technical audit (requirements, integrations, success metrics)',
-            'Interactive prototypes and user flows (desktop & mobile)',
-            'Responsive front-end development (HTML, CSS, JS; React/Vue option)',
-            'Web app architecture and API design for SPAs/PWAs (where applicable)',
-            'CMS setup & editor training (headless or integrated)',
-            'E-commerce setup (checkout, payment gateway, product feeds)',
+            'Discovery audit',
+            'Wireframes user flows',
+            'Responsive front-end',
+            'Web app architecture',
         ],
 
         'included_2' => [
-            'Hosting & deployment setup (CDN, SSL, DNS, CI/CD pipeline, uptime monitoring)',
-            'Performance optimization (core web vitals, image CDN, critical CSS)',
-            'Security hardening and basic penetration checks',
-            'Automated deployment pipeline & documentation',
-            '30 days post-launch support and monitoring checklist',
+            'CMS setup training',
+            'Hosting deployment setup',
+            'Performance optimization',
+            'Post-launch support',
         ],
 
         // -------------------------------------------------
@@ -703,19 +699,17 @@ return [
         'includedPara' => 'Everything you need to launch and operate a mobile product.',
 
         'included_1' => [
-            'Product discovery & technical requirements (user flows, KPIs)',
-            'Interactive prototypes & usability testing (iOS & Android flows)',
-            'Native or cross-platform development (chosen by product needs)',
-            'Backend/API architecture, database design, and integrations',
-            'Push notifications, analytics & crash monitoring setup',
+            'Product discovery',
+            'Interactive prototypes',
+            'Native cross-platform build',
+            'Backend API architecture',
         ],
 
         'included_2' => [
-            'Performance profiling, battery & memory optimizations',
-            'Security hardening and data privacy checks (GDPR/region-specific where applicable)',
-            'App store submission & review support (both stores)',
-            'Deployment pipeline (CI/CD) and release playbook',
-            '30 days post-launch support and optional retained maintenance plans',
+            'Push analytics monitoring',
+            'Security hardening',
+            'App store submission',
+            'CI/CD pipeline',
         ],
 
         // -------------------------------------------------
@@ -995,18 +989,17 @@ return [
         'includedPara' => 'Everything you need to produce and ship motion work.',
 
         'included_1' => [
-            'Project brief and script workshop (where needed)',
-            'Storyboard and animatic (timing proof)',
-            'Style frames and concept direction',
-            'Full animation delivery (MP4, GIF, Lottie/JSON for UI where applicable)',
-            'Sound design and mix (spots longer than 15s) or music cue recommendations',
+            'Script workshop',
+            'Storyboard animatic',
+            'Style concept frames',
+            'Full animation delivery',
         ],
 
         'included_2' => [
-            'Motion token guide / animation library for product teams',
-            'Export presets and responsive variants (vertical, square, landscape)',
-            'Source project files (After Effects, Blender, Lottie) and a usage checklist',
-            '30 days post-delivery polish & support',
+            'Sound design mix',
+            'Export presets',
+            'Source project files',
+            'Post-delivery support',
         ],
 
         // -------------------------------------------------
@@ -1287,19 +1280,17 @@ return [
         'includedPara' => 'From strategy to deployment and optimization.',
 
         'included_1' => [
-            'AI opportunity & workflow audit',
-            'Use-case prioritization and ROI mapping',
-            'Conversation design & prompt engineering',
-            'Knowledge base structuring and retrieval setup',
-            'API & CRM integrations',
+            'AI opportunity audit',
+            'Use-case prioritization',
+            'Prompt engineering',
+            'Knowledge base setup',
         ],
 
         'included_2' => [
-            'Access controls and security configuration',
-            'Testing scenarios and failure-mode simulations',
-            'Analytics dashboard for agent performance',
-            'Deployment to web/app/Slack/internal tools',
-            '30 days post-launch optimization & tuning',
+            'API integrations',
+            'Security configuration',
+            'Performance dashboard',
+            'Post-launch tuning',
         ],
 
         // -------------------------------------------------
@@ -1580,19 +1571,17 @@ return [
         'includedPara' => 'A complete SEO program built to deliver results.',
 
         'included_1' => [
-            'Technical SEO audit and prioritized fix list',
-            'Core web vitals and performance remediation',
-            'Keyword research and opportunity mapping',
-            'Content briefs, landing page copy, and pillar strategies',
-            'Local citations and Google Business Profile optimization',
+            'Technical SEO audit',
+            'Core web vitals',
+            'Keyword research',
+            'Content briefs',
         ],
 
         'included_2' => [
-            'Ecommerce optimization (product schema, feeds, faceted nav) where applicable',
-            'Link-building outreach and content amplification',
-            'Conversion rate optimization suggestions tied to organic traffic',
-            'Monthly reporting dashboard and quarterly strategy reviews',
-            '30 days of implementation support after major rollouts',
+            'Local optimization',
+            'Ecommerce optimization',
+            'Link outreach',
+            'Monthly reporting',
         ],
 
         // -------------------------------------------------
@@ -1873,18 +1862,17 @@ return [
         'includedPara' => 'A practical social program that ships results.',
 
         'included_1' => [
-            'Social audit & audience mapping',
-            '90-day content & campaign plan (calendar + briefs)',
-            'Creative production (video edits, motion, captions, thumbnails)',
-            'Paid media setup & A/B testing (creative + audience)',
-            'Community management guidelines and moderation playbook',
+            'Social audit',
+            'Content calendar',
+            'Creative production',
+            'Paid media setup',
         ],
 
         'included_2' => [
-            'Content repurposing system and template library',
-            'Analytics dashboard and monthly performance playbook',
-            'Quarterly strategy reviews and experimentation roadmap',
-            '30 days post-campaign optimization support',
+            'Community guidelines',
+            'Repurposing system',
+            'Analytics dashboard',
+            'Quarterly reviews',
         ],
 
         // -------------------------------------------------

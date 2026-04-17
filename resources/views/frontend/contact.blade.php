@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="d-grid">
                                     <span>Email Address</span>
-                                    <h5>hello@markoagency.com</h5>
+                                    <h5>hello@businesslogoexperts.com</h5>
                                 </div>
                             </div>
 

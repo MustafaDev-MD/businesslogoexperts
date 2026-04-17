@@ -6,7 +6,7 @@
                     <i class="fa-regular fa-circle-dot"></i>
                     <span>Our Core Services</span>
                 </div>
-                <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown">Digital Solutions That Drive Real Results</h2>
+                <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown">Digital Solutions That<br> Drive Real Results</h2>
             </div>
 
             <div class="card-service-wrapper">

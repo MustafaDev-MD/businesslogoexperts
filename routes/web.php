@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\PackageFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +32,7 @@ Route::controller(FrontendController::class)->group(function () {
     Route::get('/services', 'services')->name('services');
     Route::get('/services/{slug}', 'singleService')->name('single-service');
     // Route::get('/single-service', 'singleService')->name('single-service-page');
-
+    
     // Other pages
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/faq', 'faq')->name('faq');
@@ -40,6 +41,11 @@ Route::controller(FrontendController::class)->group(function () {
     Route::get('/team', 'team')->name('team');
     Route::get('/testimonial', 'testimonial')->name('testimonial');
 });
+
+Route::get('/package-form/{service}/{package}', [PackageFormController::class, 'index'])
+    ->name('package.form');
+    
+Route::post('/package-submit', [PackageFormController::class, 'submit'])->name('package.submit')->middleware('throttle:5,1');;
 
 // -----------------------------------------------------------------------------
 // 404 Page Route

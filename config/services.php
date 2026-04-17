@@ -35,35 +35,9 @@ return [
         ],
     ],
 
-    // [
-    //     'name' => 'Branding ',
-    //     'slug' => 'branding ',
-    // ],
-    // [
-    //     'name' => 'Web Development ',
-    //     'slug' => 'web-development ',
-    // ],
-    // [
-    //     'name' => 'App Development',
-    //     'slug' => 'app-development',
-    // ],
-    // [
-    //     'name' => 'Animation',
-    //     'slug' => 'animation',
-    // ],
-    // [
-    //     'name' => 'AI Agents',
-    //     'slug' => 'ai-agents',
-    // ],
-    // [
-    //     'name' => 'SEO',
-    //     'slug' => 'seo',
-    // ],
-    // [
-    //     'name' => 'Social Media',
-    //     'slug' => 'social-media',
-    // ],
-
-    
+    'recaptcha' => [
+        'site_key' => env('RECAPTCHA_SITE_KEY'),
+        'secret'   => env('RECAPTCHA_SECRET_KEY'),
+    ],
 
 ];

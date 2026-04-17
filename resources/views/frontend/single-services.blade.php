@@ -194,7 +194,7 @@
                             </div>
                             @endif
 
-                            <div class="section">
+                            <!-- <div class="section">
                                 <div class="hero-container">
                                     <div class="d-flex flex-column justify-content-center text-center gspace-5">
                                         <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -274,14 +274,14 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
 
                     <!-- Right Column: Sidebar -->
                     <div class="col col-xl-4">
-                        <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-5">
+                        <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-2">
 
                             <!-- Why Choose Us -->
                             <!-- <div class="card service-recent">
@@ -325,7 +325,7 @@
                             </div>
 
                             <!-- Recent Services -->
-                            <div class="card service-recent">
+                            <!-- <div class="card service-recent">
                                 <h4 class="text-start">{{ $service['rightCTATitle'] ?? 'Ready to make your brand do the heavy lifting?' }}</h4>
                                 <div class="underline-accent-short"></div>
                                 <p class="text-start">{{ $service['rightCTADes'] ?? 'Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.' }}</p>
@@ -337,6 +337,160 @@
                                         <h6>+1 (62) 987 7543</h6>
                                     </div>
                                 </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="pricing">
+        <div class="hero-container">
+            <div class="d-flex flex-column justify-content-center text-center gspace-5">
+                <!-- <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                <div class="sub-heading align-self-center">
+                    <i class="fa-regular fa-circle-dot"></i>
+                    <span>Our Core Services</span>
+                </div>
+                <h2 class="title-heading heading-container heading-container-short">Flexible Pricing Plans<br> for Every Business</h2>
+            </div> -->
+                <div class="row row-cols-xl-3 row-cols-1 grid-spacer-2">
+                    <div class="col">
+                        <div class="pricing-container">
+                            <div class="card card-pricing-title animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                                <div class="spacer"></div>
+                                <div class="content">
+                                    <h3 class="title-heading">{{ $service['pricing']['title'] ?? "Let's Find the Right Strategy!" }}</h3>
+                                    <div class="link-wrapper">
+                                        <a href="{{ url('/contact') }}">Book a Free Consultation</a>
+                                        <i class="fa-solid fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @if(isset($service['pricing']['plans'][0]))
+                            @php $starter = $service['pricing']['plans'][0]; @endphp
+                            <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                                <h4>{{ $starter['name'] }}</h4>
+                                <p>{{ $starter['description'] }}</p>
+                                <div class="d-flex flex-row gspace-1 align-items-center h-100">
+                                    <h3>${{ $starter['price'] }}</h3>
+                                    <p>/Month</p>
+                                </div>
+                                <a href="{{ route('package.form', [
+                                            'service' => $service['slug'],
+                                            'package' => Str::slug($starter['name'])
+                                        ]) }}" class="btn btn-accent">
+                                    <div class="btn-title"><span>View Details</span></div>
+                                    <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
+                                </a>
+                                <ul class="check-list">
+                                    @foreach($starter['features'] as $feature)
+                                    <li><a href="javascript:void(0)">{{ $feature }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        @if(isset($service['pricing']['plans'][1]))
+                        @php $enterprise = $service['pricing']['plans'][1]; @endphp
+                        <div class="card card-pricing pricing-highlight animate-box animated slow animate__animated" data-animate="animate__fadeInUp">
+                            <div class="spacer"></div>
+                            <h4>{{ $enterprise['name'] }}</h4>
+                            <p>{{ $enterprise['description'] }}</p>
+                            <div class="d-flex flex-row gspace-1 align-items-center">
+                                <h3>${{ $enterprise['price'] }}</h3>
+                                <p>/Month</p>
+                            </div>
+                            <a href="{{ route('package.form', [
+                                            'service' => $service['slug'],
+                                            'package' => Str::slug($enterprise['name'])
+                                        ]) }}" class="btn btn-accent">
+                                <div class="btn-title"><span>View Details</span></div>
+                                <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+
+                            @if(isset($enterprise['coreBenefits']))
+                            <div class="core-benefits">
+                                @foreach($enterprise['coreBenefits'] as $benefit)
+                                <div class="benefit">
+                                    <i class="{{ isset($benefit['brand']) ? 'fa-brands' : 'fa-solid' }} {{ $benefit['icon'] }}"></i>
+                                    <a href="javascript:void(0)">{{ $benefit['text'] }}</a>
+                                </div>
+                                @endforeach
+                            </div>
+                            @endif
+
+                            <ul class="check-list">
+                                @foreach($enterprise['features'] as $feature)
+                                <li><a href="javascript:void(0)">{{ $feature }}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                    </div>
+                    <div class="col">
+                        <div class="pricing-container">
+                            <div class="card pricing-highlight-box animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                                <div class="d-flex flex-column gspace-2 w-100">
+                                    <!-- <h5>Your Growth, Our Priority!</h5>
+                                <div class="d-flex flex-column gspace-2">
+                                    <div class="pricing-highlights">
+                                        <a href="javascript:void(0)">Data-Driven Digital Marketing</a>
+                                        <i class="fa-solid fa-arrow-circle-right"></i>
+                                    </div>
+                                    <div class="pricing-highlights">
+                                        <a href="javascript:void(0)">Proven Strategies for Higher</a>
+                                        <i class="fa-solid fa-arrow-circle-right"></i>
+                                    </div>
+                                    <div class="pricing-highlights">
+                                        <a href="javascript:void(0)">Scalable Solution for Every Business</a>
+                                        <i class="fa-solid fa-arrow-circle-right"></i>
+                                    </div>
+                                </div> -->
+                                    <h4 class="text-start">{{ $service['rightCTATitle'] ?? 'Ready to make your brand do the heavy lifting?' }}</h4>
+                                    <div class="underline-accent-short"></div>
+                                    <p class="text-start">{{ $service['rightCTADes'] ?? 'Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.' }}</p>
+                                    <a href="tel:+1 (62) 987 7543">
+                                        <div class="navbar-icon-wrapper inner-service-button">
+                                            <div class="icon-circle">
+                                                <i class="fa-solid fa-phone-volume"></i>
+                                            </div>
+                                            <h6>+1 (62) 987 7543</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="spacer"></div>
+                            </div>
+                            <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                                <h4>Growth</h4>
+                                <p>Best for growing businesses ready</p>
+                                <div class="d-flex flex-row gspace-1 align-items-center h-100">
+                                    <h3>
+                                        $299
+                                    </h3>
+                                    <p>/Month</p>
+                                </div>
+                                <a href="{{ route('package.form', [
+                                            'service' => $service['slug'],
+                                            'package' => Str::slug($starter['name'])
+                                        ]) }}" class="btn btn-accent">
+                                    <div class="btn-title">
+                                        <span>View Details</span>
+                                    </div>
+                                    <div class="icon-circle">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                                <ul class="check-list">
+                                    <li><a href="javascript:void(0)">Basic SEO & Marketing</a></li>
+                                    <li><a href="javascript:void(0)">Social Media Management (1 Platform)</a></li>
+                                    <li><a href="javascript:void(0)">Monthly Performance Report</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

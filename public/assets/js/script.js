@@ -497,3 +497,242 @@ function initAnimateData() {
 //         prevEl: ".swiper-button-prev",
 //     },
 // });
+
+const fileInput = document.getElementById('fileInput');
+const fileList = document.getElementById('fileList');
+const uploadBox = document.querySelector('.file-upload-box');
+
+let selectedFiles = []; // 🔥 global array
+
+function renderFiles() {
+    fileList.innerHTML = '';
+
+    selectedFiles.forEach((file, index) => {
+        const div = document.createElement('div');
+        div.classList.add('file-item');
+
+        div.innerHTML = `
+                <span>${file.name}</span>
+                <div class="file-actions">
+                    <span>${(file.size / 1024).toFixed(1)} KB</span>
+                    <button type="button" onclick="removeFile(${index})">✖</button>
+                </div>
+            `;
+
+        fileList.appendChild(div);
+    });
+
+    // 🔥 important: update input files
+    const dataTransfer = new DataTransfer();
+    selectedFiles.forEach(file => dataTransfer.items.add(file));
+    fileInput.files = dataTransfer.files;
+}
+
+// remove file
+function removeFile(index) {
+    selectedFiles.splice(index, 1);
+    renderFiles();
+}
+
+// add files
+function addFiles(files) {
+    Array.from(files).forEach(file => {
+        selectedFiles.push(file);
+    });
+    renderFiles();
+}
+
+// click upload
+fileInput.addEventListener('change', function () {
+    addFiles(this.files);
+});
+
+// drag over
+uploadBox.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadBox.classList.add('dragover');
+});
+
+// drag leave
+uploadBox.addEventListener('dragleave', () => {
+    uploadBox.classList.remove('dragover');
+});
+
+// drop
+uploadBox.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadBox.classList.remove('dragover');
+    addFiles(e.dataTransfer.files);
+});
+
+document.querySelector("form").addEventListener("submit", function(e) {
+    let errors = [];
+
+    let firstName = document.getElementById("first-name");
+    let email = document.getElementById("email");
+    let subject = document.getElementById("subject");
+    let message = document.getElementById("message");
+
+    // reset styles
+    document.querySelectorAll("input, textarea").forEach(el => {
+        el.classList.remove("error-field");
+    });
+
+    // validation rules
+    if (!firstName.value.trim()) {
+        errors.push("First name is required");
+        firstName.classList.add("error-field");
+    }
+
+    if (!email.value.trim()) {
+        errors.push("Email is required");
+        email.classList.add("error-field");
+    }
+
+    if (email.value && !/^\S+@\S+\.\S+$/.test(email.value)) {
+        errors.push("Email is invalid");
+        email.classList.add("error-field");
+    }
+
+    if (!subject.value.trim()) {
+        errors.push("Subject is required");
+        subject.classList.add("error-field");
+    }
+
+    if (!message.value.trim()) {
+        errors.push("Message is required");
+        message.classList.add("error-field");
+    }
+
+    // file validation
+    let files = document.getElementById("fileInput").files;
+    if (files.length > 0) {
+        for (let i = 0; i < files.length; i++) {
+            if (files[i].size > 50 * 1024 * 1024) {
+                errors.push("Each file must be under 50MB");
+                break;
+            }
+        }
+    }
+
+    if (errors.length > 0) {
+        e.preventDefault();
+
+        Swal.fire({
+            icon: "error",
+            title: "Validation Error",
+            html: errors.join("<br>")
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const form = document.getElementById("packageForm");
+
+    // ---- Custom glassmorphism toast ----
+    function showToast(type, message) {
+        const container = document.getElementById("gtoastContainer");
+        const toast = document.createElement("div");
+        toast.className = "gtoast " + type;
+        toast.innerHTML = `
+<div class="gtoast-icon">${type === 'success' ? '✓' : '✕'}</div>
+<div class="gtoast-msg">${message}</div>
+`;
+        const remove = () => {
+            toast.classList.add("removing");
+            setTimeout(() => toast.remove(), 250);
+        };
+        toast.addEventListener("click", remove);
+        container.appendChild(toast);
+        setTimeout(remove, 4000);
+    }
+
+    // ---- Error logic: sirf ek field ek waqt pe ----
+    let errorQueue = [];
+    let currentIndex = 0;
+
+    function clearAllErrors() {
+        document.querySelectorAll(".error-field").forEach(el => {
+            el.classList.remove("error-field");
+            if (el.dataset.original) {
+                el.placeholder = el.dataset.original;
+                delete el.dataset.original;
+            }
+        });
+        errorQueue = [];
+        currentIndex = 0;
+    }
+
+    function highlightField(index) {
+        if (index >= errorQueue.length) return;
+
+        const {
+            key,
+            message
+        } = errorQueue[index];
+        const el = document.querySelector(`[name="${key}"]`);
+        if (!el) return;
+
+        el.classList.add("error-field");
+        if (!el.dataset.original) el.dataset.original = el.placeholder;
+        el.placeholder = message;
+        el.focus();
+
+        // Jab user type kare is field mein, tab clear karo — agli field highlight mat karo
+        el.addEventListener("input", function handler() {
+            el.classList.remove("error-field");
+            if (el.dataset.original) {
+                el.placeholder = el.dataset.original;
+                delete el.dataset.original;
+            }
+            el.removeEventListener("input", handler);
+        });
+    }
+
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        clearAllErrors();
+
+        const res = await fetch(form.action, {
+            method: "POST",
+            headers: {
+                "X-Requested-With": "XMLHttpRequest",
+                "Accept": "application/json",
+                "X-CSRF-TOKEN": "{{ csrf_token() }}"
+            },
+            body: new FormData(form)
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.status === "success") {
+            showToast("success", data.message);
+            form.reset();
+
+            document.getElementById("fileList").innerHTML = "";
+            document.getElementById("fileInput").value = "";
+
+            return;
+        }
+
+        if (res.status === 422 && data.errors) {
+            // Queue banao
+            errorQueue = Object.keys(data.errors).map(key => ({
+                key,
+                message: data.errors[key][0]
+            }));
+
+            currentIndex = 0;
+
+            // Sirf pehli field highlight + toast
+            highlightField(currentIndex);
+            showToast("error", errorQueue[currentIndex].message);
+        }
+    });
+
+    // Dobara submit kare to error queue aage badhti hai
+    // (clearAllErrors pehle call hota hai, fresh errors aate hain)
+
+});

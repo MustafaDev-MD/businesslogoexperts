@@ -51,6 +51,12 @@ class FrontendController extends Controller
         return view('frontend.contact');
     }
 
+    // Contact page
+    public function packageForm()
+    {
+        return view('frontend.package-form');
+    }
+
     // FAQ page
     public function faq()
     {
