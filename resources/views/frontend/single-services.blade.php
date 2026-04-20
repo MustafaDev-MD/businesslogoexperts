@@ -657,6 +657,53 @@
                     </div>
                 </div>
                 <div class="col col-xl-7">
+                    
+                    <div class="accordion accordion-flush" id="faqAccordion1">
+                        @foreach($service['faqs'] as $index => $faq)
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading{{ $index + 1 }}">
+                                <button class="accordion-button {{ $index != 0 ? 'collapsed' : '' }}"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse{{ $index + 1 }}"
+                                    aria-expanded="{{ $index == 0 ? 'true' : 'false' }}"
+                                    aria-controls="flush-collapse{{ $index + 1 }}">
+                                    {{ $faq['question'] }}
+                                </button>
+                            </h2>
+                            <div id="flush-collapse{{ $index + 1 }}" 
+                                 class="accordion-collapse collapse {{ $index == 0 ? 'show' : '' }}"
+                                 aria-labelledby="flush-heading{{ $index + 1 }}" 
+                                 data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                <div class="accordion-spacer"></div>
+                                    <p>{{ $faq['answer'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+
+<!-- @if(!empty($service['faqs']))
+    <div class="section">
+        <div class="hero-container">
+            <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
+                <div class="col col-xl-5">
+                    <div class="faq-title-container">
+                        <div class="sub-heading">
+                            <i class="fa-regular fa-circle-dot"></i>
+                            <span>Frequently Asked Questions</span>
+                        </div>
+                        <h2 class="title-heading">Got Questions? We've Got Answers.</h2>
+                    </div>
+                </div>
+                <div class="col col-xl-7">
                     <div class="d-flex flex-column">
                         <div class="accordion" id="faqAccordion1">
                             @foreach($service['faqs'] as $index => $faq)
@@ -686,6 +733,6 @@
             </div>
         </div>
     </div>
-    @endif
+    @endif -->
 
 </x-layouts.frontend>

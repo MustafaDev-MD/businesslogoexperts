@@ -737,33 +737,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const accordion = document.querySelector('#faqAccordion1');
-    if (!accordion) return;
-  
-    accordion.addEventListener('hide.bs.collapse', function (e) {
-      const btn = accordion.querySelector('[data-bs-target="#' + e.target.id + '"]');
-      if (!btn) return;
-  
-      const btnTop = btn.getBoundingClientRect().top;
-      const scrollY = window.scrollY;
-  
-      // Animation ke dauran har frame pe scroll pin karo
-      let rafId;
-      const pinScroll = () => {
-        const diff = btn.getBoundingClientRect().top - btnTop;
-        if (Math.abs(diff) > 0.5) {
-          window.scrollTo({ top: scrollY + diff, behavior: 'instant' });
-        }
-        rafId = requestAnimationFrame(pinScroll);
-      };
-  
-      rafId = requestAnimationFrame(pinScroll);
-  
-      e.target.addEventListener('hidden.bs.collapse', function () {
-        cancelAnimationFrame(rafId);
-        const diff = btn.getBoundingClientRect().top - btnTop;
-        window.scrollTo({ top: scrollY + diff, behavior: 'instant' });
-      }, { once: true });
-    });
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    const accordion = document.getElementById('faqAccordion1');
+    
+    if (accordion) {
+        accordion.addEventListener('hide.bs.collapse', function() {
+            // Extra smooth closing
+        });
+        
+        accordion.addEventListener('shown.bs.collapse', function() {
+            // After open
+        });
+    }
+});
