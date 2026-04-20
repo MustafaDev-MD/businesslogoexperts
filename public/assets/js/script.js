@@ -737,91 +737,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-document.querySelectorAll('#faqAccordion1 .accordion-button').forEach(button => {
-    button.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
+document.addEventListener('DOMContentLoaded', function () {
+    const accordion = document.querySelector('#faqAccordion1');
+    if (!accordion) return;
   
-      const target = document.querySelector(this.dataset.bsTarget);
-      const isOpen = target.classList.contains('show');
-      const accordion = document.querySelector('#faqAccordion1');
-      const currentOpen = accordion.querySelector('.accordion-collapse.show');
+    accordion.addEventListener('hide.bs.collapse', function (e) {
+      const btn = accordion.querySelector('[data-bs-target="#' + e.target.id + '"]');
+      if (!btn) return;
   
-      // Button ka position lock karo
-      const lockScroll = () => {
-        const startY = window.scrollY;
-        const startRect = button.getBoundingClientRect().top;
+      const btnTop = btn.getBoundingClientRect().top;
+      const scrollY = window.scrollY;
   
-        return () => {
-          const diff = button.getBoundingClientRect().top - startRect;
-          if (Math.abs(diff) > 1) {
-            window.scrollTo({ top: startY + diff, behavior: 'instant' });
-          }
-        };
+      // Animation ke dauran har frame pe scroll pin karo
+      let rafId;
+      const pinScroll = () => {
+        const diff = btn.getBoundingClientRect().top - btnTop;
+        if (Math.abs(diff) > 0.5) {
+          window.scrollTo({ top: scrollY + diff, behavior: 'instant' });
+        }
+        rafId = requestAnimationFrame(pinScroll);
       };
   
-      if (!isOpen && currentOpen && currentOpen !== target) {
-        // Dusra open karna hai
-        const compensate = lockScroll();
-        
-        const bsClose = bootstrap.Collapse.getInstance(currentOpen);
-        bsClose.hide();
+      rafId = requestAnimationFrame(pinScroll);
   
-        currentOpen.addEventListener('hidden.bs.collapse', () => {
-          compensate();
-          const compensate2 = lockScroll();
-          bootstrap.Collapse.getOrCreateInstance(target).show();
-  
-          // Animation ke dauran continuously compensate karo
-          const interval = setInterval(() => {
-            compensate2();
-          }, 10);
-  
-          target.addEventListener('shown.bs.collapse', () => {
-            clearInterval(interval);
-            compensate2();
-          }, { once: true });
-  
-        }, { once: true });
-  
-      } else if (!isOpen) {
-        // Sirf kholo
-        const compensate = lockScroll();
-        bootstrap.Collapse.getOrCreateInstance(target).show();
-  
-        const interval = setInterval(() => compensate(), 10);
-        target.addEventListener('shown.bs.collapse', () => {
-          clearInterval(interval);
-          compensate();
-        }, { once: true });
-  
-      } else {
-        // Sirf band karo
-        const compensate = lockScroll();
-        bootstrap.Collapse.getInstance(target).hide();
-  
-        const interval = setInterval(() => compensate(), 10);
-        target.addEventListener('hidden.bs.collapse', () => {
-          clearInterval(interval);
-          compensate();
-        }, { once: true });
-      }
+      e.target.addEventListener('hidden.bs.collapse', function () {
+        cancelAnimationFrame(rafId);
+        const diff = btn.getBoundingClientRect().top - btnTop;
+        window.scrollTo({ top: scrollY + diff, behavior: 'instant' });
+      }, { once: true });
     });
   });
-
-  function toggle(btn) {
-    const body = btn.nextElementSibling;
-    const isOpen = body.classList.contains('open');
-    
-    // Sabhi band karo
-    document.querySelectorAll('.acc-body.open').forEach(b => {
-      b.classList.remove('open');
-      b.previousElementSibling.classList.remove('open');
-    });
-    
-    // Agar band tha toh kholo
-    if (!isOpen) {
-      body.classList.add('open');
-      btn.classList.add('open');
-    }
-  }

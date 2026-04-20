@@ -191,6 +191,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 /* url('../fonts/Magox.woff2') format('woff2'), 
 url('../fonts/Magox.otf') format('opentype'),  */
 
@@ -1159,7 +1160,7 @@ body.lightmode #newsletterForm input:autofill:focus {
     align-self: stretch;
 }
 
-.cta-btn{
+.cta-btn {
     width: fit-content;
 }
 
@@ -1170,7 +1171,7 @@ body.lightmode #newsletterForm input:autofill:focus {
     box-shadow: var(--box-shadow-top-left);
 }
 
-.all-services-btn{
+.all-services-btn {
     width: 351px;
 }
 
@@ -1754,7 +1755,7 @@ body.lightmode .title-heading {
     transition: all 0.6s;
 }
 
-.inner-service-button{
+.inner-service-button {
     width: 235px;
 }
 
@@ -1811,7 +1812,7 @@ body.lightmode .navbar-icon-wrapper {
     height: 100%;
 }
 
-.testimonial-ratings{
+.testimonial-ratings {
     width: 50%;
 }
 
@@ -2701,7 +2702,7 @@ body.lightmode .card-partner {
     color: var(--accent-color);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     left: -10%;
     color: var(--accent-color);
 }
@@ -3378,7 +3379,7 @@ body.lightmode .case-studies-content::before {
     background-image: radial-gradient(at center center, var(--accent-color-6) 0%, var(--accent-transparent) 50%);
 }
 
-.card-pricing.pricing-highlight .fa-circle-dot{
+.card-pricing.pricing-highlight .fa-circle-dot {
     color: var(--accent-color);
 }
 
@@ -4986,7 +4987,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .title-heading-banner {
-        background-image: linear-gradient(340deg, #ffffff24  10%, var(--primary) 100%);
+        background-image: linear-gradient(340deg, #ffffff24 10%, var(--primary) 100%);
     }
 
     .about-img-layout {
@@ -6010,15 +6011,19 @@ body.lightmode .cta-service-banner::before {
     color: #e63946 !important;
 }
 
-.collapsing {
-    transition: height 0.2s ease !important;
-  }
+/* .collapsing {
+    transition: height 0.25s ease !important;
+}
 
-  .acc-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.show {
+    height: 200px;
+} */
+
+.collapsing {
+    transition: height 0.2s !important;
+    will-change: height;
   }
-  .acc-body.open {
-    max-height: 500px; /* content se zyada ho bas */
+  
+  .accordion-collapse {
+    will-change: height;
   }
