@@ -6011,20 +6011,25 @@ body.lightmode .cta-service-banner::before {
 }
 
 .accordion-collapse {
-    transition: all 0.3s ease;
+    height: auto !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.accordion-collapse.collapsing {
-    height: auto !important;
+/* when open */
+.accordion-collapse.show {
+    max-height: 500px; /* adjust if content zyada ho */
+}
+
+/* smooth content */
+.accordion-body {
     opacity: 0;
     transform: translateY(-10px);
+    transition: all 0.3s ease;
 }
 
-.accordion-collapse.show {
+.accordion-collapse.show .accordion-body {
     opacity: 1;
     transform: translateY(0);
-}
-
-.accordion-button {
-    transition: all 0.3s ease;
 }
