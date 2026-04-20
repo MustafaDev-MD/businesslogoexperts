@@ -6011,5 +6011,5 @@ body.lightmode .cta-service-banner::before {
 }
 
 .collapsing {
-    transition: height 0.1s ease !important;
+    transition: height 0.2s ease !important;
   }
