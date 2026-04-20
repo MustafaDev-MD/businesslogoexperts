@@ -6013,3 +6013,12 @@ body.lightmode .cta-service-banner::before {
 .collapsing {
     transition: height 0.2s ease !important;
   }
+
+  .acc-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .acc-body.open {
+    max-height: 500px; /* content se zyada ho bas */
+  }

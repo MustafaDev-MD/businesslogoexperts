@@ -738,21 +738,90 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.querySelectorAll('#faqAccordion1 .accordion-button').forEach(button => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+  
       const target = document.querySelector(this.dataset.bsTarget);
       const isOpen = target.classList.contains('show');
-      
-      if (isOpen) {
-        // Close hone se pehle scroll position lock kar lo
-        const rect = this.getBoundingClientRect();
-        const scrollY = window.scrollY;
+      const accordion = document.querySelector('#faqAccordion1');
+      const currentOpen = accordion.querySelector('.accordion-collapse.show');
+  
+      // Button ka position lock karo
+      const lockScroll = () => {
+        const startY = window.scrollY;
+        const startRect = button.getBoundingClientRect().top;
+  
+        return () => {
+          const diff = button.getBoundingClientRect().top - startRect;
+          if (Math.abs(diff) > 1) {
+            window.scrollTo({ top: startY + diff, behavior: 'instant' });
+          }
+        };
+      };
+  
+      if (!isOpen && currentOpen && currentOpen !== target) {
+        // Dusra open karna hai
+        const compensate = lockScroll();
         
-        target.addEventListener('hidden.bs.collapse', function handler() {
-          const newRect = button.getBoundingClientRect();
-          const diff = newRect.top - rect.top;
-          window.scrollTo({ top: scrollY + diff, behavior: 'instant' });
-          target.removeEventListener('hidden.bs.collapse', handler);
-        });
+        const bsClose = bootstrap.Collapse.getInstance(currentOpen);
+        bsClose.hide();
+  
+        currentOpen.addEventListener('hidden.bs.collapse', () => {
+          compensate();
+          const compensate2 = lockScroll();
+          bootstrap.Collapse.getOrCreateInstance(target).show();
+  
+          // Animation ke dauran continuously compensate karo
+          const interval = setInterval(() => {
+            compensate2();
+          }, 10);
+  
+          target.addEventListener('shown.bs.collapse', () => {
+            clearInterval(interval);
+            compensate2();
+          }, { once: true });
+  
+        }, { once: true });
+  
+      } else if (!isOpen) {
+        // Sirf kholo
+        const compensate = lockScroll();
+        bootstrap.Collapse.getOrCreateInstance(target).show();
+  
+        const interval = setInterval(() => compensate(), 10);
+        target.addEventListener('shown.bs.collapse', () => {
+          clearInterval(interval);
+          compensate();
+        }, { once: true });
+  
+      } else {
+        // Sirf band karo
+        const compensate = lockScroll();
+        bootstrap.Collapse.getInstance(target).hide();
+  
+        const interval = setInterval(() => compensate(), 10);
+        target.addEventListener('hidden.bs.collapse', () => {
+          clearInterval(interval);
+          compensate();
+        }, { once: true });
       }
     });
   });
+
+  function toggle(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = body.classList.contains('open');
+    
+    // Sabhi band karo
+    document.querySelectorAll('.acc-body.open').forEach(b => {
+      b.classList.remove('open');
+      b.previousElementSibling.classList.remove('open');
+    });
+    
+    // Agar band tha toh kholo
+    if (!isOpen) {
+      body.classList.add('open');
+      btn.classList.add('open');
+    }
+  }
