@@ -6010,40 +6010,6 @@ body.lightmode .cta-service-banner::before {
     color: #e63946 !important;
 }
 
-/* Let Bootstrap handle height animation */
-.accordion-collapse {
-    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-/* DO NOT override height here */
-.accordion-collapse.collapsing {
-    opacity: 0;
-    transform: translateY(-8px);
-    transition: 
-        height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-        opacity 0.25s ease,
-        transform 0.25s ease;
-}
-
-/* Smooth visible state */
-.accordion-collapse.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Inner content smoothness */
-.accordion-body {
-    opacity: 0;
-    transform: translateY(-6px);
-    transition: all 0.3s ease;
-}
-
-.accordion-collapse.show .accordion-body {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Button smooth */
-.accordion-button {
-    transition: all 0.3s ease;
-}
+.collapsing {
+    transition: height 0.1s ease !important;
+  }

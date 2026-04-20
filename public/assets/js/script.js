@@ -737,4 +737,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
+document.querySelectorAll('#faqAccordion1 .accordion-button').forEach(button => {
+    button.addEventListener('click', function () {
+      const target = document.querySelector(this.dataset.bsTarget);
+      const isOpen = target.classList.contains('show');
+      
+      if (isOpen) {
+        // Close hone se pehle scroll position lock kar lo
+        const rect = this.getBoundingClientRect();
+        const scrollY = window.scrollY;
+        
+        target.addEventListener('hidden.bs.collapse', function handler() {
+          const newRect = button.getBoundingClientRect();
+          const diff = newRect.top - rect.top;
+          window.scrollTo({ top: scrollY + diff, behavior: 'instant' });
+          target.removeEventListener('hidden.bs.collapse', handler);
+        });
+      }
+    });
+  });
