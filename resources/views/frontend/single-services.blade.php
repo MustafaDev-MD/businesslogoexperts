@@ -11,7 +11,7 @@
 
 
     <!-- Section Content -->
-    <div class="section pb-0">
+    <div class="section">
         <div class="hero-container">
             <div class="d-flex flex-column gspace-5">
 

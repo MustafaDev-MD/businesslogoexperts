@@ -3884,7 +3884,7 @@ body.lightmode .newsletter-layout {
     display: flex;
     flex-direction: column;
     min-height: 60px;
-    width: 60px;
+    /* width: 60px; */
     background-color: var(--secondary);
     justify-content: center;
     align-items: center;
@@ -3893,8 +3893,8 @@ body.lightmode .newsletter-layout {
 
 .social-item {
     aspect-ratio: 1/1;
-    width: 45px;
-    min-height: 45px;
+    width: 35px;
+    min-height: 35px;
     line-height: 20px;
     transition: all 0.5s;
     display: flex;
@@ -3929,7 +3929,8 @@ body.lightmode .newsletter-layout {
 }
 
 .footer-content-spacer {
-    height: 120px;
+    /* height: 120px; */
+    height: 60px;
 }
 
 .social-item:hover {
@@ -6007,4 +6008,23 @@ body.lightmode .cta-service-banner::before {
 
 .error-field::placeholder {
     color: #e63946 !important;
+}
+
+.accordion-collapse {
+    transition: all 0.3s ease;
+}
+
+.accordion-collapse.collapsing {
+    height: auto !important;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.accordion-collapse.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.accordion-button {
+    transition: all 0.3s ease;
 }

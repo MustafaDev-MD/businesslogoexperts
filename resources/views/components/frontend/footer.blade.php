@@ -19,7 +19,7 @@
                         </div>
 
                         <!-- Quick Links -->
-                        <div class="col col-xl-2">
+                        <div class="col col-xl-2 offset-2">
                             <div class="footer-quick-links">
                                 <h5>Quick Links</h5>
                                 <ul class="footer-list">
@@ -34,16 +34,10 @@
                         </div>
 
                         <!-- Services -->
-                        <div class="col col-xl-3">
+                        <!-- <div class="col col-xl-3">
                             <div class="footer-services-container">
                                 <h5>Services</h5>
                                 <ul class="footer-list">
-                                    <!-- <li><a href="{{ route('single-service', ['slug' => 'social-media-marketing']) }}">Social Media Marketing</a></li>
-                                    <li><a href="{{ route('single-service', ['slug' => 'seo-optimization']) }}">SEO Optimization</a></li>
-                                    <li><a href="{{ route('single-service', ['slug' => 'ppc-advertising']) }}">PPC Advertising</a></li>
-                                    <li><a href="{{ route('single-service', ['slug' => 'content-marketing']) }}">Content Marketing</a></li>
-                                    <li><a href="{{ route('single-service', ['slug' => 'branding-strategy']) }}">Branding Strategy</a></li>
-                                    <li><a href="{{ route('single-service', ['slug' => 'email-marketing']) }}">Email Marketing</a></li> -->
                                     @foreach(config('custom_services') as $service)
                                     @if(isset($service['slug']) && isset($service['name']))
                                     <li>
@@ -55,10 +49,10 @@
                                     @endforeach
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Contact & Social -->
-                        <div class="col col-xl-3">
+                        <div class="col col-xl-3 offset-1">
                             <div class="footer-contact-container">
                                 <h5>Contact Info</h5>
                                 <ul class="contact-list">
