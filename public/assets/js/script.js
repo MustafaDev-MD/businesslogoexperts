@@ -738,15 +738,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.querySelectorAll('.accordion-collapse').forEach(el => {
-    el.addEventListener('show.bs.collapse', function () {
-        this.style.maxHeight = this.scrollHeight + "px";
-    });
-
-    el.addEventListener('hide.bs.collapse', function () {
-        this.style.maxHeight = this.scrollHeight + "px";
-        setTimeout(() => {
-            this.style.maxHeight = "0px";
-        }, 10);
-    });
-});
