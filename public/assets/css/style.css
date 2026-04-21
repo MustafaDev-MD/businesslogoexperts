@@ -4373,7 +4373,12 @@ body.lightmode .newsletter-layout {
 .accordion {
     display: flex;
     flex-direction: column;
-    gap: 20px 20px;
+    /* gap: 20px 20px; */
+    gap: 10px;
+}
+
+.accordion-header{
+    margin-bottom: 10px;
 }
 
 .accordion .accordion-item {
