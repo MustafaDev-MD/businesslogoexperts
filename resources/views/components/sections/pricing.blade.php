@@ -4,9 +4,9 @@
             <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
                 <div class="sub-heading align-self-center">
                     <i class="fa-regular fa-circle-dot"></i>
-                    <span>Our Core Services</span>
+                    <span>Our Service Plans</span>
                 </div>
-                <h2 class="title-heading heading-container heading-container-short">Flexible Pricing Plans<br> for Every Business</h2>
+                <h2 class="title-heading heading-container heading-container-short">Flexible plans for brands<br> at every stage</h2>
             </div>
             <div class="row row-cols-xl-3 row-cols-1 grid-spacer-2">
                 <div class="col">
@@ -16,7 +16,7 @@
                             <div class="content">
                                 <h3 class="title-heading">Let's Find the Right Strategy for You!</h3>
                                 <div class="link-wrapper">
-                                    <a href=".contact.html">Book a Free Consultation</a>
+                                    <a href="{{ route('contact') }}">Book a Free Consultation</a>
                                     <i class="fa-solid fa-arrow-circle-right"></i>
                                 </div>
                             </div>
@@ -26,11 +26,11 @@
                             <p>Perfect for startups & small businesses</p>
                             <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                 <h3>
-                                    $99
+                                    $1,999
                                 </h3>
                                 <p>/Month</p>
                             </div>
-                            <a href="#" class="btn btn-accent">
+                            <a href="{{ route('single-service', 'branding') }}#pricing" class="btn btn-accent">
                                 <div class="btn-title">
                                     <span>View Details</span>
                                 </div>
@@ -39,9 +39,9 @@
                                 </div>
                             </a>
                             <ul class="check-list">
-                                <li><a href="javascript:void(0)">Basic SEO & Marketing</a></li>
-                                <li><a href="javascript:void(0)">Social Media Management (1 Platform)</a></li>
-                                <li><a href="javascript:void(0)">Monthly Performance Report</a></li>
+                                <li><a href="javascript:void(0)">Basic SEO support</a></li>
+                                <li><a href="javascript:void(0)">Social media management</a></li>
+                                <li><a href="javascript:void(0)">Monthly reporting</a></li>
                             </ul>
                         </div>
                     </div>
@@ -53,11 +53,11 @@
                         <p>Full scale marketing for maximum impact</p>
                         <div class="d-flex flex-row gspace-1 align-items-center">
                             <h3>
-                                $399
+                                $12,000
                             </h3>
                             <p>/Month</p>
                         </div>
-                        <a href="#" class="btn btn-accent">
+                        <a href="{{ route('single-service', 'website-development') }}#pricing" class="btn btn-accent">
                             <div class="btn-title">
                                 <span>View Details</span>
                             </div>
@@ -80,12 +80,10 @@
                             </div>
                         </div>
                         <ul class="check-list">
-                            <li><a href="javascript:void(0)">Complate Digital Marketing Suite</a></li>
-                            <li><a href="javascript:void(0)">Paid Ads Management</a></li>
-                            <li><a href="javascript:void(0)">Dedicated Account Manager</a></li>
-                            <li><a href="javascript:void(0)">Email Marketing & Automation</a></li>
-                            <li><a href="javascript:void(0)">Dedicated Account Manager</a></li>
-                            <li><a href="javascript:void(0)">Weekly Performance insights</a></li>
+                            <li><a href="javascript:void(0)">Full digital strategy</a></li>
+                            <li><a href="javascript:void(0)">Dedicated account support</a></li>
+                            <li><a href="javascript:void(0)">Priority delivery</a></li>
+                            <li><a href="javascript:void(0)">Advanced performance reporting</a></li>
                         </ul>
                     </div>
                 </div>
@@ -93,18 +91,18 @@
                     <div class="pricing-container">
                         <div class="card pricing-highlight-box animate-box animated animate__animated" data-animate="animate__fadeInRight">
                             <div class="d-flex flex-column gspace-2 w-100">
-                                <h5>Your Growth, Our Priority!</h5>
+                                <h5>Your growth, our priority</h5>
                                 <div class="d-flex flex-column gspace-2">
                                     <div class="pricing-highlights">
-                                        <a href="javascript:void(0)">Data-Driven Digital Marketing</a>
+                                        <a href="javascript:void(0)">Strategy tailored to your goals</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <a href="javascript:void(0)">Proven Strategies for Higher</a>
+                                        <a href="javascript:void(0)">Clear communication at every step</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <a href="javascript:void(0)">Scalable Solution for Every Business</a>
+                                        <a href="javascript:void(0)">Scalable solutions for growth</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                 </div>
@@ -113,14 +111,14 @@
                         </div>
                         <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
                             <h4>Growth</h4>
-                            <p>Best for growing businesses ready</p>
+                            <p>Perfect for startups & small businesses</p>
                             <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                 <h3>
-                                    $299
+                                    $14,000
                                 </h3>
                                 <p>/Month</p>
                             </div>
-                            <a href="#" class="btn btn-accent">
+                            <a href="{{ route('single-service', 'app-development') }}#pricing" class="btn btn-accent">
                                 <div class="btn-title">
                                     <span>View Details</span>
                                 </div>
@@ -129,9 +127,10 @@
                                 </div>
                             </a>
                             <ul class="check-list">
-                                <li><a href="javascript:void(0)">Basic SEO & Marketing</a></li>
-                                <li><a href="javascript:void(0)">Social Media Management (1 Platform)</a></li>
-                                <li><a href="javascript:void(0)">Monthly Performance Report</a></li>
+                                <li><a href="javascript:void(0)">Core SEO strategy</a></li>
+                                <li><a href="javascript:void(0)">Social media management</a></li>
+                                <li><a href="javascript:void(0)">Performance tracking</a></li>
+                                <li><a href="javascript:void(0)">Ongoing content support</a></li>
                             </ul>
                         </div>
                     </div>

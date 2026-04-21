@@ -25,7 +25,7 @@
                                             <span class="counter" data-target="90"></span>
                                             <span class="counter-detail">%</span>
                                         </div>
-                                        <p>Improved Project</p>
+                                        <p>Client satisfaction</p>
                                     </div>
                                     <div class="underline-vertical"></div>
                                     <div class="d-flex flex-column justify-content-center align-items-center gspace-1">
@@ -33,18 +33,18 @@
                                             <span class="counter" data-target="49"></span>
                                             <span class="counter-detail">%</span>
                                         </div>
-                                        <p>New Project</p>
+                                        <p>Repeat projects</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-center gspace-2">
                                 <div class="testimonial-header-link-wrapper">
                                     <i class="fa-regular fa-circle-check accent-color"></i>
-                                    <a href="javascript:void(0)">Social Media Growth</a>
+                                    <a href="javascript:void(0)">Brand growth</a>
                                 </div>
                                 <div class="testimonial-header-link-wrapper">
                                     <i class="fa-regular fa-circle-check accent-color"></i>
-                                    <a href="javascript:void(0)">Performance Marketing</a>
+                                    <a href="javascript:void(0)">Performance focus</a>
                                 </div>
                             </div>
                         </div>
@@ -55,10 +55,10 @@
                         <div class="card-testimonial-header-title">
                             <div class="sub-heading">
                                 <i class="fa-regular fa-circle-dot"></i>
-                                <span>What Our Client Says</span>
+                                <span>What clients say</span>
                             </div>
-                            <h2 class="title-heading">Hear from Our Satisfied Clients, Real Success Stories</h2>
-                            <p>Discover how businesses like yours achieved outstanding growth with Marko's expert digital marketing solutions.</p>
+                            <h2 class="title-heading">Real partnerships. Real momentum.</h2>
+                            <p>Our clients come to us for clarity, consistency, and work that supports measurable progress. Here’s a look at how they describe the experience.</p>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                                         <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                     </div>
                                     <p class="testimonial-description">
-                                        “We've worked with many agencies before, but Marko stands out. Their data-driven approach and creative solutions gave us an edge over competitors.”
+                                        “Business Logo Experts brought structure to our brand and clarity to our messaging. The result was a stronger identity and a smoother marketing process.”
                                     </p>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                                         <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                     </div>
                                     <p class="testimonial-description">
-                                        “From SEO to paid ads, Marko nailed every aspect of our campaign. Our website traffic skyrocketed, and lead generation has never been better!”
+                                        “They understood our goals quickly and turned them into work that felt thoughtful, modern, and ready to launch. The process was easy and the result felt elevated.”
                                     </p>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                                         <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                     </div>
                                     <p class="testimonial-description">
-                                        “Highly professional and results-oriented. Marko's expertise in branding and content marketing helped us build a strong online identity.”
+                                        “We needed a team that could handle both strategy and execution. They delivered work that improved how our brand shows up and how our audience responds.”
                                     </p>
                                 </div>
                             </div>

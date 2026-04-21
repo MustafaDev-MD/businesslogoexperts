@@ -12,22 +12,22 @@
             </div>
             <div class="hero-container position-relative">
                 <div class="d-flex flex-column gspace-2">
-                    <h1 class="title-heading-banner animate-box animated animate__animated" data-animate="animate__fadeInLeft">Amplify Your Brand with Cutting-Edge Digital Marketing</h1>
+                    <h1 class="title-heading-banner animate-box animated animate__animated" data-animate="animate__fadeInLeft">Build a brand people remember.</h1>
                     <div class="banner-heading">
                         <div class="banner-video-content order-xl-1 order-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
                             <div class="d-flex flex-column flex-xl-row text-xl-start text-center align-items-center gspace-5">
-                                <button class="request-loader" data-video="https://www.youtube.com/embed/VhBl3dHT5SY?autoplay=1"><i class="fa-solid fa-play"></i></button>
+                                <!-- <button class="request-loader" data-video="https://www.youtube.com/embed/VhBl3dHT5SY?autoplay=1"><i class="fa-solid fa-play"></i></button> -->
                                 <p>
-                                    Watch our video reviews and see how businesses achieve success with Marko's digital marketing solutions.
+                                Strategy-led digital work for brands that want clarity and momentum.
                                 </p>
                             </div>
                         </div>
                         <div class="banner-content order-xl-2 order-1  animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                            <p>Marko empowers businesses to grow online with data driven digital marketing, innovative branding, and performance focused strategies trusted by top brands lorem ipsum dolor sit amet consectetur.</p>
+                            <p>We create branding, websites, apps, motion, AI systems, SEO, and social campaigns that look sharp, feel human, and deliver measurable growth.</p>
                             <div class="d-flex flex-md-row flex-column justify-content-center justify-content-xl-start align-self-center align-self-xl-start gspace-3">
                                 <a href="{{ route('about') }}" class="btn btn-accent">
                                     <div class="btn-title">
-                                        <span>Get Started</span>
+                                        <span>Start a Project</span>
                                     </div>
                                     <div class="icon-circle">
                                         <i class="fa-solid fa-arrow-right"></i>
@@ -40,8 +40,8 @@
                                         <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Reviewer" class="avatar">
                                     </div>
                                     <div class="detail">
-                                        <span>2.7k Positive</span>
-                                        <span>Reviews</span>
+                                        <span>Trusted by growing</span>
+                                        <span>brands worldwide</span>
                                     </div>
                                 </div>
                             </div>
@@ -63,11 +63,13 @@
                             <div class="d-flex flex-column">
                                 <div class="card-expertise-wrapper">
                                     <div class="card card-expertise  animate-box animated animate__animated" data-animate="animate__fadeInDown">
-                                        <h4>Ready to Elevate Your Digital Presence?</h4>
-                                        <p>Let's create a custom strategy that fits your business goals.</p>
+                                        <h4>Ready to upgrade your presence?</h4>
+                                        <p>Let’s shape a digital strategy that reflects your brand, supports your goals, and gives your audience a reason to stay.</p>
                                         <div class="d-flex align-items-center flex-row gspace-2 expertise-link">
-                                            <a href="{{ route('contact') }}">Get Free Consultation</a>
-                                            <i class="fa-solid fa-circle-arrow-right"></i>
+                                            <a href="{{ route('contact') }}">
+                                                Book a Free Call
+                                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -80,13 +82,13 @@
                 <div class="expertise-title">
                     <div class="sub-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">
                         <i class="fa-regular fa-circle-dot"></i>
-                        <span>Our Expertise</span>
+                        <span>Our Strength</span>
                     </div>
-                    <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">Data Driven Strategies, Measurable Results</h2>
-                    <p>At Marko, we specialize in crafting innovative digital marketing strategies that drive real business growth. Our expertise ensures your brand stays ahead in the competitive digital landscape.</p>
+                    <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">Creative systems built for real business outcomes.</h2>
+                    <p>Business Logo Experts helps brands move with more clarity, confidence, and consistency. We bring design thinking, technical execution, and performance strategy together so every project feels polished and every launch has purpose. From first impression to final action, we build experiences that do more than look good.</p>
                     <div class="d-flex flex-column flex-md-row gspace-2">
                         <div class="expertise-list">
-                            <h5>What We Do Best</h5>
+                            <h5>What We Focus On</h5>
                             <!-- @php
                             $services = [
                             ['name'=>'Performance Marketing','slug'=>'performance-marketing'],
@@ -120,9 +122,9 @@
                                     <span class="counter" data-target="21"></span>
                                     <span class="counter-detail">+</span>
                                 </div>
-                                <h6>Years of Experience on Digital Marketing Services</h6>
+                                <h6>Years building digital solutions</h6>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit in ex ligula varius at rutrum et finibus sed felis qisque.</p>
+                            <p>We combine visual craft with practical execution to help businesses launch stronger, communicate better, and grow faster.</p>
                         </div>
                     </div>
                 </div>
@@ -144,12 +146,11 @@
     @include('components.sections.partner')
 
     <!-- Section Why Choose Us -->
-    <div class="section">
+    <!-- <div class="section">
         <div class="hero-container">
             <div class="d-flex flex-column flex-xl-row gspace-5">
                 <div class="chooseus-card-container">
                     <div class="d-flex flex-column gspace-2">
-                        <!-- Cards Repeated, links updated -->
                         @foreach([['icon'=>'Icon-2.png','title'=>'Data-Driven Approach','desc'=>'Every decision is backed by real-time analytics for maximum impact.'],
                         ['icon'=>'icon-1.png','title'=>'Creative & Innovative','desc'=>'Cutting-edge marketing techniques to keep you ahead of the competition.'],
                         ['icon'=>'Icon-3.png','title'=>'Transparent Reporting','desc'=>'Clear insights and performance tracking, so you always know your ROI.']] as $item)
@@ -207,13 +208,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Section Service -->
     @include('components.sections.service')
 
     <!-- Section Case Studies -->
-    @include('components.sections.case-studies')
+    {{-- @include('components.sections.case-studies') --}}
 
     <!-- Section Testimonial -->
     @include('components.sections.testimonial')

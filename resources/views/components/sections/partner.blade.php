@@ -6,14 +6,13 @@
             <div class="row row-cols-xl-2 row-cols-1 align-items-center px-5 position-relative z-2">
                 <div class="col">
                     <div class="d-flex flex-column justify-content-start pe-xl-3 pe-0">
-                        <h3 class="title-heading">Powering Success for Top Brands</h3>
+                        <h3 class="title-heading">Helping brands grow with confidence</h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex flex-column ps-xl-3 ps-0">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ligula, varius at rutrum et, finibus sed felis.
-                            Quisque eget tincidunt lectus. Sed quis diam sed neque mattis feugiat.
+                            We work with businesses that want more than a pretty website or a quick logo. Our focus is building brand presence that feels coherent, modern, and built to perform across every channel.
                         </p>
                     </div>
                 </div>

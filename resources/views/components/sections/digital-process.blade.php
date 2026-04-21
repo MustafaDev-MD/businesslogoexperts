@@ -8,15 +8,15 @@
                         <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInDown">
                             <div class="sub-heading">
                                 <i class="fa-regular fa-circle-dot"></i>
-                                <span>How it Work</span>
+                                <span>How It Works</span>
                             </div>
-                            <h2 class="title-heading">Simple Steps to Digital Success</h2>
+                            <h2 class="title-heading">A simple process built to move you forward</h2>
                         </div>
                     </div>
                     <div class="col">
                         <div class="d-flex flex-column gspace-2 justify-content-end h-100  animate-box animated fast animate__animated" data-animate="animate__fadeInDown">
                             <p>
-                                Our streamlined process ensures your digital growth is seamless and effective. ipsum dolor sit amet, consectetur adipiscing elit. In ex ligula, varius at rutrum et, finibus sed felis.
+                                We keep the process clear, efficient, and collaborative so you always know what is happening, what comes next, and how each step supports your goals.
                             </p>
                             <div class="link-wrapper">
                                 <a href="{{ route('contact') }}">Get Started Now</a>
@@ -37,9 +37,9 @@
                                         <span>01</span>
                                     </div>
                                     <div class="d-flex flex-column gspace-2">
-                                        <h5>Discovery & Consult</h5>
+                                        <h5>Discover</h5>
                                         <p>
-                                            Lorem ipsum dol consectetur adipiscing elit ut elit tell luctus nec ullamcorper mattis
+                                            We learn about your brand, your audience, and the results you want to achieve.
                                         </p>
                                     </div>
                                 </div>
@@ -55,9 +55,9 @@
                                             <span>02</span>
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
-                                            <h5>Strategy & Planning</h5>
+                                            <h5>Plan</h5>
                                             <p>
-                                                Lorem ipsum dol consectetur adipiscing elit ut elit tell luctus nec ullamcorper mattis
+                                                We shape the strategy, structure, and creative direction around your priorities.
                                             </p>
                                         </div>
                                     </div>
@@ -74,9 +74,9 @@
                                             <span>03</span>
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
-                                            <h5>Execution & Optimize</h5>
+                                            <h5>Build</h5>
                                             <p>
-                                                Lorem ipsum dol consectetur adipiscing elit ut elit tell luctus nec ullamcorper mattis
+                                                We design, develop, and refine the work with focus on quality and performance.
                                             </p>
                                         </div>
                                     </div>
@@ -93,9 +93,9 @@
                                             <span>04</span>
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
-                                            <h5>Result & Growth</h5>
+                                            <h5>Improve</h5>
                                             <p>
-                                                Lorem ipsum dol consectetur adipiscing elit ut elit tell luctus nec ullamcorper mattis
+                                                We launch, review the results, and continue optimizing for stronger outcomes.
                                             </p>
                                         </div>
                                     </div>

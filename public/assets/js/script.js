@@ -737,16 +737,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const accordion = document.getElementById('faqAccordion1');
-    
-    if (accordion) {
-        accordion.addEventListener('hide.bs.collapse', function() {
-            // Extra smooth closing
-        });
-        
-        accordion.addEventListener('shown.bs.collapse', function() {
-            // After open
-        });
-    }
-});

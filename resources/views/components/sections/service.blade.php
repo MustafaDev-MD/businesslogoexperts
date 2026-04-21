@@ -6,7 +6,7 @@
                     <i class="fa-regular fa-circle-dot"></i>
                     <span>Our Core Services</span>
                 </div>
-                <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown">Digital Solutions That<br> Drive Real Results</h2>
+                <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown">Digital solutions that help<br> brands move forward</h2>
             </div>
 
             <div class="card-service-wrapper">
@@ -28,7 +28,7 @@
                                     <h4>{{ $service['name'] }}</h4>
                                 </div>
                             </div>
-                            <p>Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.</p>
+                            <p>{{ $service['info'] }}</p>
                             <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent">
                                 <div class="btn-title"><span>View Details</span></div>
                                 <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
@@ -45,7 +45,7 @@
             </a>
 
             <div class="service-link-footer">
-                <p>Need a custom solution? Let's create a strategy tailored for your business. <a href="{{ route('contact') }}">Get a Free Strategy Call</a></p>
+                <p>Need something tailored? Let’s shape a solution around your goals. <a href="{{ route('contact') }}">Start a Strategy Call</a></p>
             </div>
         </div>
     </div>
