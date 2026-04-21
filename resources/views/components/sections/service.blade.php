@@ -28,7 +28,9 @@
                                     <h4>{{ $service['name'] }}</h4>
                                 </div>
                             </div>
+                            @if(!empty($service['info']))
                             <p>{{ $service['info'] }}</p>
+                            @endif
                             <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent">
                                 <div class="btn-title"><span>View Details</span></div>
                                 <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
