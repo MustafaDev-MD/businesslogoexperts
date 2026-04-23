@@ -35,9 +35,9 @@
                                 </a>
                                 <div class="banner-reviewer">
                                     <div class="d-flex flex-row align-items-center">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/client-review-1.webp') }}" alt="Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/client-review-3.webp') }}" alt="Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/client-review-2.webp') }}" alt="Reviewer" class="avatar">
                                     </div>
                                     <div class="detail">
                                         <span>Trusted by growing</span>

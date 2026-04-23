@@ -10,8 +10,8 @@
                                 <div class="testimonial-reviewer">
                                     <div class="avatar-container">
                                         <img src="{{ asset('assets/image/emma-richard.webp') }}" alt="Testimonial Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/david-mont.webp') }}" alt="Testimonial Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/sophia-lewis.webp') }}" alt="Testimonial Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/client-review-1.webp') }}" alt="Testimonial Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/client-review-3.webp') }}" alt="Testimonial Reviewer" class="avatar">
                                         <img src="{{ asset('assets/image/james-peterson.webp') }}" alt="Testimonial Reviewer" class="avatar">
                                     </div>
                                     <div class="detail">
