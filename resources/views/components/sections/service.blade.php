@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             @if(!empty($service['info']))
-                            <p>{{ $service['info'] }}</p>
+                                <p>{{ $service['info'] }}</p>
                             @endif
                             <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent">
                                 <div class="btn-title"><span>View Details</span></div>

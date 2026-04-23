@@ -58,7 +58,7 @@
             <div class="d-flex flex-column flex-xl-row gspace-5">
                 <div class="expertise-img-layout">
                     <div class="image-container expertise-img">
-                        <img src="{{ asset('assets/image/dummy-img-600x400.jpg') }}" alt="Expertise Image" class="img-fluid  animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <img src="{{ asset('assets/image/our-strength.webp') }}" alt="Expertise Image" class="img-fluid  animate-box animated animate__animated" data-animate="animate__fadeInUp">
                         <div class="expertise-layout">
                             <div class="d-flex flex-column">
                                 <div class="card-expertise-wrapper">

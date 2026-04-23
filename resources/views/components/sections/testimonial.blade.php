@@ -9,10 +9,10 @@
                             <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-3">
                                 <div class="testimonial-reviewer">
                                     <div class="avatar-container">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Reviewer" class="avatar">
-                                        <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/emma-richard.webp') }}" alt="Testimonial Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/david-mont.webp') }}" alt="Testimonial Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/sophia-lewis.webp') }}" alt="Testimonial Reviewer" class="avatar">
+                                        <img src="{{ asset('assets/image/james-peterson.webp') }}" alt="Testimonial Reviewer" class="avatar">
                                     </div>
                                     <div class="detail">
                                         <h6>2.7k Positive</h6>
@@ -79,7 +79,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/emma-richard.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">Emma Richard</span>
@@ -105,7 +105,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/david-mont.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">David Mont</span>
@@ -131,7 +131,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/sophia-lewis.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">Sophia Lewis</span>
@@ -157,7 +157,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/james-peterson.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">James Peterson</span>
@@ -183,7 +183,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/emma-richard.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">Emma Richard</span>
@@ -209,7 +209,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/david-mont.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">David Mont</span>
@@ -219,7 +219,7 @@
                                         <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                     </div>
                                     <p class="testimonial-description">
-                                        “We've worked with many agencies before, but Marko stands out. Their data-driven approach and creative solutions gave us an edge over competitors.”
+                                        “Business Logo Experts brought structure to our brand and clarity to our messaging. The result was a stronger identity and a smoother marketing process.”
                                     </p>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/sophia-lewis.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">Sophia Lewis</span>
@@ -245,7 +245,7 @@
                                         <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                     </div>
                                     <p class="testimonial-description">
-                                        “From SEO to paid ads, Marko nailed every aspect of our campaign. Our website traffic skyrocketed, and lead generation has never been better!”
+                                        “They understood our goals quickly and turned them into work that felt thoughtful, modern, and ready to launch. The process was easy and the result felt elevated.”
                                     </p>
                                 </div>
                             </div>
@@ -261,7 +261,7 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/dummy-img-400x400.jpg') }}" alt="Testimonial Person Image" class="img-fluid">
+                                                <img src="{{ asset('assets/image/james-peterson.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <span class="profile-name">James Peterson</span>
@@ -271,7 +271,7 @@
                                         <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                     </div>
                                     <p class="testimonial-description">
-                                        “Highly professional and results-oriented. Marko's expertise in branding and content marketing helped us build a strong online identity.”
+                                        “We needed a team that could handle both strategy and execution. They delivered work that improved how our brand shows up and how our audience responds.”
                                     </p>
                                 </div>
                             </div>
