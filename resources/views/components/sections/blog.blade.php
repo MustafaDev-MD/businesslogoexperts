@@ -33,7 +33,7 @@
 
                             <!-- Image -->
                             <div class="blog-image">
-                                <img src="{{ asset($post['image']) }}" alt="Blog Image">
+                                <img src="{{ asset($post['image']) }}" alt="{{ $post['alt-text'] }}">
                             </div>
 
                             <!-- Content -->

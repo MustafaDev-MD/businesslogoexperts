@@ -26,7 +26,7 @@
                             <div class="d-flex flex-row w-100 gspace-1 mb-2">
 
                                 <div class="image-container">
-                                    <img src="{{ asset($item['image']) }}" class="img-fluid">
+                                    <img src="{{ asset($item['image']) }}" alt="{{ $post['alt-text'] }}" class="img-fluid">
                                 </div>
 
                                 <div class="d-grid">
@@ -73,7 +73,7 @@
 
                         <!-- Image -->
                         <div class="post-image">
-                            <img src="{{ asset($post['image']) }}" class="img-fluid">
+                            <img src="{{ asset($post['image']) }}" alt="{{ $post['alt-text'] }}" class="img-fluid">
                         </div>
 
                         <!-- Title -->

@@ -13,6 +13,7 @@ return [
 
 
         'image' => 'assets/image//blog/how-to-uild-a-brand-system-that-scales.webp',
+        'alt-text' => 'How to Build a Brand<br> System That Scales',
 
         'date' => 'April 14, 2025',
         'category' => 'Branding',
@@ -75,6 +76,7 @@ return [
         'description' => 'Discover what turns a website into a conversion machine.',
 
         'image' => 'assets/image/blog/what-makes-a-website-actually-convert.webp',
+        'alt-text' => 'What Makes a Website Actually Convert?',
 
         'date' => 'April 14, 2025',
         'category' => 'Web Development',
@@ -148,6 +150,7 @@ return [
         'description' => 'Learn how AI agents actually improve business workflows and efficiency.',
 
         'image' => 'assets/image//blog/where-aI-agents-create-real-business-value.webp',
+        'alt-text' => 'Where AI Agents Create Real Business Value',
 
         'date' => 'April 14, 2025',
         'category' => 'AI Agents',
