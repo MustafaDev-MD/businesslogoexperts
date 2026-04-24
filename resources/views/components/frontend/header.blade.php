@@ -96,7 +96,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('blog') }}">Blog</a></li>
-                            <li><a class="dropdown-item" href="{{ route('single-post') }}">Single Post</a></li>
+                            {{-- <li><a class="dropdown-item" href="{{ route('single-post') }}">Single Post</a></li> --}}
                         </ul>
                     </li> -->
 

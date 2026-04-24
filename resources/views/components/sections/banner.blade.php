@@ -27,7 +27,8 @@
         <div class="banner-layout">
             <div class="d-flex flex-column text-center align-items-center gspace-2">
                 <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                    {{ $title }}
+                    {{-- {{ $title }} --}}
+                    {!! $title !!}
                 </h2>
                 <nav class="breadcrumb">
                     <a href="{{ route('home') }}" class="gspace-2">Home</a>

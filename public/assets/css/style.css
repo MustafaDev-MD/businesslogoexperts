@@ -1681,13 +1681,13 @@ body.lightmode .digital-process-banner {
     display: inline-block;
     -webkit-background-clip: text;
     background-color: transparent;
-    background-image: linear-gradient(284deg, var(--accent-transparent) 3%, var(--primary) 100%);
+    background-image: linear-gradient(329deg, var(--accent-transparent) 3%, var(--primary) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
 }
 
 body.lightmode .title-heading {
-    background-image: linear-gradient(284deg, var(--primary) 100%, var(--primary) 100%);
+    background-image: linear-gradient(329deg, var(--primary) 100%, var(--primary) 100%);
 }
 
 .banner-heading {
@@ -3181,7 +3181,7 @@ body.lightmode .case-studies-content::before {
 .blog-link-post {
     font-size: var(--font-size-xl);
     color: var(--primary);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-normal);
 }
 
 .meta-data {
@@ -4997,7 +4997,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .title-heading-banner {
-        background-image: linear-gradient(340deg, #ffffff24  10%, var(--primary) 100%);
+        background-image: linear-gradient(329deg, #ffffff24  10%, var(--primary) 100%);
     }
 
     .about-img-layout {

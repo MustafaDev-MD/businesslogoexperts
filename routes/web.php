@@ -23,7 +23,8 @@ Route::controller(FrontendController::class)->group(function () {
 
     // Blog pages
     Route::get('/blog', 'blog')->name('blog');
-    Route::get('/single-post', 'singlePost')->name('single-post');
+    Route::get('/blog/{slug}', 'singlePost')->name('single-post');
+    // Route::get('/single-post', 'singlePost')->name('single-post');
 
     // Case Studies
     Route::get('/case-studies', 'caseStudies')->name('case-studies');

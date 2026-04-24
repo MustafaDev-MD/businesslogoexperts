@@ -34,9 +34,24 @@ class FrontendController extends Controller
     }
 
     // Single blog post page
-    public function singlePost()
+    public function singlePost($slug)
     {
-        return view('frontend.single-post');
+        $posts = config('blog_posts');
+
+        $post = collect($posts)->firstWhere('slug', $slug);
+
+        if (!$post) {
+            abort(404);
+        }
+
+        $recent = collect($posts)
+            ->reject(function ($item) use ($slug) {
+                return $item['slug'] === $slug;
+            })
+            ->take(2)
+            ->values();
+
+        return view('frontend.single-post', compact('post', 'recent'));
     }
 
     // Case studies page
