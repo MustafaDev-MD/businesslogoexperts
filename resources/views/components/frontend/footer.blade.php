@@ -26,7 +26,7 @@
                                     <li><a href="{{ route('home') }}">Home</a></li>
                                     <li><a href="{{ route('about') }}">About Us</a></li>
                                     <li><a href="{{ route('services') }}">Services</a></li>
-                                    <li><a href="{{ route('case-studies') }}">Case Studies</a></li>
+                                    <!-- <li><a href="{{ route('case-studies') }}">Case Studies</a></li> -->
                                     <li><a href="{{ route('blog') }}">Blog</a></li>
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                 </ul>
@@ -69,11 +69,11 @@
                                                 <i class="fa-brands fa-facebook"></i>
                                             </a>
                                         </div>
-                                        <div class="social-item-wrapper">
+                                        <!-- <div class="social-item-wrapper">
                                             <a href="https://youtube.com" target="_blank" class="social-item">
                                                 <i class="fa-brands fa-youtube"></i>
                                             </a>
-                                        </div>
+                                        </div> -->
                                         <div class="social-item-wrapper">
                                             <a href="https://instagram.com" target="_blank" class="social-item">
                                                 <i class="fa-brands fa-instagram"></i>
