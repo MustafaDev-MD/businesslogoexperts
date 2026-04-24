@@ -12,7 +12,7 @@ return [
         'description' => 'Learn how to build a scalable brand system that drives recognition, trust, and growth.',
 
 
-        'image' => 'assets/image/dummy-img-600x400.jpg',
+        'image' => 'assets/image//blog/how-to-uild-a-brand-system-that-scales.webp',
 
         'date' => 'April 14, 2025',
         'category' => 'Branding',
@@ -74,7 +74,7 @@ return [
         'excerpt' => 'A good website does more than look polished. We break down the design, structure, and performance choices that help turn visitors into customers.',
         'description' => 'Discover what turns a website into a conversion machine.',
 
-        'image' => 'assets/image/dummy-img-600x400.jpg',
+        'image' => 'assets/image/blog/what-makes-a-website-actually-convert.webp',
 
         'date' => 'April 14, 2025',
         'category' => 'Web Development',
@@ -147,7 +147,7 @@ return [
         'excerpt' => 'AI should save time, reduce friction, and support better decisions. Here’s how to identify the workflows where automation actually pays off.',
         'description' => 'Learn how AI agents actually improve business workflows and efficiency.',
 
-        'image' => 'assets/image/dummy-img-600x400.jpg',
+        'image' => 'assets/image//blog/where-aI-agents-create-real-business-value.webp',
 
         'date' => 'April 14, 2025',
         'category' => 'AI Agents',

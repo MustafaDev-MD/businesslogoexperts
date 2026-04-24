@@ -147,10 +147,12 @@
         <div class="section pt-0">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1">
-                    <iframe loading="lazy" class="maps overflow-hidden col col-xl-7"
+                <div class="col col-xl-7">
+                    <iframe loading="lazy" class="maps package-form-maps overflow-hidden"
                         src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
                         title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom">
                     </iframe>
+                </div>
                     <div class="col col-xl-5">
                         <div class="contact-title-wrapper">
                             <div class="card contact-title">

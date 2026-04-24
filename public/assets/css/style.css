@@ -4500,13 +4500,17 @@ body.lightmode .accordion-button:not(.collapsed)::after {
 /* ================== 51. Maps Components ================== */
 
 .maps {
-    /* max-width: 100%; */
-    /* width: 100%; */
+    max-width: 100%;
+    width: 100%;
     line-height: 1;
-    /* height: 400px; */
+    height: 400px;
     filter: brightness(69%) contrast(200%) saturate(0%) blur(0px) hue-rotate(0deg);
     border-radius: var(--global-border-radius);
     overflow: hidden;
+}
+
+.package-form-maps{
+    height: -webkit-fill-available;
 }
 
 /* ================== 52. Single Service Components ================== */
@@ -4547,7 +4551,7 @@ body.lightmode .accordion-button:not(.collapsed)::after {
 /* ================== 53. CTA Service Banner Components ================== */
 
 .cta-service-banner {
-    background-image: url('../image/dummy-img-1920x900.jpg');
+    background-image: url('../image/about-us-image.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
