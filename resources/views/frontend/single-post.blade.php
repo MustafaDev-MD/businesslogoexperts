@@ -53,7 +53,7 @@
                         <div class="cta-service-banner">
                             <div class="spacer"></div>
                             <h3 class="title-heading">
-                                {{ $post['cta']['title'] ?? 'Transform Your Business with Marko!' }}
+                                {{ $post['cta']['title'] ?? 'Transform Your Business with Us!' }}
                             </h3>
                             <p>
                                 {{ $post['cta']['desc'] ?? 'Take your digital marketing to the next level.' }}
