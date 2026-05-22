@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactFormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PackageFormController;
@@ -46,7 +47,9 @@ Route::controller(FrontendController::class)->group(function () {
 Route::get('/package-form/{service}/{package}', [PackageFormController::class, 'index'])
     ->name('package.form');
     
-Route::post('/package-submit', [PackageFormController::class, 'submit'])->name('package.submit')->middleware('throttle:5,1');;
+Route::post('/package-submit', [PackageFormController::class, 'submit'])->name('package.submit')->middleware('throttle:5,1');
+
+Route::post('/contact-submit', [ContactFormController::class, 'submitContact'])->name('contact.submit')->middleware('throttle:5,1');
 
 // -----------------------------------------------------------------------------
 // 404 Page Route

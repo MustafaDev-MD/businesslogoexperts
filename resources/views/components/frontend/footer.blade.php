@@ -9,7 +9,9 @@
                         <div class="col col-xl-4">
                             <div class="footer-logo-container">
                                 <div class="logo-container-footer">
-                                    <img src="{{ asset('assets/image/logo.png') }}" alt="Logo" class="site-logo img-fluid">
+                                    <a href="{{ route('home') }}">
+                                        <img src="{{ asset('assets/image/logo.png') }}" alt="Logo" class="site-logo img-fluid">
+                                    </a>
                                 </div>
                                 <h4>Driving Digital Growth with Innovation & Strategy</h4>
                                 <p>

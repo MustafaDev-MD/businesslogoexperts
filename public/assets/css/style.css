@@ -184,13 +184,13 @@
 }
 
 /* ExtraBold - 800 */
-@font-face {
+/* @font-face {
     font-family: 'Neue-Jothama';
     src: url('../fonts/Neue-Jothama-ExtraBold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-}
+} */
 /* url('../fonts/Magox.woff2') format('woff2'), 
 url('../fonts/Magox.otf') format('opentype'),  */
 
@@ -424,7 +424,7 @@ h2 {
 }
 
 h3 {
-    font-size: var(--font-size-11xl);
+    font-size: var(--font-size-9xl);
     line-height: var(--line-height-snug);
 }
 
@@ -1684,6 +1684,7 @@ body.lightmode .digital-process-banner {
     background-image: linear-gradient(329deg, var(--accent-transparent) 3%, var(--primary) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
+    padding-bottom: 10px;
 }
 
 body.lightmode .title-heading {

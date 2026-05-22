@@ -84,8 +84,13 @@
                     <div class="form-layout-wrapper">
                         <div class="card form-layout">
                             <h3 class="title-heading">Let's Talk About Your Next Project</h3>
-                            <form action="#" method="POST" id="contactForm" class="form">
+                            <!-- <form action="#" method="POST" id="contactForm" class="form"> -->
+                            <!-- <form id="contactForm" action="{{ route('contact.submit') }}" method="POST" class="form">
                                 @csrf
+
+                                <input type="text" name="website" style="position:absolute; left:-9999px;">
+                                <input type="hidden" name="form_time" value="{{ time() }}">
+
                                 <div class="row row-cols-md-2 row-cols-1 g-3">
                                     <div class="col">
                                         <input type="text" name="first_name" id="first-name" placeholder="First Name" value="{{ old('first_name') }}">
@@ -97,7 +102,7 @@
 
                                 <div class="row row-cols-md-2 row-cols-1 g-3">
                                     <div class="col">
-                                        <input type="email" name="email" id="email" placeholder="Email Address" required value="{{ old('email') }}">
+                                        <input type="email" name="email" id="email" placeholder="Email Address"  value="{{ old('email') }}">
                                     </div>
                                     <div class="col">
                                         <input type="text" name="subject" id="subject" placeholder="Subject" value="{{ old('subject') }}">
@@ -116,7 +121,76 @@
                                         </span>
                                     </button>
                                 </div>
+                            </form> -->
+
+                            <form id="contactForm" action="{{ route('contact.submit') }}" method="POST" class="form">
+                                @csrf
+
+                                <!-- Honeypot -->
+                                <input type="text" name="website" style="position:absolute; left:-9999px;">
+
+                                <!-- Time protection -->
+                                <input type="hidden" name="form_time" value="{{ time() }}">
+
+                                <div class="row row-cols-md-2 row-cols-1 g-3">
+                                    <div class="col">
+                                        <input type="text"
+                                            name="first_name"
+                                            id="contact-first-name"
+                                            placeholder="First Name"
+                                            value="{{ old('first_name') }}"
+                                            required>
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="text"
+                                            name="last_name"
+                                            id="contact-last-name"
+                                            placeholder="Last Name"
+                                            value="{{ old('last_name') }}">
+                                    </div>
+                                </div>
+
+                                <div class="row row-cols-md-2 row-cols-1 g-3">
+                                    <div class="col">
+                                        <input type="email"
+                                            name="email"
+                                            id="contact-email"
+                                            placeholder="Email Address"
+                                            value="{{ old('email') }}"
+                                            required>
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="text"
+                                            name="subject"
+                                            id="contact-subject"
+                                            placeholder="Subject"
+                                            value="{{ old('subject') }}"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <textarea name="message"
+                                    id="contact-message"
+                                    rows="5"
+                                    placeholder="Message"
+                                    required>{{ old('message') }}</textarea>
+
+                                <div class="form-button-container">
+                                    <button type="submit" class="btn btn-accent">
+                                        <span class="btn-title">
+                                            <span>Send a Message</span>
+                                        </span>
+
+                                        <span class="icon-circle">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </form>
+
+                            <div class="gtoast-container" id="gtoastContainer"></div>
                         </div>
                     </div>
                 </div>
@@ -124,6 +198,138 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const form = document.getElementById("contactForm");
+
+            // Toast
+            function showToast(type, message) {
+                const container = document.getElementById("gtoastContainer");
+
+                const toast = document.createElement("div");
+
+                toast.className = "gtoast " + type;
+
+                toast.innerHTML = `
+            <div class="gtoast-icon">
+                ${type === 'success' ? '✓' : '✕'}
+            </div>
+
+            <div class="gtoast-msg">
+                ${message}
+            </div>
+        `;
+
+                const remove = () => {
+                    toast.classList.add("removing");
+                    setTimeout(() => toast.remove(), 250);
+                };
+
+                toast.addEventListener("click", remove);
+
+                container.appendChild(toast);
+
+                setTimeout(remove, 4000);
+            }
+
+            // Clear errors
+            function clearAllErrors() {
+                document.querySelectorAll(".error-field").forEach(el => {
+
+                    el.classList.remove("error-field");
+
+                    if (el.dataset.original) {
+                        el.placeholder = el.dataset.original;
+                        delete el.dataset.original;
+                    }
+                });
+            }
+
+            // Highlight field
+            function highlightField(key, message) {
+
+                const el = document.querySelector(`[name="${key}"]`);
+
+                if (!el) return;
+
+                el.classList.add("error-field");
+
+                if (!el.dataset.original) {
+                    el.dataset.original = el.placeholder;
+                }
+
+                el.placeholder = message;
+
+                el.focus();
+
+                el.addEventListener("input", function handler() {
+
+                    el.classList.remove("error-field");
+
+                    if (el.dataset.original) {
+                        el.placeholder = el.dataset.original;
+                        delete el.dataset.original;
+                    }
+
+                    el.removeEventListener("input", handler);
+                });
+            }
+
+            // Submit
+            form.addEventListener("submit", async function(e) {
+
+                e.preventDefault();
+
+                clearAllErrors();
+
+                try {
+
+                    const response = await fetch(form.action, {
+                        method: "POST",
+
+                        headers: {
+                            "X-Requested-With": "XMLHttpRequest",
+                            "Accept": "application/json",
+                            "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                        },
+
+                        body: new FormData(form)
+                    });
+
+                    const data = await response.json();
+
+                    // Success
+                    if (response.ok && data.status === "success") {
+
+                        showToast("success", data.message);
+
+                        form.reset();
+
+                        return;
+                    }
+
+                    // Validation
+                    if (response.status === 422 && data.errors) {
+
+                        const firstKey = Object.keys(data.errors)[0];
+
+                        const firstMessage = data.errors[firstKey][0];
+
+                        highlightField(firstKey, firstMessage);
+
+                        showToast("error", firstMessage);
+                    }
+
+                } catch (error) {
+
+                    showToast("error", "Something went wrong.");
+                }
+            });
+
+        });
+    </script>
 
     <!-- Section Maps -->
     <div class="section pt-0">

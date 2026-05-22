@@ -315,7 +315,8 @@
 
                             <!-- CTA Banner -->
                             <div class="cta-service-banner">
-                                <div class="spacer"></div>
+                                <!-- <div class="spacer"></div> -->
+                                <span>Featured article</span>
                                 <h3 class="title-heading">{{ $service['rightBlogTitle'] ?? 'Transform Your Business with Marko!' }}</h3>
                                 <p>{{ $service['rightBlogDes'] ?? 'Take your business to the next level with our solutions.' }}</p>
                                 <div class="link-wrapper">
@@ -657,7 +658,7 @@
                     </div>
                 </div>
                 <div class="col col-xl-7">
-                    
+
                     <div class="accordion accordion-flush" id="faqAccordion1">
                         @foreach($service['faqs'] as $index => $faq)
                         <div class="accordion-item">
@@ -671,12 +672,12 @@
                                     {{ $faq['question'] }}
                                 </button>
                             </h2>
-                            <div id="flush-collapse{{ $index + 1 }}" 
-                                 class="accordion-collapse collapse {{ $index == 0 ? 'show' : '' }}"
-                                 aria-labelledby="flush-heading{{ $index + 1 }}" 
-                                 data-bs-parent="#faqAccordion1">
+                            <div id="flush-collapse{{ $index + 1 }}"
+                                class="accordion-collapse collapse {{ $index == 0 ? 'show' : '' }}"
+                                aria-labelledby="flush-heading{{ $index + 1 }}"
+                                data-bs-parent="#faqAccordion1">
                                 <div class="accordion-body">
-                                <div class="accordion-spacer"></div>
+                                    <div class="accordion-spacer"></div>
                                     <p>{{ $faq['answer'] }}</p>
                                 </div>
                             </div>
@@ -688,9 +689,9 @@
             </div>
         </div>
     </div>
-@endif
+    @endif
 
-<!-- @if(!empty($service['faqs']))
+    <!-- @if(!empty($service['faqs']))
     <div class="section">
         <div class="hero-container">
             <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">

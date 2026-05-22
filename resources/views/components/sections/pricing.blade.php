@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                            <h4>Starter</h4>
+                            <h4>Starter - Branding</h4>
                             <p>Perfect for startups & small businesses</p>
                             <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                 <h3>
@@ -49,7 +49,7 @@
                 <div class="col">
                     <div class="card card-pricing pricing-highlight animate-box animated slow animate__animated" data-animate="animate__fadeInUp">
                         <div class="spacer"></div>
-                        <h4>Enterprise</h4>
+                        <h4>Enterprise - Web Development</h4>
                         <p>Full scale marketing for maximum impact</p>
                         <div class="d-flex flex-row gspace-1 align-items-center">
                             <h3>

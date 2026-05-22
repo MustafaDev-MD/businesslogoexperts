@@ -168,7 +168,7 @@ return [
 
         // Sidebar content (Blog + CTA)
 
-        'rightBlogTitle' => 'Featured article — How to turn a logo into a growth engine',
+        'rightBlogTitle' => 'How to turn a logo into a growth engine',
         'rightBlogDes' => 'A logo should do more than look good — it should guide product choices and reduce buyer friction. We break down three tests to make sure your identity works at scale.',
 
         'rightCTATitle' => 'Ready to make your brand do the heavy lifting',
@@ -467,7 +467,7 @@ return [
 
         // Sidebar content (Blog + CTA)
 
-        'rightBlogTitle' => 'Featured article — How to design a landing page that actually converts',
+        'rightBlogTitle' => 'How to design a landing page that actually converts',
         'rightBlogDes' => 'A practical checklist of UX, copy, and performance tweaks that move conversion metrics — with examples we’ve tested across dozens of launches.',
 
         'rightCTATitle' => 'Ready to ship a website that grows with your business?',
@@ -761,7 +761,7 @@ return [
         // SIDEBAR BLOG + CTA
         // -------------------------------------------------
 
-        'rightBlogTitle' => 'Featured article — Building mobile apps that retain: 5 design patterns that work',
+        'rightBlogTitle' => 'Building mobile apps that retain: 5 design patterns that work',
         'rightBlogDes' => 'Small changes to onboarding, push timing, and data sync can dramatically improve retention. We share tested patterns from recent launches.',
 
         'rightCTATitle' => 'Ready to build an app users actually keep?',
@@ -1052,7 +1052,7 @@ return [
         // SIDEBAR BLOG + CTA
         // -------------------------------------------------
 
-        'rightBlogTitle' => 'Featured article — Motion that moves metrics: A pragmatic checklist',
+        'rightBlogTitle' => 'Motion that moves metrics: A pragmatic checklist',
         'rightBlogDes' => 'Which animation choices actually improve comprehension and conversion? We share practical rules and experiments that show measurable wins.',
 
         'rightCTATitle' => 'Ready to bring your story to life in motion?',
@@ -1344,7 +1344,7 @@ return [
         // SIDEBAR BLOG + CTA
         // -------------------------------------------------
 
-        'rightBlogTitle' => 'Featured article — AI agents that actually save money: a practical framework',
+        'rightBlogTitle' => 'AI agents that actually save money: a practical framework',
         'rightBlogDes' => 'How to evaluate ROI, avoid common automation traps, and design agents that produce measurable results.',
 
         'rightCTATitle' => 'Ready to automate smarter?',
@@ -1636,7 +1636,7 @@ return [
         // SIDEBAR BLOG + CTA
         // -------------------------------------------------
 
-        'rightBlogTitle' => 'Featured article — The SEO checklist for modern product sites',
+        'rightBlogTitle' => 'The SEO checklist for modern product sites',
         'rightBlogDes' => 'A practical checklist that covers technical, content, and conversion steps you can run in a sprint to see measurable gains.',
 
         'rightCTATitle' => 'Ready to grow organic traffic that converts?',
@@ -1928,7 +1928,7 @@ return [
         // SIDEBAR BLOG + CTA
         // -------------------------------------------------
 
-        'rightBlogTitle' => 'Featured article — Creative tests that actually move metrics on social',
+        'rightBlogTitle' => 'Creative tests that actually move metrics on social',
         'rightBlogDes' => 'We share five creative experiments that consistently lower CAC and lift engagement across platforms.',
 
         'rightCTATitle' => 'Ready to turn social into a predictable channel?',

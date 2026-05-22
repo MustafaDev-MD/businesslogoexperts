@@ -13,7 +13,7 @@
             <div class="d-flex flex-column flex-xl-row gspace-5">
                 <div class="about-img-layout">
                     <div class="image-container about-img">
-                        <img src="{{ asset('assets/image/dummy-img-600x400.jpg') }}" alt="About Us Image" class="img-fluid animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <img src="{{ asset('assets/image/about-us.webp') }}" alt="About Us Image" class="img-fluid animate-box animated animate__animated" data-animate="animate__fadeInUp">
                         <div class="about-layout">
                             <div class="d-flex flex-column">
                                 <div class="card-about-wrapper">

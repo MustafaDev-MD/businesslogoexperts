@@ -51,8 +51,8 @@
 
                         <!-- CTA -->
                         <div class="cta-service-banner">
-                            <div class="spacer"></div>
-                            <h3 class="title-heading">
+                            <!-- <div class="spacer"></div> -->
+                            <h3 class="title-heading pb-3">
                                 {{ $post['cta']['title'] ?? 'Transform Your Business with Us!' }}
                             </h3>
                             <p>
