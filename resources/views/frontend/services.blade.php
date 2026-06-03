@@ -30,7 +30,7 @@
                                     <div>
                                         <div class="service-icon-wrapper">
                                             <div class="service-icon">
-                                                <img src="{{ asset('assets/image/Icon-7.png') }}" alt="Service Icon" class="img-fluid">
+                                                <img src="{{ asset($service['icon'] ?? 'assets/image/Icon-5.png') }}" alt="Service Icon" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -38,7 +38,9 @@
                                         <h4>{{ $service['name'] }}</h4>
                                     </div>
                                 </div>
-                                <p>Build brand awareness & engage your audience effectively lorem ipsum dolor sit amet consectetur adip.</p>
+                                @if(!empty($service['info']))
+                                    <p>{{ $service['info'] ?? 'NO INFO' }}</p>
+                                @endif
                                 <a href="{{ route('single-service', ['slug'=>$service['slug']]) }}" class="btn btn-accent">
                                     <div class="btn-title"><span>View Details</span></div>
                                     <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>

@@ -27,6 +27,7 @@ return [
 
         'name' => 'Branding',
         'info' => 'Build a stronger identity with systems that make your brand easier to remember, trust, and recognize.',
+        'icon' => 'assets/image/branding.png',
         'heading' => 'Branding',
         'slug' => 'branding',
         'parent' => 'Services',
@@ -325,6 +326,7 @@ return [
 
         'name' => 'Web Development',
         'info' => 'Create fast, polished websites and web apps that support your goals and give users a better experience.',
+        'icon' => 'assets/image/website-development.png',
         'heading' => 'Website Development',
         'slug' => 'website-development',
         'parent' => 'Services',
@@ -624,6 +626,7 @@ return [
 
         'name' => 'App Development',
         'info' => 'Design and develop mobile apps that feel smooth, useful, and ready for real-world growth.',
+        'icon' => 'assets/image/app-development.png',
         'heading' => 'App Development',
         'slug' => 'app-development',
         'parent' => 'Services',
@@ -915,6 +918,7 @@ return [
 
         'name' => 'Animation',
         'info' => 'Use motion to simplify ideas, strengthen storytelling, and make your brand feel more alive.',
+        'icon' => 'assets/image/animation-motion.png',
         'heading' => 'Animation & Motion',
         'slug' => 'animation-motion',
         'parent' => 'Services',
@@ -1206,6 +1210,7 @@ return [
 
         'name' => 'AI Agents',
         'info' => 'Automate repetitive work with smart AI tools that save time and improve how your business operates.',
+        'icon' => 'assets/image/ai-agents.png',
         'heading' => 'AI Agents',
         'slug' => 'ai-agents',
         'parent' => 'Services',
@@ -1498,6 +1503,7 @@ return [
 
         'name' => 'SEO',
         'info' => 'Grow your visibility in search with strategies that bring in the right traffic and support long-term growth.',
+        'icon' => 'assets/image/seo.png',
         'heading' => 'SEO',
         'slug' => 'seo',
         'parent' => 'Services',
@@ -1790,6 +1796,7 @@ return [
 
         'name' => 'Social Media',
         'info' => 'Turn social platforms into active brand channels that build awareness, engagement, and action.',
+        'icon' => 'assets/image/social-media.png',
         'heading' => 'Social Media',
         'slug' => 'social-media',
         'parent' => 'Services',
