@@ -220,7 +220,7 @@
     @include('components.sections.testimonial')
 
     <!-- Section Digital Process -->
-    @include('components.sections.digital-process')
+    {{-- @include('components.sections.digital-process') --}}
 
     <!-- Section Pricing -->
     @include('components.sections.pricing')

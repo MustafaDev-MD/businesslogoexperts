@@ -427,7 +427,7 @@ h2 {
 
 h3 {
     font-size: var(--font-size-9xl);
-    line-height: var(--line-height-snug);
+    /* line-height: var(--line-height-snug); */
 }
 
 h4 {
@@ -444,7 +444,7 @@ h5 {
 
 h6 {
     font-size: var(--font-size-2xl);
-    line-height: var(--line-height-snug);
+    /* line-height: var(--line-height-snug); */
 }
 
 h1,

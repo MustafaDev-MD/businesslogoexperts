@@ -40,7 +40,7 @@
                         </div>
                         <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">Who We Are & What Drives Us</h2>
                         <p>At Marko, we specialize in crafting innovative digital marketing strategies that drive real business growth. Our about ensures your brand stays ahead in the competitive digital landscape.</p>
-                        <p>Get to know the passionate team behind the strategies, the values that guide us, and the mission that fuels our growth.</p>
+                        <!-- <p>Get to know the passionate team behind the strategies, the values that guide us, and the mission that fuels our growth.</p> -->
 
                         <div class="d-flex flex-column flex-md-row gspace-1 gspace-md-5">
                             <div class="about-list">
@@ -69,10 +69,12 @@
     </div>
 
     <!-- Section Partner -->
+        <div class="section">
     @include('components.sections.partner')
+        </div>
 
     <!-- Section Why Choose Us -->
-    <div class="section">
+    <!-- <div class="section">
         <div class="hero-container">
             <div class="d-flex flex-column flex-xl-row gspace-5">
                 <div class="chooseus-card-container">
@@ -171,7 +173,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Section Modal Video -->
     <div class="section p-0">
