@@ -71,7 +71,7 @@ class PackageFormController extends Controller
             'first_name' => 'required|string|max:255',
             'last_name'  => 'nullable|string|max:255',
             'email'      => 'required|email:rfc,dns',
-            'subject'    => 'nullable|string|max:255',
+            'subject'    => 'required|string|max:255',
             'message'    => 'required|string',
             'files.*'    => 'file|max:51200|mimes:jpg,png,gif,mp4,pdf,doc,docx,zip,txt',
         ]);
@@ -95,7 +95,7 @@ class PackageFormController extends Controller
             'first_name' => $validated['first_name'],
             'last_name' => $validated['last_name'] ?? null,
             'email' => $validated['email'],
-            'subject' => $validated['subject'] ?? null,
+            'subject' => $validated['subject'],
             'message' => $validated['message'],
             'files' => json_encode($uploadedFiles),
         ]);
@@ -108,7 +108,7 @@ class PackageFormController extends Controller
                 'first_name' => $validated['first_name'],
                 'last_name'  => $validated['last_name'] ?? '',
                 'email'      => $validated['email'],
-                'subject'    => $validated['subject'] ?? '',
+                'subject'    => $validated['subject'],
                 'message'    => $validated['message'],
                 'files'      => $uploadedFiles,
             ])

@@ -36,12 +36,14 @@ Route::controller(FrontendController::class)->group(function () {
     // Route::get('/single-service', 'singleService')->name('single-service-page');
     
     // Other pages
-    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/contact-us', 'contact')->name('contact');
     Route::get('/faq', 'faq')->name('faq');
     Route::get('/pricing', 'pricing')->name('pricing');
     Route::get('/partnership', 'partnership')->name('partnership');
     Route::get('/team', 'team')->name('team');
     Route::get('/testimonial', 'testimonial')->name('testimonial');
+    Route::get('/terms-of-service', 'termsOfService')->name('terms-of-service');
+    Route::get('/privacy-policy', 'privacyPolicy')->name('privacy-policy');
 });
 
 Route::get('/package-form/{service}/{package}', [PackageFormController::class, 'index'])

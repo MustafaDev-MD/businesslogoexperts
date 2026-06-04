@@ -414,7 +414,9 @@ body.lightmode .keep-dark {
 }
 
 h1 {
-    font-size: var(--font-size-15xl);
+    /* font-size: var(--font-size-15xl);
+    line-height: var(--line-height-snug); */
+    font-size: var(--font-size-14xl);
     line-height: var(--line-height-snug);
 }
 
@@ -1675,6 +1677,9 @@ body.lightmode .digital-process-banner {
     background-image: linear-gradient(349deg, var(--accent-transparent) 30%, var(--primary) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
+    font-size: var(--font-size-15xl);
+    line-height: var(--line-height-snug);
+
 }
 
 .title-heading {

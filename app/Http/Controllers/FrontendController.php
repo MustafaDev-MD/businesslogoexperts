@@ -123,6 +123,16 @@ class FrontendController extends Controller
         return view('frontend.testimonial');
     }
 
+    public function termsOfService()
+    {
+        return view('frontend.terms-of-service');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('frontend.privacy-policy');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | 404 Page Not Found

@@ -364,7 +364,7 @@
                                 <div class="content">
                                     <h3 class="title-heading">{{ $service['pricing']['title'] ?? "Let's Find the Right Strategy!" }}</h3>
                                     <div class="link-wrapper">
-                                        <a href="{{ url('/contact') }}">Book a Free Consultation</a>
+                                        <a href="{{ route('contact') }}">{{ $service['pricing']['link'] ?? "Book a Free Consultation" }}</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                 </div>
@@ -377,13 +377,13 @@
                                 <p>{{ $starter['description'] }}</p>
                                 <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                     <h3>${{ $starter['price'] }}</h3>
-                                    <p>/Month</p>
+                                    <p>/ one-time</p>
                                 </div>
                                 <a href="{{ route('package.form', [
                                             'service' => $service['slug'],
                                             'package' => Str::slug($starter['name'])
                                         ]) }}" class="btn btn-accent">
-                                    <div class="btn-title"><span>View Details</span></div>
+                                    <div class="btn-title"><span>Get Package</span></div>
                                     <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                                 </a>
                                 <ul class="check-list">
@@ -398,26 +398,26 @@
 
                     <div class="col">
                         @if(isset($service['pricing']['plans'][1]))
-                        @php $enterprise = $service['pricing']['plans'][1]; @endphp
+                        @php $growth = $service['pricing']['plans'][1]; @endphp
                         <div class="card card-pricing pricing-highlight animate-box animated slow animate__animated" data-animate="animate__fadeInUp">
                             <div class="spacer"></div>
-                            <h4>{{ $enterprise['name'] }}</h4>
-                            <p>{{ $enterprise['description'] }}</p>
+                            <h4>{{ $growth['name'] }}</h4>
+                            <p>{{ $growth['description'] }}</p>
                             <div class="d-flex flex-row gspace-1 align-items-center">
-                                <h3>${{ $enterprise['price'] }}</h3>
-                                <p>/Month</p>
+                                <h3>${{ $growth['price'] }}</h3>
+                                <p>/ one-time</p>
                             </div>
                             <a href="{{ route('package.form', [
                                             'service' => $service['slug'],
-                                            'package' => Str::slug($enterprise['name'])
+                                            'package' => Str::slug($growth['name'])
                                         ]) }}" class="btn btn-accent">
-                                <div class="btn-title"><span>View Details</span></div>
+                                <div class="btn-title"><span>Get Package</span></div>
                                 <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                             </a>
 
-                            @if(isset($enterprise['coreBenefits']))
+                            @if(isset($growth['coreBenefits']))
                             <div class="core-benefits">
-                                @foreach($enterprise['coreBenefits'] as $benefit)
+                                @foreach($growth['coreBenefits'] as $benefit)
                                 <div class="benefit">
                                     <i class="{{ isset($benefit['brand']) ? 'fa-brands' : 'fa-solid' }} {{ $benefit['icon'] }}"></i>
                                     <a href="javascript:void(0)">{{ $benefit['text'] }}</a>
@@ -427,7 +427,7 @@
                             @endif
 
                             <ul class="check-list">
-                                @foreach($enterprise['features'] as $feature)
+                                @foreach($growth['features'] as $feature)
                                 <li><a href="javascript:void(0)">{{ $feature }}</a></li>
                                 @endforeach
                             </ul>
@@ -467,32 +467,29 @@
                                 </div>
                                 <div class="spacer"></div>
                             </div>
+                            @if(isset($service['pricing']['plans'][2]))
+                            @php $enterprise = $service['pricing']['plans'][2]; @endphp
                             <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                                <h4>Growth</h4>
-                                <p>Best for growing businesses ready</p>
+                                <h4>{{ $enterprise['name'] }}</h4>
+                                <p>{{ $enterprise['description'] }}</p>
                                 <div class="d-flex flex-row gspace-1 align-items-center h-100">
-                                    <h3>
-                                        $299
-                                    </h3>
-                                    <p>/Month</p>
+                                    <h3>${{ $enterprise['price'] }}</h3>
+                                    <p>/ one-time</p>
                                 </div>
                                 <a href="{{ route('package.form', [
                                             'service' => $service['slug'],
-                                            'package' => Str::slug($starter['name'])
+                                            'package' => Str::slug($enterprise['name'])
                                         ]) }}" class="btn btn-accent">
-                                    <div class="btn-title">
-                                        <span>View Details</span>
-                                    </div>
-                                    <div class="icon-circle">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
+                                    <div class="btn-title"><span>Get Package</span></div>
+                                    <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                                 </a>
                                 <ul class="check-list">
-                                    <li><a href="javascript:void(0)">Basic SEO & Marketing</a></li>
-                                    <li><a href="javascript:void(0)">Social Media Management (1 Platform)</a></li>
-                                    <li><a href="javascript:void(0)">Monthly Performance Report</a></li>
+                                    @foreach($enterprise['features'] as $feature)
+                                    <li><a href="javascript:void(0)">{{ $feature }}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -603,7 +600,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                @endforeach `
+                                @endforeach
 
                             </div>
                         </div>

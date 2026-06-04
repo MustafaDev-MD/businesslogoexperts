@@ -128,27 +128,57 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Let's Find the Right Strategy for You!",
+            'title' => "Let’s find the right direction for your brand.",
+            'link' => 'Book a free 30-minute brand consultation',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '1,999',
+                    'description' => 'Best for new brands and early-stage businesses',
+                    'price' => '1,950',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        'Logo concept and final mark',
+                        'Basic color palette',
+                        'Typography pairing',
+                        'Mini brand guide',
+                        '2 revision rounds'
+                    ],
                 ],
                 [
                     'name' => 'Growth ',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '7,500',
+                    'description' => 'Best for brands ready to scale',
+                    'price' => '4,750',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        'Logo suite and variations',
+                        'Brand identity system',
+                        'Color and typography rules',
+                        'Brand messaging direction',
+                        'Social media templates',
+                        'Business card and stationery design',
+                        '3 revision rounds'
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
                     ]
-                ]
+                ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for larger brands and rebrands',
+                    'price' => '8,900',
+                    'highlight' => false,
+                    'features' => [
+                        'Brand audit and strategy',
+                        'Naming support if needed',
+                        'Full logo system',
+                        'Complete style guide',
+                        'Print collateral suite',
+                        'Rollout support',
+                        'Priority communication'
+                    ],
+                ],
             ]
         ],
 
@@ -172,7 +202,7 @@ return [
         'rightBlogTitle' => 'How to turn a logo into a growth engine',
         'rightBlogDes' => 'A logo should do more than look good — it should guide product choices and reduce buyer friction. We break down three tests to make sure your identity works at scale.',
 
-        'rightCTATitle' => 'Ready to make your brand do the heavy lifting',
+        'rightCTATitle' => 'Ready to make your brand do the heavy lifting?',
         'rightCTADes' => 'Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.',
 
         // -------------------------------------------------
@@ -187,7 +217,7 @@ return [
                 'position' => 'CEO, Nexatech',
                 'description' => '“Business Logo Experts turned our fragmented assets into a focused system. The new identity improved stakeholder confidence and helped us close enterprise deals faster.”',
                 'result' => '(Result: +18% enterprise conversion)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/emma-richard.webp',
                 'stars' => 5,
             ],
             [
@@ -195,7 +225,7 @@ return [
                 'position' => 'Marketing Director, StudioPlus',
                 'description' => '“The visual language made our messaging clearer across channels. Templates saved our team hours each week and improved campaign consistency.”',
                 'result' => '(Result: reduced time-to-publish by 40%)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/david-mont.webp',
                 'stars' => 5,
             ],
             [
@@ -203,7 +233,7 @@ return [
                 'position' => 'Founder, Lumen Studio',
                 'description' => '“From naming to motion, the process was strategic and fast. The new logo and pitch assets helped us win a major partnership during launch.”',
                 'result' => 'secured one major partnership in launch quarter',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/sophia-lewis.webp',
                 'stars' => 5,
             ],
             [
@@ -211,7 +241,7 @@ return [
                 'position' => 'CEO, Nexatech',
                 'description' => '“Business Logo Experts turned our fragmented assets into a focused system. The new identity improved stakeholder confidence and helped us close enterprise deals faster.”',
                 'result' => '+18% enterprise conversion',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/emma-richard.webp',
                 'stars' => 5,
             ],
             [
@@ -219,7 +249,7 @@ return [
                 'position' => 'Marketing Director, StudioPlus',
                 'description' => '“The visual language made our messaging clearer across channels. Templates saved our team hours each week and improved campaign consistency.”',
                 'result' => '(Result: reduced time-to-publish by 40%)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/david-mont.webp',
                 'stars' => 5,
             ],
             [
@@ -227,7 +257,7 @@ return [
                 'position' => 'Founder, Lumen Studio',
                 'description' => '“From naming to motion, the process was strategic and fast. The new logo and pitch assets helped us win a major partnership during launch.”',
                 'result' => 'secured one major partnership in launch quarter',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/sophia-lewis.webp',
                 'stars' => 5,
             ],
         ],
@@ -236,10 +266,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '1,200+ brand',
             'reviewLabel' => 'systems delivered',
@@ -428,27 +458,58 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Let's Find the Right Strategy for You!",
+            'title' => "Let’s build the right website for your business.",
+            'link' => 'Book a free 30-minute strategy call',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '3,499',
+                    'description' => 'Best for small businesses and launch-ready websites',
+                    'price' => '3,500',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        '5-page responsive website',
+                        'Custom homepage design',
+                        'Basic CMS setup',
+                        'Mobile optimization',
+                        'Contact form integration',
+                        '2 revision rounds'
+                    ]
                 ],
                 [
                     'name' => 'Growth ',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '12,000',
+                    'description' => 'Best for brands that need a stronger online presence',
+                    'price' => '7,500',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        '8–12 page custom website',
+                        'Advanced UI/UX design',
+                        'CMS and blog setup',
+                        'SEO-ready structure',
+                        'Speed optimization',
+                        'Analytics integration',
+                        '3 revision rounds',
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
                     ]
-                ]
+                ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for large websites and custom web builds',
+                    'price' => '15,000',
+                    'highlight' => false,
+                    'features' => [
+                        'Full website strategy',
+                        'Custom design system',
+                        'Web app or portal features',
+                        'API integrations',
+                        'Performance and security setup',
+                        'Hosting and deployment support',
+                        'Priority project handling'
+                    ]
+                ],
             ]
         ],
 
@@ -472,8 +533,8 @@ return [
         'rightBlogTitle' => 'How to design a landing page that actually converts',
         'rightBlogDes' => 'A practical checklist of UX, copy, and performance tweaks that move conversion metrics — with examples we’ve tested across dozens of launches.',
 
-        'rightCTATitle' => 'Ready to ship a website that grows with your business?',
-        'rightCTADes' => 'Book a free 30-minute audit — we’ll map quick wins and the right technical approach for your goals.',
+        'rightCTATitle' => 'Ready to launch a website that works harder?',
+        'rightCTADes' => 'Book a free 30-minute tech and UX audit — we’ll identify the best package for your website.',
 
         // -------------------------------------------------
         // SOCIAL PROOF
@@ -487,7 +548,7 @@ return [
                 'position' => 'CTO, Arcus Retail',
                 'description' => '“Business Logo Experts rebuilt our storefront on a headless stack and optimized our funnels. The technical quality and speed improvements directly impacted revenue.”',
                 'result' => '(Result: +42% checkout conversion)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/client-review-1.webp',
                 'stars' => 5,
             ],
             [
@@ -495,7 +556,7 @@ return [
                 'position' => 'Product Manager, MedBridge',
                 'description' => '“The portal was delivered on time and with strong attention to security and UX. We’ve automated workflows that used to take hours.”',
                 'result' => '(Result: 20% operational efficiency gain)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/client-review-3.webp',
                 'stars' => 5,
             ],
             [
@@ -503,7 +564,7 @@ return [
                 'position' => 'Founder, SparkNotes Studio',
                 'description' => '“The dev team worked with our marketers to make content launches painless. The new CMS workflow is a game changer.”',
                 'result' => '(Result: content publishing time cut by 50%)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/client-review-2.webp',
                 'stars' => 5,
             ],
             [
@@ -511,7 +572,7 @@ return [
                 'position' => 'CTO, Arcus Retail',
                 'description' => '“Business Logo Experts rebuilt our storefront on a headless stack and optimized our funnels. The technical quality and speed improvements directly impacted revenue.”',
                 'result' => '(Result: +42% checkout conversion)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/client-review-1.webp',
                 'stars' => 5,
             ],
             [
@@ -519,7 +580,7 @@ return [
                 'position' => 'Product Manager, MedBridge',
                 'description' => '“The portal was delivered on time and with strong attention to security and UX. We’ve automated workflows that used to take hours.”',
                 'result' => '(Result: 20% operational efficiency gain)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/client-review-3.webp',
                 'stars' => 5,
             ],
             [
@@ -527,7 +588,7 @@ return [
                 'position' => 'Founder, SparkNotes Studio',
                 'description' => '“The dev team worked with our marketers to make content launches painless. The new CMS workflow is a game changer.”',
                 'result' => '(Result: content publishing time cut by 50%)',
-                'image' => 'assets/image/dummy-img-400x400.jpg',
+                'image' => 'assets/image/client-review-2.webp',
                 'stars' => 5,
             ],
         ],
@@ -536,10 +597,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '520+ websites &',
             'reviewLabel' => 'web apps launched',
@@ -723,25 +784,56 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Let's Find the Right Strategy for You!",
+            'title' => "Let’s turn your idea into a powerful mobile app.",
+            'link' => 'Book a free 30-minute consultation',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '14,000',
+                    'description' => 'Best for MVPs and startup app launches',
+                    'price' => '5,500',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        'iOS or Android app',
+                        'UI/UX design',
+                        'Up to 8 core screens',
+                        'User authentication',
+                        'Basic backend setup',
+                        'App store submission support'
+                    ]
                 ],
                 [
                     'name' => 'Growth',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '45,000',
+                    'description' => 'Best for businesses ready to scale digitally',
+                    'price' => '12,500',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        'Cross-platform development',
+                        'Custom UI/UX design',
+                        'Advanced user flows',
+                        'API integrations',
+                        'Push notifications',
+                        'Analytics integration',
+                        'Admin dashboard'
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
+                    ],
+                ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for complex platforms and custom ecosystems',
+                    'price' => '25,000',
+                    'highlight' => false,
+                    'features' => [
+                        'Enterprise-grade architecture',
+                        'Custom backend development',
+                        'Advanced integrations',
+                        'Multi-user permissions',
+                        'Scalability optimization',
+                        'Security implementation',
+                        'Priority development support'
                     ]
                 ]
             ]
@@ -767,8 +859,8 @@ return [
         'rightBlogTitle' => 'Building mobile apps that retain: 5 design patterns that work',
         'rightBlogDes' => 'Small changes to onboarding, push timing, and data sync can dramatically improve retention. We share tested patterns from recent launches.',
 
-        'rightCTATitle' => 'Ready to build an app users actually keep?',
-        'rightCTADes' => 'Book a free 30-minute product audit — we’ll map core flows, tech approach, and a launch plan.',
+        'rightCTATitle' => 'Ready to launch your next big app?',
+        'rightCTADes' => "Book a free 30-minute app strategy session and we'll outline the smartest path from concept to launch.",
 
         // -------------------------------------------------
         // TESTIMONIALS
@@ -831,9 +923,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '230+ mobile',
             'reviewLabel' => 'apps launched',
@@ -1015,27 +1108,56 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Let's Find the Right Strategy for You!",
+            'title' => "Let’s bring your brand to life with motion.",
+            'link' => 'Book a free 30-minute creative call',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '1,200',
+                    'description' => 'Best for short social animations and simple brand motion',
+                    'price' => '2,200',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        '15–30 second animation',
+                        'Basic motion graphics',
+                        'Logo reveal',
+                        'Simple text animation',
+                        '2 revision rounds',
+                    ],
                 ],
                 [
                     'name' => 'Growth',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '6,500',
+                    'description' => 'Best for explainer videos and campaign visuals',
+                    'price' => '5,800',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        '30–60 second animation',
+                        'Custom storyboard',
+                        'Brand motion style',
+                        'Voiceover sync',
+                        'Social media cutdowns',
+                        '3 revision rounds',
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
                     ]
                 ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for large-scale motion systems and premium campaigns',
+                    'price' => '11,500',
+                    'highlight' => false,
+                    'features' => [
+                        'Full motion strategy',
+                        'Advanced explainer video',
+                        'Multi-format deliverables',
+                        'Product or service animations',
+                        'Sound design coordination',
+                        'Brand motion toolkit',
+                        'Priority support'
+                    ]
+                ]
             ],
         ],
 
@@ -1059,8 +1181,8 @@ return [
         'rightBlogTitle' => 'Motion that moves metrics: A pragmatic checklist',
         'rightBlogDes' => 'Which animation choices actually improve comprehension and conversion? We share practical rules and experiments that show measurable wins.',
 
-        'rightCTATitle' => 'Ready to bring your story to life in motion?',
-        'rightCTADes' => 'Book a free 30-minute motion brief review — we’ll map the right format, timeline, and impact for your goals.',
+        'rightCTATitle' => 'Ready to make your brand move?',
+        'rightCTADes' => 'Book a free 30-minute motion review and we’ll recommend the right package for your project.',
 
         // -------------------------------------------------
         // TESTIMONIALS
@@ -1123,9 +1245,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '800+ animation',
             'reviewLabel' => 'assets delivered',
@@ -1308,27 +1431,58 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Let's Find the Right Strategy for You!",
+            'title' => "Let’s build AI that actually helps your business.",
+            'link' => 'Book a free 30-minute automation call',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '3,000',
+                    'description' => 'Best for simple chatbot or workflow automation',
+                    'price' => '3,800',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        'One AI chatbot',
+                        'Basic workflow setup',
+                        'FAQ or knowledge base training',
+                        'Website or app integration',
+                        'Basic handoff flow',
+                        '2 revision rounds',
+                    ]
                 ],
                 [
                     'name' => 'Growth',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '12,000',
+                    'description' => 'Best for customer support and lead automation',
+                    'price' => '8,500',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        'Custom AI agent',
+                        'CRM integration',
+                        'Lead qualification flow',
+                        'Internal workflow automation',
+                        'Analytics tracking',
+                        'Knowledge base tuning',
+                        '3 revision rounds',
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
                     ]
                 ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for advanced automation and custom AI systems',
+                    'price' => '16,500',
+                    'highlight' => false,
+                    'features' => [
+                        'Multi-agent system',
+                        'Advanced integrations',
+                        'Secure access controls',
+                        'Custom logic and routing',
+                        'Reporting dashboard',
+                        'Deployment support',
+                        'Priority implementation'
+                    ]
+                ]
             ],
         ],
 
@@ -1353,7 +1507,7 @@ return [
         'rightBlogDes' => 'How to evaluate ROI, avoid common automation traps, and design agents that produce measurable results.',
 
         'rightCTATitle' => 'Ready to automate smarter?',
-        'rightCTADes' => 'Book a free AI workflow audit — we’ll identify high-impact automation opportunities in your business.',
+        'rightCTADes' => 'Book a free 30-minute AI workflow audit and we’ll recommend the best package for your goals.',
 
         // -------------------------------------------------
         // TESTIMONIALS
@@ -1416,9 +1570,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '150+ AI',
             'reviewLabel' => 'workflows deployed',
@@ -1601,27 +1756,55 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Let's Find the Right Strategy for You!",
+            'title' => "Let’s grow your visibility the right way.",
+            'link' => 'Book a free 30-minute SEO audit',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '1,499',
+                    'description' => 'Best for small businesses starting SEO',
+                    'price' => '900',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        'Basic SEO audit',
+                        'Keyword research',
+                        'On-page optimization',
+                        'Meta tags setup',
+                        'Monthly reporting',
+                    ]
                 ],
                 [
                     'name' => 'Growth',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '4,500',
+                    'description' => 'Best for brands ready to scale search traffic',
+                    'price' => '1,800',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        'Full SEO audit',
+                        'Content strategy',
+                        'Technical fixes',
+                        'Local SEO setup',
+                        'Link building support',
+                        'Monthly reporting',
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
                     ]
                 ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for competitive markets and larger websites',
+                    'price' => '3,500',
+                    'highlight' => false,
+                    'features' => [
+                        'Advanced SEO strategy',
+                        'Technical SEO improvements',
+                        'Content optimization plan',
+                        'Competitor analysis',
+                        'Ongoing link outreach',
+                        'Priority support',
+                    ]
+                ]
             ],
         ],
 
@@ -1645,8 +1828,8 @@ return [
         'rightBlogTitle' => 'The SEO checklist for modern product sites',
         'rightBlogDes' => 'A practical checklist that covers technical, content, and conversion steps you can run in a sprint to see measurable gains.',
 
-        'rightCTATitle' => 'Ready to grow organic traffic that converts?',
-        'rightCTADes' => 'Book a free SEO audit — we’ll surface quick wins and a 90-day plan to move the needle.',
+        'rightCTATitle' => 'Ready to rank higher and grow faster?',
+        'rightCTADes' => 'Book a free SEO audit and we’ll show you where the biggest opportunities are.',
 
         // -------------------------------------------------
         // TESTIMONIALS
@@ -1709,9 +1892,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '500+ SEO',
             'reviewLabel' => 'programs delivered',
@@ -1894,27 +2078,56 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Starter & Growth — scalable social programs",
+            'title' => "Book a free SEO audit and we’ll show you where the biggest opportunities are.",
+            'link' => 'Book a free 30-minute strategy call',
             'plans' => [
                 [
                     'name' => 'Starter',
-                    'description' => 'Perfect for startups & small businesses',
-                    'price' => '2,500',
+                    'description' => 'Best for brands that need a clean content presence',
+                    'price' => '750',
                     'highlight' => false,
-                    'features' => ['Basic SEO & Marketing', 'Social Media Management (1 Platform)', 'Monthly Performance Report']
+                    'features' => [
+                        'Content planning',
+                        '12 posts monthly',
+                        'Caption writing',
+                        'Basic design templates',
+                        'Monthly reporting',
+                    ]
                 ],
                 [
                     'name' => 'Growth',
-                    'description' => 'Full scale marketing for maximum impact',
-                    'price' => '7,500',
+                    'description' => 'Best for brands ready to build reach and engagement',
+                    'price' => '1,500',
                     'highlight' => true,
-                    'features' => ['Complete Digital Marketing Suite', 'Paid Ads Management', 'Dedicated Account Manager', 'Email Marketing & Automation', 'Weekly Performance insights'],
+                    'features' => [
+                        'Content strategy',
+                        '20 posts monthly',
+                        'Reels and short video edits',
+                        'Hashtag research',
+                        'Community support',
+                        'Monthly reporting',
+                    ],
                     'coreBenefits' => [
                         ['icon' => 'fa-brain', 'text' => 'Dedicated Account Manager'],
                         ['icon' => 'fa-accessible-icon', 'text' => 'Priority Support 24/7', 'brand' => true],
                         ['icon' => 'fa-bug', 'text' => 'Customized Growth Strength']
                     ]
                 ],
+                [
+                    'name' => 'Enterprise',
+                    'description' => 'Best for brands that want full social management',
+                    'price' => '3,000',
+                    'highlight' => false,
+                    'features' => [
+                        'Full social strategy',
+                        '30 posts monthly',
+                        'Paid ad creative',
+                        'Community management',
+                        'Performance tracking',
+                        'Campaign optimization',
+                        'Priority support'
+                    ]
+                ]
             ],
         ],
 
@@ -1938,8 +2151,8 @@ return [
         'rightBlogTitle' => 'Creative tests that actually move metrics on social',
         'rightBlogDes' => 'We share five creative experiments that consistently lower CAC and lift engagement across platforms.',
 
-        'rightCTATitle' => 'Ready to turn social into a predictable channel?',
-        'rightCTADes' => 'Book a free 30-minute strategy call — we’ll map a 90-day plan and quick experiments you can run next month.',
+        'rightCTATitle' => 'Ready to grow your audience with purpose?',
+        'rightCTADes' => 'Book a free social strategy session and we’ll show you the best plan for your brand.',
 
         // -------------------------------------------------
         // TESTIMONIALS
@@ -1978,9 +2191,10 @@ return [
 
         'testimonialSummary' => [
             'avatars' => [
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
-                'assets/image/dummy-img-400x400.jpg',
+                'assets/image/client-review-3.webp',
+                'assets/image/client-review-1.webp',
+                'assets/image/james-peterson.webp',
+                'assets/image/emma-richard.webp',
             ],
             'positiveReviews' => '300+ social',
             'reviewLabel' => 'campaigns launched',

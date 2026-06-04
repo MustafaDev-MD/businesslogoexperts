@@ -79,32 +79,6 @@
                                     <div class="d-flex flex-row align-items-center justify-content-between">
                                         <div class="d-flex flex-row gspace-2">
                                             <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/emma-richard.webp') }}" alt="Testimonial Person Image" class="img-fluid">
-                                            </div>
-                                            <div class="d-flex flex-column">
-                                                <span class="profile-name">Emma Richard</span>
-                                                <p class="profile-info">CEO Nexatech</p>
-                                            </div>
-                                        </div>
-                                        <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
-                                    </div>
-                                    <p class="testimonial-description">
-                                        “Marko completely transformed our online presence! Their digital marketing strategies helped us double our revenue in just six months.”
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card card-testimonial">
-                                    <div class="stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-between">
-                                        <div class="d-flex flex-row gspace-2">
-                                            <div class="testimonial-image">
                                                 <img src="{{ asset('assets/image/david-mont.webp') }}" alt="Testimonial Person Image" class="img-fluid">
                                             </div>
                                             <div class="d-flex flex-column">
@@ -168,32 +142,6 @@
                                     </div>
                                     <p class="testimonial-description">
                                         “We needed a team that could handle both strategy and execution. They delivered work that improved how our brand shows up and how our audience responds.”
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card card-testimonial">
-                                    <div class="stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-between">
-                                        <div class="d-flex flex-row gspace-2">
-                                            <div class="testimonial-image">
-                                                <img src="{{ asset('assets/image/emma-richard.webp') }}" alt="Testimonial Person Image" class="img-fluid">
-                                            </div>
-                                            <div class="d-flex flex-column">
-                                                <span class="profile-name">Emma Richard</span>
-                                                <p class="profile-info">CEO Nexatech</p>
-                                            </div>
-                                        </div>
-                                        <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
-                                    </div>
-                                    <p class="testimonial-description">
-                                        “Marko completely transformed our online presence! Their digital marketing strategies helped us double our revenue in just six months.”
                                     </p>
                                 </div>
                             </div>

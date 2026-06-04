@@ -100,8 +100,8 @@
                 <div class="copyright-container">
                     <span class="copyright">© 2026 Business Logo Experts. All Rights Reserved.</span>
                     <div class="d-flex flex-row gspace-2">
-                        <a href="#" class="legal-link">Terms of Service</a>
-                        <a href="#" class="legal-link">Privacy Policy</a>
+                        <a href="{{ route('terms-of-service') }}" class="legal-link">Terms of Service</a>
+                        <a href="{{ route('privacy-policy') }}" class="legal-link">Privacy Policy</a>
                     </div>
                 </div>
 

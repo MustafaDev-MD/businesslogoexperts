@@ -23,12 +23,12 @@
                         </div>
                         <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
                             <h4>Starter - Branding</h4>
-                            <p>Perfect for startups & small businesses</p>
+                            <p>Best for new brands and early-stage businesses</p>
                             <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                 <h3>
-                                    $1,999
+                                    $1,950
                                 </h3>
-                                <p>/Month</p>
+                                <p>/ one-time</p>
                             </div>
                             <a href="{{ route('single-service', 'branding') }}#pricing" class="btn btn-accent">
                                 <div class="btn-title">
@@ -39,9 +39,11 @@
                                 </div>
                             </a>
                             <ul class="check-list">
-                                <li><a href="javascript:void(0)">Basic SEO support</a></li>
-                                <li><a href="javascript:void(0)">Social media management</a></li>
-                                <li><a href="javascript:void(0)">Monthly reporting</a></li>
+                                <li><a href="javascript:void(0)">Logo concept and final mark</a></li>
+                                <li><a href="javascript:void(0)">Basic color palette</a></li>
+                                <li><a href="javascript:void(0)">Typography pairing</a></li>
+                                <li><a href="javascript:void(0)">Mini brand guide</a></li>
+                                <li><a href="javascript:void(0)">2 revision rounds</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,13 +51,13 @@
                 <div class="col">
                     <div class="card card-pricing pricing-highlight animate-box animated slow animate__animated" data-animate="animate__fadeInUp">
                         <div class="spacer"></div>
-                        <h4>Enterprise - Web Development</h4>
-                        <p>Full scale marketing for maximum impact</p>
+                        <h4>Growth - Web Development</h4>
+                        <p>Best for brands that need a stronger online presence</p>
                         <div class="d-flex flex-row gspace-1 align-items-center">
                             <h3>
-                                $12,000
+                                $7,500
                             </h3>
-                            <p>/Month</p>
+                            <p>/ one-time</p>
                         </div>
                         <a href="{{ route('single-service', 'website-development') }}#pricing" class="btn btn-accent">
                             <div class="btn-title">
@@ -80,10 +82,13 @@
                             </div>
                         </div>
                         <ul class="check-list">
-                            <li><a href="javascript:void(0)">Full digital strategy</a></li>
-                            <li><a href="javascript:void(0)">Dedicated account support</a></li>
-                            <li><a href="javascript:void(0)">Priority delivery</a></li>
-                            <li><a href="javascript:void(0)">Advanced performance reporting</a></li>
+                            <li><a href="javascript:void(0)">8–12 page custom website</a></li>
+                            <li><a href="javascript:void(0)">Advanced UI/UX design</a></li>
+                            <li><a href="javascript:void(0)">CMS and blog setup</a></li>
+                            <li><a href="javascript:void(0)">SEO-ready structure</a></li>
+                            <li><a href="javascript:void(0)">Speed optimization</a></li>
+                            <li><a href="javascript:void(0)">Analytics integration</a></li>
+                            <li><a href="javascript:void(0)">3 revision rounds</a></li>
                         </ul>
                     </div>
                 </div>
@@ -110,13 +115,13 @@
                             <div class="spacer"></div>
                         </div>
                         <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                            <h4>Growth</h4>
-                            <p>Perfect for startups & small businesses</p>
+                            <h4>Enterprise - Web Development</h4>
+                            <p>Best for complex platforms and custom ecosystems</p>
                             <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                 <h3>
-                                    $14,000
+                                    $25,000
                                 </h3>
-                                <p>/Month</p>
+                                <p>/ one-time</p>
                             </div>
                             <a href="{{ route('single-service', 'app-development') }}#pricing" class="btn btn-accent">
                                 <div class="btn-title">
@@ -127,10 +132,13 @@
                                 </div>
                             </a>
                             <ul class="check-list">
-                                <li><a href="javascript:void(0)">Core SEO strategy</a></li>
-                                <li><a href="javascript:void(0)">Social media management</a></li>
-                                <li><a href="javascript:void(0)">Performance tracking</a></li>
-                                <li><a href="javascript:void(0)">Ongoing content support</a></li>
+                                <li><a href="javascript:void(0)">Enterprise-grade architecture</a></li>
+                                <li><a href="javascript:void(0)">Custom backend development</a></li>
+                                <li><a href="javascript:void(0)">Advanced integrations</a></li>
+                                <li><a href="javascript:void(0)">Multi-user permissions</a></li>
+                                <li><a href="javascript:void(0)">Scalability optimization</a></li>
+                                <li><a href="javascript:void(0)">Security implementation</a></li>
+                                <li><a href="javascript:void(0)">Priority development support</a></li>
                             </ul>
                         </div>
                     </div>

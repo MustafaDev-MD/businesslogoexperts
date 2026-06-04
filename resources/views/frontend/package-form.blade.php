@@ -91,7 +91,7 @@
                                             <input type="email" name="email" id="email" placeholder="Email Address" value="{{ old('email') }}" required>
                                         </div>
                                         <div class="col">
-                                            <input type="text" name="subject" id="subject" placeholder="Subject" value="{{ old('subject') }}">
+                                            <input type="text" name="subject" id="subject" placeholder="Subject" value="{{ old('subject') }}" required>
                                         </div>
                                     </div>
 
@@ -273,7 +273,7 @@
                     }
                 });
 
-                document.addEventListener("DOMContentLoaded", function() {
+                // document.addEventListener("DOMContentLoaded", function() {
 
                     const form = document.getElementById("packageForm");
 
@@ -382,7 +382,7 @@
                     // Dobara submit kare to error queue aage badhti hai
                     // (clearAllErrors pehle call hota hai, fresh errors aate hain)
 
-                });
+                // });
 
             });
         </script>
@@ -444,7 +444,7 @@
                                     </div>
                                     <div class="d-grid">
                                         <span>Office Address</span>
-                                        <h5>Marko HQ - 902 Digital Lane, San Francisco, CA 94110, USA</h5>
+                                        <h5>902 Digital Lane, San Francisco, CA 94110, USA</h5>
                                     </div>
                                 </div>
                             </div>
