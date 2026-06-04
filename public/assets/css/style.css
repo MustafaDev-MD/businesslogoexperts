@@ -268,7 +268,8 @@ url('../fonts/Magox.otf') format('opentype'),  */
 
     /* 2.4 Line Height Variables */
     --line-height-tight: 1em;
-    --line-height-snug: 0.9;
+    /* --line-height-snug: 0.9; */
+    --line-height-snug: 1;
     --line-height-normal: 1.3em;
     --line-height-relaxed: 1.4em;
     --line-height-loose: 1.5em;
@@ -4621,6 +4622,10 @@ body.lightmode .cta-service-banner::before {
 }
 
 /* ================== 55. CustomText Container Components ================== */
+
+.heading-container-extra-short {
+    max-width: 60%;
+}
 
 .heading-container-short {
     max-width: 70%;

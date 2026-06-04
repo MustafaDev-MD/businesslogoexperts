@@ -115,7 +115,7 @@
                             <div class="spacer"></div>
                         </div>
                         <div class="card card-pricing animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                            <h4>Enterprise - Web Development</h4>
+                            <h4>Enterprise - App Development</h4>
                             <p>Best for complex platforms and custom ecosystems</p>
                             <div class="d-flex flex-row gspace-1 align-items-center h-100">
                                 <h3>
