@@ -20,7 +20,7 @@
                                 <div>
                                     <div class="service-icon-wrapper">
                                         <div class="service-icon">
-                                            <img src="{{ asset('assets/image/Icon-7.png') }}" alt="Service Icon" class="img-fluid">
+                                            <img src="{{ asset($service['icon'] ?? 'assets/image/Icon-5.png') }}" alt="Service Icon" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
