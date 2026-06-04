@@ -45,7 +45,7 @@ return [
         // EXPERTISE SECTION (Positioning & Value Prop)
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/branding-banner.webp',
 
         'bannerAlt' => 'Branding Banner',
 
@@ -85,7 +85,7 @@ return [
             'Rebrand' => [
                 'assets/image/dummy-img-600x400.jpg',
                 'assets/image/dummy-img-600x400.jpg',
-            ]
+            ],
         ],
 
         // Portfolio tab descriptions
@@ -374,9 +374,9 @@ return [
         // EXPERTISE SECTION (Positioning & Value Prop)
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/web-development-banner.webp',
 
-        'bannerAlt' => 'Branding Banner',
+        'bannerAlt' => 'Website Development Banner',
 
         'expertiseTitle' => 'Make your digital presence a conversion engine.',
 
@@ -705,7 +705,7 @@ return [
         // EXPERTISE SECTION
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/app-development-banner.webp',
         'bannerAlt' => 'App Development Banner',
 
         'expertiseTitle' => 'Turn idea into a product people keep using.',
