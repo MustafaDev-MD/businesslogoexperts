@@ -26,7 +26,7 @@
     <div class="banner-layout-wrapper">
         <div class="banner-layout">
             <div class="d-flex flex-column text-center align-items-center gspace-2">
-                <h1 class="title-heading animate-box animated animate__animated heading-container heading-container-extra-short" data-animate="animate__fadeInRight">
+                <h1 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">
                     {{-- {{ $title }} --}}
                     {!! $title !!}
                 </h1>
