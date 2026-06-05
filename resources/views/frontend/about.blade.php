@@ -46,32 +46,32 @@
                             <div class="about-list">
                                 <ul class="check-list">
                                     @foreach(config('custom_services') as $service)
-                                        @if(isset($service['slug']) && isset($service['name']))
-                                            <li>
-                                                <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">{{ $service['name'] }}</a>
-                                            </li>
-                                        @endif
+                                    @if(isset($service['slug']) && isset($service['name']))
+                                    <li>
+                                        <a href="{{ route('single-service', ['slug' => $service['slug']]) }}">{{ $service['name'] }}</a>
+                                    </li>
+                                    @endif
                                     @endforeach
                                 </ul>
                             </div>
                             {{-- <div class="about-list">
                                 <ul class="check-list">
                                     <li><a href="{{ route('single-service') }}">Performance Marketing</a></li>
-                                    <li><a href="{{ route('single-service') }}">Social Media Growth</a></li>
-                                    <li><a href="{{ route('single-service') }}">Content Marketing</a></li>
-                                </ul>
-                            </div>--}}
-                        </div>
+                            <li><a href="{{ route('single-service') }}">Social Media Growth</a></li>
+                            <li><a href="{{ route('single-service') }}">Content Marketing</a></li>
+                            </ul>
+                        </div>--}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <!-- Section Partner -->
-        <div class="section">
-    @include('components.sections.partner')
-        </div>
+    <div class="section pt-0 px-0">
+        @include('components.sections.partner')
+    </div>
 
     <!-- Section Why Choose Us -->
     <!-- <div class="section">

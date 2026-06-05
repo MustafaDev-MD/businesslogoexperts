@@ -417,6 +417,11 @@ body.lightmode .keep-dark {
 h1 {
     /* font-size: var(--font-size-15xl);
     line-height: var(--line-height-snug); */
+    font-size: var(--font-size-14xl);
+    line-height: var(--line-height-snug);
+}
+
+.home-main-heading {
     font-size: var(--font-size-15xl);
     line-height: var(--line-height-snug);
 }
@@ -1162,7 +1167,7 @@ body.lightmode #newsletterForm input:autofill:focus {
     align-self: stretch;
 }
 
-.cta-btn{
+.cta-btn {
     width: fit-content;
 }
 
@@ -1173,7 +1178,7 @@ body.lightmode #newsletterForm input:autofill:focus {
     box-shadow: var(--box-shadow-top-left);
 }
 
-.all-services-btn{
+.all-services-btn {
     width: 351px;
 }
 
@@ -1761,7 +1766,7 @@ body.lightmode .title-heading {
     transition: all 0.6s;
 }
 
-.inner-service-button{
+.inner-service-button {
     width: 235px;
 }
 
@@ -1818,7 +1823,7 @@ body.lightmode .navbar-icon-wrapper {
     height: 100%;
 }
 
-.testimonial-ratings{
+.testimonial-ratings {
     width: 50%;
 }
 
@@ -2709,7 +2714,7 @@ body.lightmode .card-partner {
     color: var(--accent-color);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     left: -10%;
     color: var(--accent-color);
 }
@@ -3386,7 +3391,7 @@ body.lightmode .case-studies-content::before {
     background-image: radial-gradient(at center center, var(--accent-color-6) 0%, var(--accent-transparent) 50%);
 }
 
-.card-pricing.pricing-highlight .fa-circle-dot{
+.card-pricing.pricing-highlight .fa-circle-dot {
     color: var(--accent-color);
 }
 
@@ -3807,6 +3812,7 @@ body.lightmode .newsletter-layout {
     display: flex;
     flex-direction: row;
     gap: 5px 5px;
+    justify-content: center;
     align-items: center;
     font-size: var(--font-size-base);
 }
@@ -4386,7 +4392,7 @@ body.lightmode .newsletter-layout {
     gap: 10px;
 }
 
-.accordion-header{
+.accordion-header {
     margin-bottom: 10px;
 }
 
@@ -4502,7 +4508,7 @@ body.lightmode .accordion-button:not(.collapsed)::after {
     z-index: 1;
 }
 
-.accordion-flush .accordion-collapse{
+.accordion-flush .accordion-collapse {
     /* margin-top: 20px; */
 }
 
@@ -4518,7 +4524,7 @@ body.lightmode .accordion-button:not(.collapsed)::after {
     overflow: hidden;
 }
 
-.package-form-maps{
+.package-form-maps {
     height: -webkit-fill-available;
 }
 
@@ -4976,6 +4982,10 @@ body.lightmode .cta-service-banner::before {
         font-size: var(--font-size-14xl);
     }
 
+    .home-main-heading {
+        font-size: var(--font-size-14xl);
+    }
+
     h2 {
         font-size: var(--font-size-13xl);
     }
@@ -5014,7 +5024,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .title-heading-banner {
-        background-image: linear-gradient(329deg, #ffffff24  10%, var(--primary) 100%);
+        background-image: linear-gradient(329deg, #ffffff24 10%, var(--primary) 100%);
     }
 
     .about-img-layout {
@@ -5042,7 +5052,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .navbar-action-container {
-        justify-content: flex-start;
+        /* justify-content: flex-start;y */
     }
 
     .navbar-icon-wrapper {
@@ -5493,6 +5503,10 @@ body.lightmode .cta-service-banner::before {
         font-size: var(--font-size-10xl);
     }
 
+    .home-main-heading {
+        font-size: var(--font-size-10xl);
+    }
+
     h2 {
         font-size: var(--font-size-9xl);
     }
@@ -5831,6 +5845,41 @@ body.lightmode .cta-service-banner::before {
     .legal-link {
         font-size: var(--font-size-xs);
     }
+
+    .digital-process-banner {
+        padding: 60px 20px 60px 20px;
+    }
+
+    .digital-process-step {
+        gap: 30px 50px;
+    }
+
+    .card-partner {
+        gap: 20px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .service-inner-tab .nav-link.active,
+    .service-inner-tab .nav-link {
+        padding: 8px 5px !important;
+    }
+
+    .service-inner-tab {
+        padding: 15px 15px;
+        gap: 5px 11px;
+    }
+
+    .glide__arrow--left {
+        left: -10%;
+    }
+
+    .glide__arrow--right {
+        right: -10%;
+    }
+
+    .service-inner-tab{
+        justify-content: center !important;
+    }
 }
 
 .file-upload-wrapper {
@@ -6051,4 +6100,3 @@ body.lightmode .cta-service-banner::before {
 /* .collapsing {
   transition: height 0s !important;
 } */
-

@@ -7,13 +7,13 @@ return [
         'slug' => 'how-to-uild-a-brand-system-that-scales',
 
         'title' => 'How to Build a Brand System That Scales',
-        'heading' => 'How to Build a Brand<br> System That Scales',
+        'heading' => 'How to Build a Brand System That Scales',
         'excerpt' => 'A strong brand is more than a logo. Learn how to create a system that keeps your identity clear, consistent, and flexible as your business grows.',
         'description' => 'Learn how to build a scalable brand system that drives recognition, trust, and growth.',
 
 
         'image' => 'assets/image//blog/how-to-uild-a-brand-system-that-scales.webp',
-        'alt-text' => 'How to Build a Brand<br> System That Scales',
+        'alt-text' => 'How to Build a Brand System That Scales',
 
         'date' => 'April 14, 2025',
         'category' => 'Branding',

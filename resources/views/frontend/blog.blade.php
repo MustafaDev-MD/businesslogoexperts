@@ -13,10 +13,10 @@
     <!-- Section Blog -->
     <div class="section">
         <div class="hero-container">
-            <div class="d-flex flex-column gspace-5">
+            <div class="d-flex flex-column gspace-md-5">
                 <!-- Blog Intro -->
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5 m-0">
-                    <div class="col col-xl-8 ps-0 pe-0">
+                    <div class="col col-xl-8 ps-0 pe-0 mt-0">
                         <div class="d-flex flex-column gspace-2 animate-box animated fast animate__animated" data-animate="animate__fadeInLeft">
                             <div class="sub-heading">
                                 <i class="fa-regular fa-circle-dot"></i>
@@ -25,7 +25,7 @@
                             <h2 class="title-heading">Fresh ideas for brands that want to grow</h2>
                         </div>
                     </div>
-                    <div class="col col-xl-4 ps-0 pe-0">
+                    <div class="col col-xl-4 ps-0 pe-0 mt-0">
                         <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated animate__animated" data-animate="animate__fadeInRight">
                             <p>Explore practical insights on branding, websites, apps, AI, SEO, and social media — all focused on helping your business look better, work smarter, and grow stronger.</p>
                             <!-- <div class="link-wrapper">

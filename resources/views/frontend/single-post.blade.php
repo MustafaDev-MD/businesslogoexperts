@@ -81,7 +81,7 @@
                         <div class="underline-muted-full"></div>
 
                         <!-- Meta -->
-                        <div class="d-flex flex-row align-items-center justify-content-between">
+                        <div class="d-flex flex-row flex-wrap gap-3 align-items-center justify-content-between">
                             <div class="d-flex flex-row align-items-center gspace-2">
 
                                 <div class="d-flex flex-row gspace-1 align-items-center">

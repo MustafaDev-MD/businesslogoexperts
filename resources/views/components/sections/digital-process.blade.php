@@ -13,7 +13,7 @@
                             <h2 class="title-heading">A simple process built to move you forward</h2>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mt-0">
                         <div class="d-flex flex-column gspace-2 justify-content-end h-100  animate-box animated fast animate__animated" data-animate="animate__fadeInDown">
                             <p>
                                 We keep the process clear, efficient, and collaborative so you always know what is happening, what comes next, and how each step supports your goals.

@@ -1,12 +1,12 @@
 <div class="section">
     <div class="hero-container">
-        <div class="d-flex flex-column justify-content-center text-center gspace-5">
+        <div class="d-flex flex-column justify-content-center text-center gspace-2 gspace-md-5">
             <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
                 <div class="sub-heading align-self-center">
                     <i class="fa-regular fa-circle-dot"></i>
                     <span>Our Service Plans</span>
                 </div>
-                <h2 class="title-heading heading-container heading-container-short">Flexible plans for brands<br> at every stage</h2>
+                <h2 class="title-heading heading-container heading-container-extra-short">Flexible plans for brands at every stage</h2>
             </div>
             <div class="row row-cols-xl-3 row-cols-1 grid-spacer-2">
                 <div class="col">

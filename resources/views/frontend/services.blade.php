@@ -64,14 +64,18 @@
     </div>
 
     <!-- Section Pricing -->
-     <div class="section">
+    <div>
 
-         @include('components.sections.pricing')
-     
-         <div class="service-link-footer d-flex flex-column justify-content-center text-center">
-             <p>Need a custom solution? Let's create a strategy tailored for your business. <a href="{{ route('contact') }}">Get a Free Strategy Call</a></p>
-         </div>
+        @include('components.sections.pricing')
 
-     </div>
+        <div class="section pt-0">
+
+            <div class="service-link-footer d-flex flex-column justify-content-center text-center">
+                <p>Need a custom solution? Let's create a strategy tailored for your business. <a href="{{ route('contact') }}">Get a Free Strategy Call</a></p>
+            </div>
+
+        </div>
+
+    </div>
 
 </x-layouts.frontend>

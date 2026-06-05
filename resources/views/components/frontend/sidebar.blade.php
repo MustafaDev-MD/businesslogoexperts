@@ -24,44 +24,41 @@
             <button class="close-btn"><span>X</span></button>
         </div>
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li><a href="{{ route('about') }}">About Us</a></li>
             <li class="sidebar-dropdown">
                 <div class="dropdown-header">
-                    <a href="#">Services</a>
+                    <a href="{{ route('services') }}">Services</a>
                     <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
                 </div>
                 <ul class="sidebar-dropdown-menu">
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="single_services.html">Service Details</a></li>
+                    @foreach(config('custom_services') as $service)
+                    @if(isset($service['slug']) && isset($service['name']))
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('single-service', ['slug' => $service['slug']]) }}">
+                            {{ $service['name'] }}
+                        </a>
+                    </li>
+                    @endif
+                    @endforeach
                 </ul>
-            </li>              
+            </li>
             <li class="sidebar-dropdown">
                 <div class="dropdown-header">
-                    <a href="#">Pages</a>
+                    <a href="{{ route('blog') }}">Blog</a>
                     <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
                 </div>
                 <ul class="sidebar-dropdown-menu">
-                    <li><a href="case_studies.html">Case Studies</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="partnership.html">Partnership</a></li>
-                    <li><a href="pricing.html">Princing Plan</a></li>
-                    <li><a href="testimonial.html">Testimonial</a></li>
-                    <li><a href="faq.html">FAQs</a></li>
-                    <li><a href="404_page.html">Error 404</a></li>
+                    @foreach(config('blog_posts') as $item)
+                    <li>
+                        <a href="{{ route('single-post', $item['slug']) }}">
+                            {{ $item['title'] }}
+                        </a>
+                    </li>
+                    @endforeach
                 </ul>
-            </li>  
-            <li class="sidebar-dropdown">
-                <div class="dropdown-header">
-                    <a href="#">Archive</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                </div>
-                <ul class="sidebar-dropdown-menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="single_post.html">Single Post</a></li>
-                </ul>
-            </li>  
-            <li class="below-dropdown"><a href="contact.html">Contact Us</a></li>
+            </li>
+            <li class="below-dropdown"><a href="{{ route('contact') }}">Contact Us</a></li>
         </ul>
     </div>
 </div>

@@ -12,7 +12,7 @@
             </div>
             <div class="hero-container position-relative">
                 <div class="d-flex flex-column gspace-2">
-                    <h1 class="title-heading-banner animate-box animated animate__animated" data-animate="animate__fadeInLeft">Build a brand people remember.</h1>
+                    <h1 class="title-heading-banner home-main-heading animate-box animated animate__animated" data-animate="animate__fadeInLeft">Build a brand people remember.</h1>
                     <div class="banner-heading">
                         <div class="banner-video-content order-xl-1 order-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
                             <div class="d-flex flex-column flex-xl-row text-xl-start text-center align-items-center gspace-5">

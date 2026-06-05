@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class FrontendController extends Controller
 {
@@ -52,6 +53,11 @@ class FrontendController extends Controller
             ->values();
 
         return view('frontend.single-post', compact('post', 'recent'));
+    }
+
+    public function __construct()
+    {
+        View::share('sidebarPosts', config('blog_posts'));
     }
 
     // Case studies page
