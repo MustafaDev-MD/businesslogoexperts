@@ -1029,7 +1029,7 @@ return [
         // EXPERTISE SECTION
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/animation-banner.webp',
         'bannerAlt' => 'Animation & Motion Banner',
 
         'expertiseTitle' => 'Tell better stories with motion that works.',
@@ -1351,7 +1351,7 @@ return [
         // EXPERTISE SECTION
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/ai-agents-banner.webp',
         'bannerAlt' => 'AI Agents Banner',
 
         'expertiseTitle' => 'Turn repetitive work into autonomous systems.',
@@ -1676,7 +1676,7 @@ return [
         // EXPERTISE SECTION
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/seo-banner.webp',
         'bannerAlt' => 'SEO Banner',
 
         'expertiseTitle' => 'Make organic discovery a repeatable growth channel.',
@@ -1998,7 +1998,7 @@ return [
         // EXPERTISE SECTION
         // -------------------------------------------------
 
-        'bannerImage' => 'assets/image/dummy-img-600x400.jpg',
+        'bannerImage' => 'assets/image/social-media-banner.webp',
         'bannerAlt' => 'Social Media Banner',
 
         'expertiseTitle' => 'Turn social channels into repeatable growth engines.',
