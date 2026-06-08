@@ -66,7 +66,7 @@ return [
 
         'portfolioImages' => [
             'Logo' => [
-                'assets/image/portfolio/branding/logo/logo-portfolio-slider-1.webp',
+                'assets/image/portfolio/branding/logo/logo-portfolio-slider-1.png',
                 'assets/image/dummy-img-600x400.jpg',
                 'assets/image/dummy-img-600x400.jpg',
             ],
