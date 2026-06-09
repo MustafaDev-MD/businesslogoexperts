@@ -2729,7 +2729,7 @@ body.lightmode .card-partner {
 .image-container img {
     width: 100%;
     /* border-radius: 10px; */
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Arrows */
@@ -4255,7 +4255,7 @@ body.lightmode .newsletter-layout {
     border-radius: 25px;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
