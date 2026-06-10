@@ -72,8 +72,9 @@ return [
                 'assets/image/portfolio/branding/logo/logo-portfolio-slider-4.png',
             ],
             'Systems' => [
-                'assets/image/portfolio/branding/systems/dummy-img-600x400.jpg',
-                'assets/image/portfolio/branding/systems/dummy-img-600x400.jpg',
+                'assets/image/portfolio/branding/systems/systems-portfolio-slider-1.png',
+                'assets/image/portfolio/branding/systems/systems-portfolio-slider-2.png',
+                'assets/image/portfolio/branding/systems/systems-portfolio-slider-3.png',
             ],
             'Assets' => [
                 'assets/image/portfolio/branding/assets/dummy-img-600x400.jpg',
@@ -81,7 +82,9 @@ return [
             ],
             'Print' => [
                 'assets/image/portfolio/branding/print/print-portfolio-slider-1.png',
-                'assets/image/portfolio/branding/print/dummy-img-600x400.jpg',
+                'assets/image/portfolio/branding/print/print-portfolio-slider-2.png',
+                'assets/image/portfolio/branding/print/print-portfolio-slider-3.png',
+                'assets/image/portfolio/branding/print/print-portfolio-slider-4.png',
             ],
             'Rebrand' => [
                 'assets/image/portfolio/branding/rebrand/dummy-img-600x400.jpg',
