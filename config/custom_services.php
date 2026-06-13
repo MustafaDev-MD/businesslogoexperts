@@ -404,9 +404,10 @@ return [
 
         'portfolioImages' => [
             'Sites' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/web-development/sites/websites-portfolio-slider-1.png',
+                'assets/image/portfolio/web-development/sites/websites-portfolio-slider-2.png',
+                'assets/image/portfolio/web-development/sites/websites-portfolio-slider-3.png',
+                'assets/image/portfolio/web-development/sites/websites-portfolio-slider-4.png',
             ],
             'Commerce' => [
                 'assets/image/dummy-img-600x400.jpg',
