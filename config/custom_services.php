@@ -416,8 +416,10 @@ return [
                 'assets/image/portfolio/web-development/e-commerce/e-commerce-portfolio-slider-4.png',
             ],
             'Webapps' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/web-development/web-apps/web-apps-portfolio-slider-1.png',
+                'assets/image/portfolio/web-development/web-apps/web-apps-portfolio-slider-2.png',
+                'assets/image/portfolio/web-development/web-apps/web-apps-portfolio-slider-3.png',
+                'assets/image/portfolio/web-development/web-apps/web-apps-portfolio-slider-4.png',
             ],
             'CMS' => [
                 'assets/image/dummy-img-600x400.jpg',
