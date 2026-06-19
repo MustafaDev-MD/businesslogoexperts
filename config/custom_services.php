@@ -427,8 +427,10 @@ return [
                 'assets/image/portfolio/web-development/cms/cms-portfolio-slider-3.png',
             ],
             'Integrate' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/web-development/Integrate/Integrate-portfolio-slider-1.png',
+                'assets/image/portfolio/web-development/Integrate/Integrate-portfolio-slider-2.png',
+                'assets/image/portfolio/web-development/Integrate/Integrate-portfolio-slider-3.png',
+                'assets/image/portfolio/web-development/Integrate/Integrate-portfolio-slider-4.png',
             ]
         ],
 
@@ -740,8 +742,10 @@ return [
 
         'portfolioImages' => [
             'Native' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/app-development/native/native-portfolio-slider-1.png',
+                'assets/image/portfolio/app-development/native/native-portfolio-slider-2.png',
+                'assets/image/portfolio/app-development/native/native-portfolio-slider-3.png',
+                'assets/image/portfolio/app-development/native/native-portfolio-slider-4.png',
             ],
             'Cross' => [
                 'assets/image/dummy-img-600x400.jpg',
