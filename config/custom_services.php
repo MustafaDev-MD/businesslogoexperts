@@ -748,8 +748,10 @@ return [
                 'assets/image/portfolio/app-development/native/native-portfolio-slider-4.png',
             ],
             'Cross' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/app-development/cross/cross-portfolio-slider-1.png',
+                'assets/image/portfolio/app-development/cross/cross-portfolio-slider-2.png',
+                'assets/image/portfolio/app-development/cross/cross-portfolio-slider-3.png',
+                'assets/image/portfolio/app-development/cross/cross-portfolio-slider-4.png',
             ],
             'Backend' => [
                 'assets/image/dummy-img-600x400.jpg',
