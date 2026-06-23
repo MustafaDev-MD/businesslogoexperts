@@ -766,8 +766,10 @@ return [
                 'assets/image/portfolio/app-development/integrate/integrate-portfolio-slider-4.png',
             ],
             'Maintain' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/app-development/maintain/maintain-portfolio-slider-1.png',
+                'assets/image/portfolio/app-development/maintain/maintain-portfolio-slider-2.png',
+                'assets/image/portfolio/app-development/maintain/maintain-portfolio-slider-3.png',
+                'assets/image/portfolio/app-development/maintain/maintain-portfolio-slider-4.png',
             ]
         ],
 
