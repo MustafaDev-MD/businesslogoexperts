@@ -754,12 +754,16 @@ return [
                 'assets/image/portfolio/app-development/cross/cross-portfolio-slider-4.png',
             ],
             'Backend' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/app-development/backend/backend-portfolio-slider-1.png',
+                'assets/image/portfolio/app-development/backend/backend-portfolio-slider-2.png',
+                'assets/image/portfolio/app-development/backend/backend-portfolio-slider-3.png',
+                'assets/image/portfolio/app-development/backend/backend-portfolio-slider-4.png',
             ],
             'Integrate' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/app-development/integrate/integrate-portfolio-slider-1.png',
+                'assets/image/portfolio/app-development/integrate/integrate-portfolio-slider-2.png',
+                'assets/image/portfolio/app-development/integrate/integrate-portfolio-slider-3.png',
+                'assets/image/portfolio/app-development/integrate/integrate-portfolio-slider-4.png',
             ],
             'Maintain' => [
                 'assets/image/dummy-img-600x400.jpg',
