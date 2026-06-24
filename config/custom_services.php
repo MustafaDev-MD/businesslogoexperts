@@ -1076,12 +1076,16 @@ return [
 
         'portfolioImages' => [
             'Motion' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/animation-motion/motion/motion-portfolio-slider-1.png',
+                'assets/image/portfolio/animation-motion/motion/motion-portfolio-slider-2.png',
+                'assets/image/portfolio/animation-motion/motion/motion-portfolio-slider-3.png',
+                'assets/image/portfolio/animation-motion/motion/motion-portfolio-slider-4.png',
             ],
             'Explainers' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/animation-motion/explainers/explainers-portfolio-slider-1.png',
+                'assets/image/portfolio/animation-motion/explainers/explainers-portfolio-slider-2.png',
+                'assets/image/portfolio/animation-motion/explainers/explainers-portfolio-slider-3.png',
+                'assets/image/portfolio/animation-motion/explainers/explainers-portfolio-slider-4.png',
             ],
             'UI' => [
                 'assets/image/dummy-img-600x400.jpg',
