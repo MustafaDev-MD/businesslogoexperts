@@ -651,7 +651,7 @@
                             <i class="fa-regular fa-circle-dot"></i>
                             <span>Frequently Asked Questions</span>
                         </div>
-                        <h2 class="title-heading">Got Questions? We've Got Answers.</h2>
+                        <h2 class="title-heading mt-3">Got Questions? We've Got Answers.</h2>
                     </div>
                 </div>
                 <div class="col col-xl-7">
