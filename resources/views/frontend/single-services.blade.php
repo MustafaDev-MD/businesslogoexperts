@@ -16,7 +16,7 @@
             <div class="d-flex flex-column gspace-5">
 
                 <!-- Service Hero Image & Title -->
-                <div class="image-container">
+                <div class="image-container single-service-main-image">
                     <img src="{{ asset($service['bannerImage'] ?? 'assets/image/dummy-img-600x400.jpg') }}"
                         alt="{{ $service['bannerAlt'] }}"
                         class="single-service-img">

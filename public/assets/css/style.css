@@ -5554,7 +5554,7 @@ body.lightmode .cta-service-banner::before {
         height: auto;
     }
 
-    .image-container {
+    .single-service-main-image {
         display: block;
     }
 
@@ -5687,7 +5687,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .about-img {
-        height: 350px;
+        height: auto;
     }
 
     .card-about {
