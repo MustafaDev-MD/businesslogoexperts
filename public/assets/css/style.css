@@ -444,7 +444,8 @@ h4 {
 
 h5 {
     font-size: var(--font-size-lg);
-    line-height: var(--line-height-ultra-tight);
+    /* line-height: var(--line-height-snug); */
+    line-height: auto;
     letter-spacing: 0.7px;
 }
 
@@ -1956,6 +1957,10 @@ body.lightmode .navbar-icon-wrapper {
     row-gap: 50px;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 /* Grid spacing (row-gap & column-gap) */
 
 .grid-spacer-1 {
@@ -2729,7 +2734,8 @@ body.lightmode .card-partner {
 .image-container img {
     width: 100%;
     /* border-radius: 10px; */
-    object-fit: contain;
+    /* object-fit: contain; */
+    object-fit: cover;
 }
 
 /* Arrows */
@@ -4255,7 +4261,8 @@ body.lightmode .newsletter-layout {
     border-radius: 25px;
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
+    object-fit: cover;
     object-position: center;
 }
 
@@ -4522,12 +4529,7 @@ body.lightmode .accordion-button:not(.collapsed)::after {
     height: 400px;
     /* filter: brightness(69%) contrast(200%) saturate(0%) blur(0px) hue-rotate(0deg); */
     filter:
-        grayscale(100%)
-        sepia(100%)
-        hue-rotate(255deg)
-        saturate(1200%)
-        brightness(55%)
-        contrast(130%);
+        grayscale(100%) sepia(100%) hue-rotate(255deg) saturate(1200%) brightness(55%) contrast(130%);
     border-radius: var(--global-border-radius);
     overflow: hidden;
 }
@@ -5508,7 +5510,7 @@ body.lightmode .cta-service-banner::before {
 
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: var(--font-size-10xl);
+        font-size: var(--font-size-9xl);
     }
 
     .home-main-heading {
@@ -5548,6 +5550,14 @@ body.lightmode .cta-service-banner::before {
         width: 100%;
     }
 
+    .post-image{
+        height: auto;
+    }
+
+    .image-container {
+        display: block;
+    }
+
     .logo-container img {
         width: 80%;
     }
@@ -5563,6 +5573,19 @@ body.lightmode .cta-service-banner::before {
     .banner-video-content p {
         font-size: var(--font-size-xs);
         max-width: 100%;
+    }
+
+    .banner-video-container {
+        padding: 60px 20px 60px 20px;
+    }
+
+    .banner-layout{
+        gap: 40px 0px;
+        padding: 40px 20px 0px 20px;
+    }
+
+    .single-service-spacer{
+        display: none;
     }
 
     .section-banner {
@@ -5664,7 +5687,7 @@ body.lightmode .cta-service-banner::before {
     }
 
     .about-img {
-        height: 550px;
+        height: 350px;
     }
 
     .card-about {
@@ -5775,7 +5798,12 @@ body.lightmode .cta-service-banner::before {
     }
 
     .single-service-title-layout {
-        width: 74%;
+        width: 100%;
+        position: static;
+    }
+
+    .single-service-img{
+        height: auto;
     }
 
     .case-studies-component.large,
@@ -5808,12 +5836,14 @@ body.lightmode .cta-service-banner::before {
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 20px 20px;
     }
 
     .footer-quick-links {
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 20px;
     }
 
     .footer-services-container {
@@ -5826,11 +5856,13 @@ body.lightmode .cta-service-banner::before {
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 20px;
     }
 
     .footer-list li {
         justify-content: center;
         text-align: center;
+        margin-bottom: 12px;
     }
 
     .footer-list a {
@@ -5840,6 +5872,7 @@ body.lightmode .cta-service-banner::before {
     .contact-list li {
         justify-content: center;
         font-size: var(--font-size-xs);
+        margin-bottom: 12px;
     }
 
     .copyright-container {
@@ -5873,21 +5906,24 @@ body.lightmode .cta-service-banner::before {
     }
 
     .service-inner-tab {
+        justify-content: center !important;
         padding: 15px 15px;
-        gap: 5px 11px;
+        /* gap: 5px 11px; */
+        gap: 0px 35px;
     }
 
     .glide__arrow--left {
-        left: -10%;
+        left: -12%;
     }
 
     .glide__arrow--right {
-        right: -10%;
+        right: -12%;
     }
 
-    .service-inner-tab{
-        justify-content: center !important;
+    .check-list{
+        margin-bottom: 8px;
     }
+    
 }
 
 .file-upload-wrapper {

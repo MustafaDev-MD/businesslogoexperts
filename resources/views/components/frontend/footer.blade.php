@@ -21,7 +21,7 @@
                         </div>
 
                         <!-- Quick Links -->
-                        <div class="col col-xl-2 offset-md-2">
+                        <div class="col col-xl-2 offset-md-2 mt-4 mt-md-auto">
                             <div class="footer-quick-links">
                                 <h5>Quick Links</h5>
                                 <ul class="footer-list">
@@ -54,7 +54,7 @@
                         </div> -->
 
                         <!-- Contact & Social -->
-                        <div class="col col-xl-3 offset-md-1">
+                        <div class="col col-xl-3 offset-md-1 mt-4 mt-md-auto">
                             <div class="footer-contact-container">
                                 <h5>Contact Info</h5>
                                 <ul class="contact-list">

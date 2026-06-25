@@ -182,7 +182,7 @@
                                     @endif
 
                                     @if(!empty($service['included_2']))
-                                    <div class="col">
+                                    <div class="col mt-0 mt-md-auto">
                                         <ul class="check-list">
                                             @foreach($service['included_2'] as $item)
                                             <li>{{ $item }}</li>
