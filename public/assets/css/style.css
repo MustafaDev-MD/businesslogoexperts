@@ -5080,7 +5080,7 @@ body.lightmode .cta-service-banner::before {
 
     .banner-content {
         justify-content: center;
-        text-align: center;
+        text-align: start;
         width: 100%;
         gap: 15px;
     }
