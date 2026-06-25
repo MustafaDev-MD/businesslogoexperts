@@ -5793,6 +5793,10 @@ body.lightmode .cta-service-banner::before {
         font-size: var(--font-size-sm);
     }
 
+    .social-item-wrapper{
+        margin-top: 10px;
+    }
+
     .blog-link-post {
         font-size: var(--font-size-base);
     }
