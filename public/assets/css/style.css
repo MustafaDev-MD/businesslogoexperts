@@ -5558,6 +5558,10 @@ body.lightmode .cta-service-banner::before {
         display: block;
     }
 
+    .breadcrumb a {
+        font-size: var(--font-size-base);
+    }
+
     .logo-container img {
         width: 80%;
     }
