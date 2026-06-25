@@ -433,7 +433,7 @@ h2 {
 
 h3 {
     font-size: var(--font-size-9xl);
-    /* line-height: var(--line-height-snug); */
+    line-height: var(--line-height-snug);
 }
 
 h4 {
