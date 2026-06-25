@@ -457,7 +457,7 @@
                                     <div class="underline-accent-short"></div>
                                     <p class="text-start">{{ $service['rightCTADes'] ?? 'Book a free 30-minute brand audit — we’ll map quick wins and the right package for your goals.' }}</p>
                                     <a href="tel:+1 (62) 987 7543">
-                                        <div class="navbar-icon-wrapper inner-service-button">
+                                        <div class="navbar-icon-wrapper inner-service-button single-service-contact-button">
                                             <div class="icon-circle">
                                                 <i class="fa-solid fa-phone-volume"></i>
                                             </div>
