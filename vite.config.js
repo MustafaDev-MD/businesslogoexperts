@@ -19,6 +19,6 @@ export default defineConfig({
         },
     },
     build: {
-        assetsInlineLimit: 0, // images ko inline na kare
+        assetsInlineLimit: 0, 
     }
 });
