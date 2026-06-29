@@ -1094,12 +1094,16 @@ return [
                 'assets/image/portfolio/animation-motion/ui/ui-portfolio-slider-4.png',
             ],
             'Social' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/animation-motion/social/social-portfolio-slider-1.png',
+                'assets/image/portfolio/animation-motion/social/social-portfolio-slider-2.png',
+                'assets/image/portfolio/animation-motion/social/social-portfolio-slider-3.png',
+                'assets/image/portfolio/animation-motion/social/social-portfolio-slider-4.png',
             ],
             '3D' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/animation-motion/3d/3d-portfolio-slider-1.png',
+                'assets/image/portfolio/animation-motion/3d/3d-portfolio-slider-2.png',
+                'assets/image/portfolio/animation-motion/3d/3d-portfolio-slider-3.png',
+                'assets/image/portfolio/animation-motion/3d/3d-portfolio-slider-4.png',
             ],
         ],
 
