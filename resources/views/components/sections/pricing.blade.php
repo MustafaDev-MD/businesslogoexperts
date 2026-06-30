@@ -39,11 +39,11 @@
                                 </div>
                             </a>
                             <ul class="check-list">
-                                <li><a href="javascript:void(0)">Logo concept and final mark</a></li>
-                                <li><a href="javascript:void(0)">Basic color palette</a></li>
-                                <li><a href="javascript:void(0)">Typography pairing</a></li>
-                                <li><a href="javascript:void(0)">Mini brand guide</a></li>
-                                <li><a href="javascript:void(0)">2 revision rounds</a></li>
+                                <li>Logo concept and final mark</li>
+                                <li>Basic color palette</li>
+                                <li>Typography pairing</li>
+                                <li>Mini brand guide</li>
+                                <li>2 revision rounds</li>
                             </ul>
                         </div>
                     </div>
@@ -70,25 +70,25 @@
                         <div class="core-benefits">
                             <div class="benefit">
                                 <i class="fa-solid fa-brain"></i>
-                                <a href="javascript:void(0)">Dedicated Account Manager</a>
+                                <span>Dedicated Account Manager</span>
                             </div>
                             <div class="benefit">
                                 <i class="fa-brands fa-accessible-icon"></i>
-                                <a href="javascript:void(0)">Priority Support 24/7</a>
+                                <span>Priority Support 24/7</span>
                             </div>
                             <div class="benefit">
                                 <i class="fa-solid fa-bug"></i>
-                                <a href="javascript:void(0)">Customized Growth Strength</a>
+                                <span>Customized Growth Strength</span>
                             </div>
                         </div>
                         <ul class="check-list">
-                            <li><a href="javascript:void(0)">8–12 page custom website</a></li>
-                            <li><a href="javascript:void(0)">Advanced UI/UX design</a></li>
-                            <li><a href="javascript:void(0)">CMS and blog setup</a></li>
-                            <li><a href="javascript:void(0)">SEO-ready structure</a></li>
-                            <li><a href="javascript:void(0)">Speed optimization</a></li>
-                            <li><a href="javascript:void(0)">Analytics integration</a></li>
-                            <li><a href="javascript:void(0)">3 revision rounds</a></li>
+                            <li>8–12 page custom website</li>
+                            <li>Advanced UI/UX design</li>
+                            <li>CMS and blog setup</li>
+                            <li>SEO-ready structure</li>
+                            <li>Speed optimization</li>
+                            <li>Analytics integration</li>
+                            <li>3 revision rounds</li>
                         </ul>
                     </div>
                 </div>
@@ -99,15 +99,15 @@
                                 <h5>Your growth, our priority</h5>
                                 <div class="d-flex flex-column gspace-2">
                                     <div class="pricing-highlights">
-                                        <a href="javascript:void(0)">Strategy tailored to your goals</a>
+                                        <li href="javascript:void(0)">Strategy tailored to your goals</li>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <a href="javascript:void(0)">Clear communication at every step</a>
+                                        <li href="javascript:void(0)">Clear communication at every step</li>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <a href="javascript:void(0)">Scalable solutions for growth</a>
+                                        <li href="javascript:void(0)">Scalable solutions for growth</li>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                 </div>
@@ -132,13 +132,13 @@
                                 </div>
                             </a>
                             <ul class="check-list">
-                                <li><a href="javascript:void(0)">Enterprise-grade architecture</a></li>
-                                <li><a href="javascript:void(0)">Custom backend development</a></li>
-                                <li><a href="javascript:void(0)">Advanced integrations</a></li>
-                                <li><a href="javascript:void(0)">Multi-user permissions</a></li>
-                                <li><a href="javascript:void(0)">Scalability optimization</a></li>
-                                <li><a href="javascript:void(0)">Security implementation</a></li>
-                                <li><a href="javascript:void(0)">Priority development support</a></li>
+                                <li>Enterprise-grade architecture</li>
+                                <li>Custom backend development</li>
+                                <li>Advanced integrations</li>
+                                <li>Multi-user permissions</li>
+                                <li>Scalability optimization</li>
+                                <li>Security implementation</li>
+                                <li>Priority development support</li>
                             </ul>
                         </div>
                     </div>

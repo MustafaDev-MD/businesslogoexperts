@@ -369,6 +369,18 @@ url('../fonts/Magox.otf') format('opentype'),  */
 
 /* ================== 04. Base Styles ================== */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 body {
     overflow-x: hidden;
     background-color: var(--secondary);
@@ -1957,7 +1969,7 @@ body.lightmode .navbar-icon-wrapper {
     row-gap: 50px;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
@@ -4020,14 +4032,27 @@ body.lightmode .newsletter-layout {
     padding: 0;
 }
 
+li {
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    transition: all 0.2s;
+    line-height: var(--line-height-loose);
+    list-style: none;
+}
+
 .check-list li {
     position: relative;
     padding-left: 32px;
     margin-bottom: 8px;
     font-size: var(--font-size-base);
-    font-weight: 300;
+    /* font-weight: 300; */
+    font-weight: 400;
     letter-spacing: 0.6px;
     line-height: var(--line-height-loose);
+    color: var(--text-color);
+
+    /* transition: all 0.2s; */
 }
 
 .check-list a {
@@ -5069,7 +5094,7 @@ body.lightmode .cta-service-banner::before {
         display: none;
     }
 
-    .single-service-contact-button{
+    .single-service-contact-button {
         display: flex;
         width: 190px;
     }
@@ -5555,7 +5580,7 @@ body.lightmode .cta-service-banner::before {
         width: 100%;
     }
 
-    .post-image{
+    .post-image {
         height: auto;
     }
 
@@ -5588,12 +5613,12 @@ body.lightmode .cta-service-banner::before {
         padding: 60px 20px 60px 20px;
     }
 
-    .banner-layout{
+    .banner-layout {
         gap: 40px 0px;
         padding: 40px 20px 0px 20px;
     }
 
-    .single-service-spacer{
+    .single-service-spacer {
         display: none;
     }
 
@@ -5793,7 +5818,7 @@ body.lightmode .cta-service-banner::before {
         font-size: var(--font-size-sm);
     }
 
-    .social-item-wrapper{
+    .social-item-wrapper {
         margin-top: 10px;
     }
 
@@ -5815,7 +5840,7 @@ body.lightmode .cta-service-banner::before {
         position: static;
     }
 
-    .single-service-img{
+    .single-service-img {
         height: auto;
     }
 
@@ -5933,10 +5958,10 @@ body.lightmode .cta-service-banner::before {
         right: -12%;
     }
 
-    .check-list{
+    .check-list {
         margin-bottom: 8px;
     }
-    
+
 }
 
 .file-upload-wrapper {

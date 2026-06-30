@@ -29,45 +29,57 @@
                 @foreach(collect(config('blog_posts'))->take(2) as $post)
                 <div class="col">
                     <!-- <a href="{{ route('single-post', $post['slug']) }}"> -->
-                        <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                    <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeInUp">
 
-                            <!-- Image -->
-                            <div class="blog-image">
-                                <img src="{{ asset($post['image']) }}" alt="{{ $post['alt-text'] }}">
-                            </div>
+                        <!-- Image -->
+                        <div class="blog-image">
+                            <img src="{{ asset($post['image']) }}" alt="{{ $post['alt-text'] }}">
+                        </div>
 
-                            <!-- Content -->
-                            <div class="card-body">
+                        <!-- Content -->
+                        <div class="card-body">
 
-                                <!-- Meta -->
-                                <div class="d-flex flex-row gspace-2">
+                            <!-- Meta -->
+                            <div class="d-flex flex-row gspace-2">
 
-                                    <div class="d-flex flex-row gspace-1 align-items-center">
-                                        <i class="fa-solid fa-calendar accent-color"></i>
-                                        <span class="meta-data">{{ $post['date'] }}</span>
-                                    </div>
-
-                                    <div class="d-flex flex-row gspace-1 align-items-center">
-                                        <i class="fa-solid fa-folder accent-color"></i>
-                                        <span class="meta-data">{{ $post['category'] }}</span>
-                                    </div>
-
+                                <div class="d-flex flex-row gspace-1 align-items-center">
+                                    <i class="fa-solid fa-calendar accent-color"></i>
+                                    <span class="meta-data">{{ $post['date'] }}</span>
                                 </div>
 
-                                <!-- Title -->
-                                <a href="{{ route('single-post', $post['slug']) }}" class="blog-link">
-                                    {{ $post['title'] }}
-                                </a>
+                                <div class="d-flex flex-row gspace-1 align-items-center">
+                                    <i class="fa-solid fa-folder accent-color"></i>
+                                    <span class="meta-data">{{ $post['category'] }}</span>
+                                </div>
 
-                                <!-- Excerpt -->
-                                <p>
-                                    {{ $post['excerpt'] ?? Str::limit(strip_tags(collect($post['content'])->pluck('text')->implode(' ')), 120) }}
-                                </p>
-
-                                <!-- Read More -->
-                                <a href="{{ route('single-post', $post['slug']) }}" class="read-more">Read More</a>
                             </div>
+
+                            <!-- Title -->
+                            <a href="{{ route('single-post', $post['slug']) }}" class="blog-link">
+                                {{ $post['title'] }}
+                            </a>
+
+                            <!-- Excerpt -->
+                            <p>
+                                {{ $post['excerpt'] ?? Str::limit(strip_tags(collect($post['content'])->pluck('text')->implode(' ')), 120) }}
+                            </p>
+
+                            <!-- Read More -->
+                            <!-- <a href="{{ route('single-post', $post['slug']) }}" class="read-more">Read More</a> -->
+                            <!-- <a
+                                href="{{ route('single-post', $post['slug']) }}"
+                                class="read-more"
+                                aria-label="Read more about {{ $post['title'] }}">
+                                Read More
+                            </a> -->
+                            <a href="{{ route('single-post', $post['slug']) }}" class="read-more">
+                                Read More
+                                <span class="visually-hidden">
+                                    about {{ $post['title'] }}
+                                </span>
+                            </a>
                         </div>
+                    </div>
                     <!-- </a> -->
                 </div>
                 @endforeach
