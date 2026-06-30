@@ -99,15 +99,15 @@
                                 <h5>Your growth, our priority</h5>
                                 <div class="d-flex flex-column gspace-2">
                                     <div class="pricing-highlights">
-                                        <li href="javascript:void(0)">Strategy tailored to your goals</li>
+                                        <span>Strategy tailored to your goals</span>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <li href="javascript:void(0)">Clear communication at every step</li>
+                                        <span>Clear communication at every step</span>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                     <div class="pricing-highlights">
-                                        <li href="javascript:void(0)">Scalable solutions for growth</li>
+                                        <span>Scalable solutions for growth</span>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
                                     </div>
                                 </div>

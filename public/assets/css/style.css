@@ -4032,7 +4032,7 @@ body.lightmode .newsletter-layout {
     padding: 0;
 }
 
-li {
+li, span {
     color: var(--text-color);
     font-size: var(--font-size-base);
     font-weight: 400;

@@ -40,11 +40,11 @@
                             <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-center gspace-2">
                                 <div class="testimonial-header-link-wrapper">
                                     <i class="fa-regular fa-circle-check accent-color"></i>
-                                    <li>Brand growth</li>
+                                    <span>Brand growth</span>
                                 </div>
                                 <div class="testimonial-header-link-wrapper">
                                     <i class="fa-regular fa-circle-check accent-color"></i>
-                                    <li>Performance focus</li>
+                                    <span>Performance focus</span>
                                 </div>
                             </div>
                         </div>
