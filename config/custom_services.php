@@ -1421,16 +1421,18 @@ return [
                 'assets/image/portfolio/ai-agents/automate/automate-portfolio-slider-4.png',
             ],
             'Copilot' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/ai-agents/copilot/copilot-portfolio-slider-1.png',
+                'assets/image/portfolio/ai-agents/copilot/copilot-portfolio-slider-2.png',
+                'assets/image/portfolio/ai-agents/copilot/copilot-portfolio-slider-3.png',
+                'assets/image/portfolio/ai-agents/copilot/copilot-portfolio-slider-4.png',
             ],
             'Integrate' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/ai-agents/integrate/integrate-portfolio-slider-1.png',
+                'assets/image/portfolio/ai-agents/integrate/integrate-portfolio-slider-2.png',
             ],
             'Train' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/ai-agents/train/train-portfolio-slider-1.png',
+                'assets/image/portfolio/ai-agents/train/train-portfolio-slider-2.png',
             ],
         ],
 
