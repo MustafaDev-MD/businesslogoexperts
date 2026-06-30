@@ -316,7 +316,7 @@
                             <!-- CTA Banner -->
                             <div class="cta-service-banner">
                                 <!-- <div class="spacer"></div> -->
-                                <span>Featured article</span>
+                                <h5>Featured article</h5>
                                 <h3 class="title-heading">{{ $service['rightBlogTitle'] ?? 'Transform Your Business with Marko!' }}</h3>
                                 <p>{{ $service['rightBlogDes'] ?? 'Take your business to the next level with our solutions.' }}</p>
                                 <div class="link-wrapper">

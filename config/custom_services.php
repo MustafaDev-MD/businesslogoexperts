@@ -2121,7 +2121,7 @@ return [
         // -------------------------------------------------
 
         'pricing' => [
-            'title' => "Book a free SEO audit and we’ll show you where the biggest opportunities are.",
+            'title' => "Book a free SEO audit",
             'link' => 'Book a free 30-minute strategy call',
             'plans' => [
                 [
