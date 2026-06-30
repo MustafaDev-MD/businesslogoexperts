@@ -1739,24 +1739,24 @@ return [
 
         'portfolioImages' => [
             'Technical' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/seo/technical/technical-portfolio-slider-1.png',
+                'assets/image/portfolio/seo/technical/technical-portfolio-slider-2.png',
             ],
             'Content' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/seo/content/content-portfolio-slider-1.png',
+                'assets/image/portfolio/seo/content/content-portfolio-slider-2.png',
             ],
             'Local' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/seo/local/local-portfolio-slider-1.png',
+                'assets/image/portfolio/seo/local/local-portfolio-slider-2.png',
             ],
             'Commerce' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/seo/commerce/commerce-portfolio-slider-1.png',
+                'assets/image/portfolio/seo/commerce/commerce-portfolio-slider-2.png',
             ],
             'Growth' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/seo/growth/growth-portfolio-slider-1.png',
+                'assets/image/portfolio/seo/growth/growth-portfolio-slider-2.png',
             ],
         ],
 
