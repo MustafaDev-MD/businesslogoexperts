@@ -67,8 +67,16 @@
                                     <h5>Social Media</h5>
                                     <div class="social-container">
                                         <div class="social-item-wrapper">
-                                            <a href="https://facebook.com" target="_blank" class="social-item">
+                                            <!-- <a href="https://facebook.com" target="_blank" class="social-item">
                                                 <i class="fa-brands fa-facebook"></i>
+                                            </a> -->
+                                            <a
+                                                href="https://facebook.com"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="social-item"
+                                                aria-label="Visit our Facebook page">
+                                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                                             </a>
                                         </div>
                                         <!-- <div class="social-item-wrapper">
@@ -77,13 +85,29 @@
                                             </a>
                                         </div> -->
                                         <div class="social-item-wrapper">
-                                            <a href="https://instagram.com" target="_blank" class="social-item">
+                                            <!-- <a href="https://instagram.com" target="_blank" class="social-item">
                                                 <i class="fa-brands fa-instagram"></i>
+                                            </a> -->
+                                            <a
+                                                href="https://instagram.com"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="social-item"
+                                                aria-label="Visit our Instagram page">
+                                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                             </a>
                                         </div>
                                         <div class="social-item-wrapper">
-                                            <a href="https://linkedin.com" target="_blank" class="social-item">
+                                            <!-- <a href="https://linkedin.com" target="_blank" class="social-item">
                                                 <i class="fa-brands fa-linkedin"></i>
+                                            </a> -->
+                                            <a
+                                                href="https://linkedin.com"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="social-item"
+                                                aria-label="Visit our LinkedIn page">
+                                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                                             </a>
                                         </div>
                                     </div>

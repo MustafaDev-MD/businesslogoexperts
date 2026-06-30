@@ -269,26 +269,32 @@ function initSidebar() {
     const $overlay = $('.sidebar-overlay');
     const $sidebar = $('.sidebar');
 
-    $menuBtn.click(function () {
+    $menuBtn.on('click', function () {
         $overlay.addClass('active');
+
+        // Accessibility
+        $sidebar.attr('aria-hidden', 'false');
+        $menuBtn.attr('aria-expanded', 'true');
+
         setTimeout(() => {
             $sidebar.addClass('active');
         }, 200);
     });
 
-    $closeBtn.click(function () {
+    function closeSidebar() {
         $sidebar.removeClass('active');
-        setTimeout(() => {
-            $overlay.removeClass('active');
-        }, 200);
-    });
 
-    $overlay.click(function () {
-        $sidebar.removeClass('active');
+        // Accessibility
+        $sidebar.attr('aria-hidden', 'true');
+        $menuBtn.attr('aria-expanded', 'false');
+
         setTimeout(() => {
             $overlay.removeClass('active');
         }, 200);
-    });
+    }
+
+    $closeBtn.on('click', closeSidebar);
+    $overlay.on('click', closeSidebar);
 }
 
 function initEditSidebar() {
@@ -312,17 +318,37 @@ function initEditSidebar() {
     });
 }
 
+// function initSidebarDropdown() {
+//     const $dropdownButtons = $(".sidebar-dropdown-btn");
+
+//     $dropdownButtons.each(function () {
+//         $(this).on("click", function () {
+//             const $dropdownMenu = $(this).parent().next(".sidebar-dropdown-menu");
+//             const isOpen = $dropdownMenu.hasClass("active");
+
+//             $(".sidebar-dropdown-menu").not($dropdownMenu).removeClass("active");
+
+//             $dropdownMenu.toggleClass("active", !isOpen);
+//         });
+//     });
+// }
+
 function initSidebarDropdown() {
     const $dropdownButtons = $(".sidebar-dropdown-btn");
 
     $dropdownButtons.each(function () {
         $(this).on("click", function () {
-            const $dropdownMenu = $(this).parent().next(".sidebar-dropdown-menu");
+            const $button = $(this);
+            const $dropdownMenu = $button.parent().next(".sidebar-dropdown-menu");
             const isOpen = $dropdownMenu.hasClass("active");
 
+            // Close all other dropdowns
             $(".sidebar-dropdown-menu").not($dropdownMenu).removeClass("active");
+            $(".sidebar-dropdown-btn").not($button).attr("aria-expanded", "false");
 
+            // Toggle current dropdown
             $dropdownMenu.toggleClass("active", !isOpen);
+            $button.attr("aria-expanded", !isOpen);
         });
     });
 }

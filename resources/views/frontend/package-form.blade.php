@@ -18,7 +18,7 @@
                             <p>{{ $package['description'] }}</p>
                             <div class="d-flex flex-row gspace-1 align-items-center">
                                 <h3>${{ $package['price'] }}</h3>
-                                <p>/Month</p>
+                                <p>/one-time</p>
                             </div>
                             <!-- <a href="#" class="btn btn-accent">
                                 <div class="btn-title">

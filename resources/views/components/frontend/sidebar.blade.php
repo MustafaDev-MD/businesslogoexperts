@@ -21,7 +21,13 @@
             <div class="logo">
                 <img src="{{ asset('assets/image/logo.png') }}" class="site-logo img-fluid logo" alt="Logo">
             </div>
-            <button class="close-btn"><span>X</span></button>
+            <!-- <button class="close-btn"><span>X</span></button> -->
+            <button
+                type="button"
+                class="close-btn"
+                aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
         </div>
         <ul class="menu">
             <li><a href="{{ route('home') }}">Home</a></li>
@@ -29,7 +35,14 @@
             <li class="sidebar-dropdown">
                 <div class="dropdown-header">
                     <a href="{{ route('services') }}">Services</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                    <!-- <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button> -->
+                    <button
+                        type="button"
+                        class="sidebar-dropdown-btn"
+                        aria-label="Expand Services menu"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
                 </div>
                 <ul class="sidebar-dropdown-menu">
                     @foreach(config('custom_services') as $service)
@@ -46,7 +59,14 @@
             <li class="sidebar-dropdown">
                 <div class="dropdown-header">
                     <a href="{{ route('blog') }}">Blog</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                    <!-- <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button> -->
+                    <button
+                        type="button"
+                        class="sidebar-dropdown-btn"
+                        aria-label="Expand Blog menu"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
                 </div>
                 <ul class="sidebar-dropdown-menu">
                     @foreach(config('blog_posts') as $item)

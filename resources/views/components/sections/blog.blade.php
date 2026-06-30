@@ -28,7 +28,7 @@
             <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
                 @foreach(collect(config('blog_posts'))->take(2) as $post)
                 <div class="col">
-                    <a href="{{ route('single-post', $post['slug']) }}">
+                    <!-- <a href="{{ route('single-post', $post['slug']) }}"> -->
                         <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeInUp">
 
                             <!-- Image -->
@@ -68,7 +68,7 @@
                                 <a href="{{ route('single-post', $post['slug']) }}" class="read-more">Read More</a>
                             </div>
                         </div>
-                    </a>
+                    <!-- </a> -->
                 </div>
                 @endforeach
 
