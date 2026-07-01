@@ -2068,14 +2068,21 @@ return [
             ],
             'Content' => [
                 'assets/image/portfolio/social-media/content/content-portfolio-slider-1.png',
+                'assets/image/portfolio/social-media/content/content-portfolio-slider-2.png',
+                'assets/image/portfolio/social-media/content/content-portfolio-slider-3.png',
+                'assets/image/portfolio/social-media/content/content-portfolio-slider-4.png',
             ],
             'Ads' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/social-media/ads/ads-portfolio-slider-1.png',
+                'assets/image/portfolio/social-media/ads/ads-portfolio-slider-2.png',
+                'assets/image/portfolio/social-media/ads/ads-portfolio-slider-3.png',
+                'assets/image/portfolio/social-media/ads/ads-portfolio-slider-4.png',
             ],
             'Community' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/social-media/community/community-portfolio-slider-1.png',
+                'assets/image/portfolio/social-media/community/community-portfolio-slider-2.png',
+                'assets/image/portfolio/social-media/community/community-portfolio-slider-3.png',
+                'assets/image/portfolio/social-media/community/community-portfolio-slider-4.png',
             ],
             'Analytics' => [
                 'assets/image/dummy-img-600x400.jpg',
