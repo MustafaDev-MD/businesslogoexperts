@@ -2061,12 +2061,13 @@ return [
 
         'portfolioImages' => [
             'Strategy' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/social-media/strategy/strategy-portfolio-slider-1.png',
+                'assets/image/portfolio/social-media/strategy/strategy-portfolio-slider-2.png',
+                'assets/image/portfolio/social-media/strategy/strategy-portfolio-slider-3.png',
+                'assets/image/portfolio/social-media/strategy/strategy-portfolio-slider-4.png',
             ],
             'Content' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/social-media/content/content-portfolio-slider-1.png',
             ],
             'Ads' => [
                 'assets/image/dummy-img-600x400.jpg',
