@@ -2085,8 +2085,10 @@ return [
                 'assets/image/portfolio/social-media/community/community-portfolio-slider-4.png',
             ],
             'Analytics' => [
-                'assets/image/dummy-img-600x400.jpg',
-                'assets/image/dummy-img-600x400.jpg',
+                'assets/image/portfolio/social-media/analytics/analytics-portfolio-slider-1.png',
+                'assets/image/portfolio/social-media/analytics/analytics-portfolio-slider-2.png',
+                'assets/image/portfolio/social-media/analytics/analytics-portfolio-slider-3.png',
+                'assets/image/portfolio/social-media/analytics/analytics-portfolio-slider-4.png',
             ],
         ],
 
