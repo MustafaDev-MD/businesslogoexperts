@@ -15,7 +15,7 @@
                                 </div>
                                 <h4>Driving Digital Growth with Innovation & Strategy</h4>
                                 <p>
-                                    Lorem ipsum dolor si consectetur adipiscing elit ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+                                    We build brands people remember and digital experiences that perform. From identity and design to websites, AI, and growth, we help businesses launch, scale, and stay unforgettable.
                                 </p>
                             </div>
                         </div>

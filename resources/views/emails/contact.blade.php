@@ -31,11 +31,11 @@
 
                             <div style="width:60px;height:3px;background:linear-gradient(90deg,#C82AEF,#9B1DB8);border-radius:2px;margin:0 auto 20px;"></div>
 
-                            <h1 style="margin:0;font-size:22px;color:#FFFFFF;font-weight:600;">
+                            <h1 style="margin:0;font-size:22px;color:#FFFFFF;font-weight:600; text-align: center;">
                                 New Contact Message
                             </h1>
 
-                            <p style="margin:8px 0 0;color:#8B8B8B;font-size:14px;">
+                            <p style="margin:8px 0 0;color:#8B8B8B;font-size:14px; text-align: center;">
                                 A new contact inquiry has been submitted
                             </p>
 
@@ -161,7 +161,7 @@
                                    border-radius:0 0 16px 16px;
                                    padding:24px 40px;">
 
-                            <p style="margin:0;color:#8B8B8B;font-size:16px;">
+                            <p style="margin:0;color:#8B8B8B;font-size:16px; text-align: center;">
                                 &copy; {{ date('Y') }}
 
                                 <span style="color:#C82AEF;">
