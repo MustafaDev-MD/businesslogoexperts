@@ -1647,6 +1647,7 @@ body.lightmode .digital-process-banner {
 
 .digital-process-steps {
     background-color: var(--secondary);
+    background-image: radial-gradient(at top left, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
     display: flex;
     flex-direction: row;
     gap: 30px 30px;
@@ -3122,6 +3123,7 @@ body.lightmode .case-studies-content::before {
     gap: 20px 20px;
     padding: 30px 30px 30px 30px;
     text-align: start;
+    background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
 }
 
 .card-blog .card_footer {
@@ -3694,7 +3696,8 @@ body.lightmode .guide-banner::before {
     display: flex;
     flex-direction: column;
     gap: 20px 20px;
-    background-color: var(--secondary);
+    /* background-color: var(--secondary); */
+    background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
     border: 1px solid var(--accent-color-3);
     border-radius: var(--global-border-radius);
     padding: 30px 30px 30px 30px;
@@ -3703,7 +3706,8 @@ body.lightmode .guide-banner::before {
 }
 
 body.lightmode .card-testimonial-header-title {
-    background-color: var(--accent-color-4);
+    /* background-color: var(--accent-color-4); */
+    background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
 }
 
 .card-testimonial {
@@ -4032,7 +4036,8 @@ body.lightmode .newsletter-layout {
     padding: 0;
 }
 
-li, span {
+li,
+span {
     color: var(--text-color);
     font-size: var(--font-size-base);
     font-weight: 400;
@@ -4552,9 +4557,8 @@ body.lightmode .accordion-button:not(.collapsed)::after {
     width: 100%;
     line-height: 1;
     height: 400px;
-    /* filter: brightness(69%) contrast(200%) saturate(0%) blur(0px) hue-rotate(0deg); */
-    filter:
-        grayscale(100%) sepia(100%) hue-rotate(255deg) saturate(1200%) brightness(55%) contrast(130%);
+    filter: brightness(69%) contrast(200%) saturate(0%) blur(0px) hue-rotate(0deg);
+    /* filter: grayscale(100%) sepia(100%) hue-rotate(255deg) saturate(1200%) brightness(55%) contrast(130%); */
     border-radius: var(--global-border-radius);
     overflow: hidden;
 }
